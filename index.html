@@ -152,7 +152,7 @@
       </button>
 
       <ul
-        class="fixed top-0 left-0 flex h-screen w-screen translate-x-full flex-col items-center justify-center gap-5 bg-white text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit transition-transform duration-500"
+        class="fixed top-0 left-0 z-50 flex h-screen w-screen translate-x-full flex-col items-center justify-center gap-5 bg-white text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit transition-transform duration-500"
         id="mobile-nav"
       >
         <button class="absolute top-8 right-8" id="close-nav">
@@ -236,12 +236,9 @@
         </div>
         <div class="text-center">
           <button
-            
             class="z-[50] mt-8 rounded-[5px] border border-white bg-transparent px-8 py-[13px] font-ubuntu text-base font-medium uppercase leading-[18.58px] tracking-wide text-white transition-all duration-1000 hover:bg-slate-50/25 lg:mt-[50px]"
           >
-            <a href="#xplore">
-              learn more
-            </a>
+            <a href="#xplore"> learn more </a>
           </button>
         </div>
       </section>
@@ -312,7 +309,7 @@
               src="./images/tech1.png"
               alt="tech1"
               class="absolute h-full w-full object-cover opacity-0 transition-all duration-[1.5s]"
-              style="clip-path: inset(0 100% 0 0)"
+              style="clip-path: inset(0 0 0 0); opacity: 1"
             />
             <img
               src="./images/tech2.png"
@@ -334,29 +331,30 @@
             />
           </div>
           <div
-            class="flex flex-col gap-5 text-xl font-medium uppercase leading-normal text-white lg:gap-8 lg:text-[50px] lg:leading-[54.14px]"
+            class="flex flex-col gap-8 text-xl font-medium uppercase leading-normal text-white lg:gap-12 lg:text-[50px] lg:leading-[54.14px]"
           >
             <div
               id="opt-1"
-              class="cursor-default border-b-2 border-white pb-5 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-8"
+              class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12"
+              style="color: #63e7ff; border-color: #63e7ff"
             >
               consulting services
             </div>
             <div
               id="opt-2"
-              class="cursor-default border-b-2 border-white pb-5 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-8"
+              class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12"
             >
               deigital conmmercialization products
             </div>
             <div
               id="opt-3"
-              class="cursor-default border-b-2 border-white pb-5 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-8"
+              class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12"
             >
               technology products
             </div>
             <div
               id="opt-4"
-              class="cursor-default border-b-2 border-white pb-5 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-8"
+              class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12"
             >
               sports analysis products
             </div>

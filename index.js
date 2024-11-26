@@ -4,28 +4,27 @@ for (let i = 1; i <= 4; i++) {
   if (element) {
     element.addEventListener("mouseenter", function () {
       const image = document.querySelector(`[alt="tech${i}"]`);
-      console.log("hovered");
       if (window.innerWidth >= 768) {
         if (image) {
           image.style.clipPath = "inset(0 0 0 0)";
           image.style.opacity = "1";
-          // element.style.color = "#63E7FF";
-          // element.style.borderColor = "#63E7FF";
+          element.style.color = "#63E7FF";
+          element.style.borderColor = "#63E7FF";
 
-          // for (let j = 1; j <= 4; j++) {
-          //   if (j !== i) {
-          //     const otherImage = document.querySelector(`[alt="tech${j}"]`);
-          //     const otherElement = document.getElementById(`opt-${j}`);
-          //     if (otherImage) {
-          //       // otherImage.style.opacity = "0";
-          //       // otherImage.style.transform = "translateX(-100%)";
-          //     }
-          //     if (otherElement) {
-          //       otherElement.style.color = "#c0cac9";
-          //       otherElement.style.borderColor = "#c0cac9";
-          //     }
-          //   }
-          // }
+          for (let j = 1; j <= 4; j++) {
+            if (j !== i) {
+              const otherImage = document.querySelector(`[alt="tech${j}"]`);
+              const otherElement = document.getElementById(`opt-${j}`);
+              if (otherImage) {
+                otherImage.style.opacity = "0";
+                otherImage.style.clipPath = "inset(0 100% 0 0)";
+              }
+              if (otherElement) {
+                otherElement.style.color = "#c0cac9";
+                otherElement.style.borderColor = "#c0cac9";
+              }
+            }
+          }
         } else {
           console.log("No image found");
         }
@@ -37,11 +36,10 @@ for (let i = 1; i <= 4; i++) {
       console.log("unhovered");
       if (window.innerWidth >= 768) {
         if (image) {
-          // image.style.opacity = "0";
           image.style.clipPath = "inset(0 100% 0 0)";
           image.style.opacity = "0";
-          // element.style.color = "#c0cac9";
-          // element.style.borderColor = "#c0cac9";
+          element.style.color = "#c0cac9";
+          element.style.borderColor = "#c0cac9";
         } else {
           console.log("No image found");
         }
@@ -118,4 +116,3 @@ window.addEventListener("scroll", function () {
 window.addEventListener("load", function () {
   xploreAnimationTriggered = false;
 });
-
