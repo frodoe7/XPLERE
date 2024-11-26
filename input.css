@@ -4,18 +4,10 @@
 
 @layer base {
   @font-face {
-    font-family: "STC";
+    font-family: "optilimitedview";
     font-style: normal;
-    font-weight: 400;
     font-display: swap;
-    src: url("fonts/STC-Regular.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "STC";
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url("fonts/STC-Bold.ttf") format("truetype");
+    src: url("fonts/OPTILimitedView.otf") format("opentype");
   }
 }
 

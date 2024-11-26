@@ -1,1333 +1,849 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landwind - Tailwind CSS Landing Page Demo</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+    <title>Xplere</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
 
-    <!-- Meta SEO -->
-    <meta name="title" content="Landwind - Tailwind CSS Landing Page" />
-    <meta
-      name="description"
-      content="Get started with a free and open-source landing page built with Tailwind CSS and the Flowbite component library."
-    />
-    <meta name="robots" content="index, follow" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="English" />
-    <meta name="author" content="Themesberg" />
 
     <!-- Social media share -->
-    <meta property="og:title" content="Landwind" - Tailwind CSS Landing Page />
-    <meta property="og:site_name" content="Themesberg" />
-    <meta property="og:url" content=https://https://demo.themesberg.com/landwind
-    />
-    <meta
-      property="og:description"
-      content="Get"
-      started
-      with
-      a
-      free
-      and
-      open-source
-      landing
-      page
-      for
-      Tailwind
-      CSS
-      built
-      with
-      the
-      Flowbite
-      component
-      library
-      featuring
-      dark
-      mode,
-      hero
-      sections,
-      pricing
-      cards,
-      and
-      more.
-    />
-    <meta property="og:type" content="" />
-    <meta property="og:image"
-    content=https://themesberg.s3.us-east-2.amazonaws.com/public/github/landwind/og-image.png>
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@themesberg" />
-    <meta name="twitter:creator" content="@themesberg" />
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
     <link href="./output.css" rel="stylesheet" />
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
 
-  <body class="text-text font-stc">
-    <header class="w-full">
-      <nav class="bg-white border-gray-200 py-8 dark:bg-gray-900">
-        <div
-          class="flex flex-wrap lg:gap-20 items-center justify-between max-w-screen-xl px-4 mx-auto"
+  <body class="overflow-x-hidden bg-background font-opti">
+    <!-- <header> -->
+    <!-- <img src="./images/top-bg.png" class="absolute top-[180px] h-full w-full" /> -->
+    <!-- Desktop nav -->
+    <nav class="mt-[51px] hidden w-full px-16 text-nav lg:block">
+      <ul
+        class="flex justify-between text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit"
+      >
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
         >
-          <a href="#" class="flex items-center">
-            <img
-              src="./images/logo.png"
-              class="h-6 sm:h-9"
-              alt="Landwind Logo"
-            />
+          <a href="#">products</a>
+          <div
+            class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+          ></div>
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="#">services</a>
+          <div
+            class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+          ></div>
+        </li>
+        <li class="z-10 cursor-pointer">
+          <a href="#">
+            <img src="./images/logo.png" alt="logo" />
           </a>
-          <div class="flex items-center lg:hidden">
-            <!-- <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> -->
-            <button
-              data-collapse-toggle="mobile-menu-2"
-              type="button"
-              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="mobile-menu-2"
-              aria-expanded="false"
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="#">about</a>
+          <div
+            class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+          ></div>
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="#">vision</a>
+          <div
+            class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+          ></div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile nav -->
+    <nav
+      class="mt-[51px] flex w-full items-center justify-between px-5 text-nav lg:hidden"
+    >
+      <a href="#">
+        <img src="./images/logo.png" alt="logo" class="h-5 lg:h-7" />
+      </a>
+
+      <button id="open-nav">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+      </button>
+
+      <ul
+        class="fixed top-0 left-0 flex h-screen w-screen translate-x-full flex-col items-center justify-center gap-5 bg-white text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit transition-transform duration-500"
+        id="mobile-nav"
+      >
+        <button class="absolute top-8 right-8" id="close-nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="#">products</a>
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="#">services</a>
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="#">about</a>
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="#">vision</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- </header> -->
+    <main>
+      <section
+        class="absolute top-0 left-0 -z-50 h-screen max-h-screen min-h-screen w-full"
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="max-h-full min-h-full w-full object-cover"
+        >
+          <source src="./videos/Slider Video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div
+          class="absolute inset-0 z-0 bg-gradient-to-t from-black via-black/70 to-transparent"
+        ></div>
+      </section>
+      <section
+        class="relative mt-[47vh] mb-[calc(53vh-250px)] lg:mb-[calc(53vh-350px)]"
+      >
+        <div class="relative text-center">
+          <h1
+            class="flex flex-col gap-2.5 text-center text-3xl font-medium uppercase leading-[60px] tracking-wide text-white lg:gap-[33px] lg:text-[80px]"
+          >
+            <span class="leading-[25px] lg:leading-[inherit]">unlock</span>
+            <div class="h-10 overflow-hidden lg:h-[80px]">
+              <div class="flex animate-slideWord flex-col gap-10">
+                <div>growth</div>
+                <div>technologies</div>
+                <div>revenue</div>
+                <div>engagement</div>
+                <div>potential</div>
+                <div>you</div>
+              </div>
+            </div>
+          </h1>
+        </div>
+        <div class="text-center">
+          <button
+            href="#xplore"
+            class="z-[50] mt-8 rounded-[5px] border border-white bg-transparent px-8 py-[13px] font-ubuntu text-base font-medium uppercase leading-[18.58px] tracking-wide text-white transition-all duration-1000 hover:bg-slate-50/25 lg:mt-[50px]"
+          >
+            learn more
+          </button>
+        </div>
+      </section>
+      <section></section>
+      <section class="relative h-[1440px] w-full object-cover pl-16 uppercase">
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-black via-black to-transparent transform-preserve-3d"
+        >
+          <div class="relative flex w-7/12 flex-col items-center" id="xplore">
+            <h2
+              class="z-[2] text-center text-3xl leading-snug tracking-wide text-white lg:text-[50px]"
             >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <svg
-                class="hidden w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+              <span
+                class="bg-gradient-to-r from-[#0d1a66] to-[#2659a0] bg-clip-text text-transparent"
+                >xplore.</span
+              ><br />the possibilities of<br />tomorrow. today.
+            </h2>
+            <div class="relative my-10 lg:-top-10 lg:my-0">
+              <img
+                src="./images/vr.png"
+                alt="vr"
+                class="z-[1] h-auto w-[550px]"
+              />
+            </div>
+            <p
+              class="text-center font-ubuntu text-lg font-normal normal-case leading-[30px] tracking-wide text-[#c0cac9]"
+            >
+              Xplere uses the intersection of technology, commercialization and
+              growth to find value for our clients in the sports, entertainment
+              and leisure industries. Our aim is to help our clients discover a
+              path for growth that is sustainable, rooted in technology and
+              takes advantage of their natural strengths.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="relative pl-16">
+        <div
+          class="mb-6 font-opti text-4xl font-medium uppercase leading-normal text-white lg:mb-[51px] lg:text-[100px] lg:leading-[100px]"
+        >
+          We <br />use
+        </div>
+      </section>
+      <div class="px-16">
+        <hr class="mb-4 h-0 w-full border-[3px] border-white" />
+      </div>
+      <section>
+        <div class="flex flex-col gap-14 p-16 lg:flex-row">
+          <div
+            id="opts"
+            class="relative h-[616px] w-[600px] max-w-full overflow-hidden"
+          >
+            <img
+              src="./images/tech1.png"
+              alt="tech1"
+              class="absolute h-full w-full -translate-x-full object-cover opacity-0 transition-all duration-[1.5s]"
+              style="opacity: 1; transform: translateX(0)"
+            />
+            <img
+              src="./images/tech2.png"
+              alt="tech2"
+              class="absolute h-full w-full -translate-x-full object-cover opacity-0 transition-all duration-[1.5s]"
+            />
+            <img
+              src="./images/tech3.png"
+              alt="tech3"
+              class="absolute h-full w-full -translate-x-full object-cover opacity-0 transition-all duration-[1.5s]"
+            />
+            <img
+              src="./images/tech4.png"
+              alt="tech4"
+              class="absolute h-full w-full -translate-x-full object-cover opacity-0 transition-all duration-[1.5s]"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-5 text-xl font-medium uppercase leading-normal text-white lg:gap-8 lg:text-[50px] lg:leading-[54.14px]"
+          >
+            <div
+              id="opt-1"
+              class="cursor-default border-b-2 border-white pb-5 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-8"
+              style="color: #63e7ff; border-color: #63e7ff"
+            >
+              consulting services
+            </div>
+            <div
+              id="opt-2"
+              class="cursor-default border-b-2 border-white pb-5 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-8"
+            >
+              deigital conmmercialization products
+            </div>
+            <div
+              id="opt-3"
+              class="cursor-default border-b-2 border-white pb-5 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-8"
+            >
+              technology products
+            </div>
+            <div
+              id="opt-4"
+              class="cursor-default border-b-2 border-white pb-5 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-8"
+            >
+              sports analysis products
+            </div>
+          </div>
+        </div>
+        <p
+          class="p-5 text-center text-xl font-medium uppercase leading-normal text-white lg:p-24 lg:text-[40px] lg:leading-[60px]"
+        >
+          to help organizations in the sports, entertainment and leisure
+          industries reach their true potential.
+        </p>
+      </section>
+
+      <div
+        class="flex flex-col items-center gap-10 bg-background font-ubuntu text-white lg:gap-20"
+      >
+        <div class="relative flex w-full flex-col items-center gap-20 px-5">
+          <img
+            src="./images/services-background.png"
+            class="absolute top-0 left-0 bottom-0 right-0 h-full w-full object-cover opacity-[15%]"
+          />
+          <h3
+            class="relative z-10 mt-20 font-opti text-3xl font-semibold uppercase lg:text-[40px]"
+          >
+            Services
+          </h3>
+
+          <div
+            class="container relative z-10 flex flex-col items-start gap-10 rounded border border-border bg-[rgba(2,3,26,0.4)] p-5 transition-all duration-500 hover:border-[#63E7FF] hover:bg-[rgba(99,231,255,0.1)] lg:p-[72px]"
+          >
+            <h4
+              class="self-center text-center font-opti text-xl uppercase lg:self-start lg:text-left lg:text-[34px]"
+            >
+              Consulting
+            </h4>
+            <div class="flex max-w-3xl flex-col gap-6">
+              <p class="opacity-80 lg:text-lg">
+                We use expertise, data and insights to determine the right path
+                for you. Our consultancy services look at your long-term
+                objectives, industry realities and a holistic understanding of
+                the market to build a future-proof plan that elevates your
+                organization to the next level.
+              </p>
+
+              <div class="flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0 0.205322)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl"
+                  >Consulting for Host Cities & Major Events</span
+                >
+              </div>
+
+              <div class="flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0 0.205322)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl"
+                  >Consulting for Rights Holders and Sports Clubs</span
+                >
+              </div>
+
+              <div class="flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0 0.205322)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl"
+                  >Insights, Research and Evaluations</span
+                >
+              </div>
+            </div>
+
+            <button
+              class="rounded border border-white py-3 px-5 uppercase transition-all hover:bg-white/20"
+            >
+              request
             </button>
           </div>
+
           <div
-            class="lg:flex-1 justify-between hidden w-full lg:flex lg:flex-col lg:order-1"
-            id="mobile-menu-2"
+            class="container relative z-10 flex flex-col items-start gap-10 rounded border border-border bg-[rgba(2,3,26,0.4)] p-5 transition-all duration-500 hover:border-[#63E7FF] hover:bg-[rgba(99,231,255,0.1)] lg:p-[72px]"
           >
-            <ul
-              class="flex flex-col mt-4 font-medium lg:flex-row lg:items-center lg:space-x-8 lg:mt-0"
+            <h4
+              class="self-center text-center font-opti text-xl uppercase lg:self-start lg:text-left lg:text-[34px]"
             >
-              <li style="margin-left: 24px">
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary transition-all lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  aria-current="page"
-                  >الرئيسية</a
+              Digital Transformation
+            </h4>
+            <div class="flex max-w-3xl flex-col gap-6">
+              <p class="opacity-80 lg:text-lg">
+                A leaner, digital oriented organization always punches above its
+                weight. This is where we come in and leverage our extensive
+                experience to overhaul key areas through digital solutions that
+                range from fan engagement to CRM systems.
+              </p>
+
+              <div class="flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary transition-all lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >عن جودة</a
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0 0.205322)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl"
+                  >Customer Experience and Engagement</span
                 >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary transition-all lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >ابحث عن مجربين</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary transition-all lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >تواصل معنا</a
-                >
-              </li>
-              <div class="lg:contents flex items-center">
-                <li class="lg:!mr-auto flex flex-1 lg:flex-[unset]">
-                  <a
-                    href="https://themesberg.com/product/tailwind-css/landing-page"
-                    class="flex w-full items-center my-2 gap-2 bg-primary text-white py-3 px-5 rounded-xl"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                      <circle cx="12" cy="7" r="4" />
-                    </svg>
-                    <span class="sm:text-base text-sm">تسجيل الدخول</span>
-                  </a>
-                </li>
-                <li class="mr-4 flex-1 lg:flex-[unset]">
-                  <button
-                    class="flex w-full items-center gap-5 bg-gray-100 rounded-xl py-3 px-5"
-                  >
-                    <div class="flex gap-2 items-center">
-                      <svg
-                        width="24px"
-                        height="24px"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="w-7 h-7"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M6.15407 7.30116C7.52877 5.59304 9.63674 4.5 12 4.5C12.365 4.5 12.7238 4.52607 13.0748 4.57644L13.7126 5.85192L11.2716 8.2929L8.6466 8.6679L7.36009 9.95441L6.15407 7.30116ZM5.2011 8.82954C4.75126 9.79256 4.5 10.8669 4.5 12C4.5 15.6945 7.17133 18.7651 10.6878 19.3856L11.0989 18.7195L8.8147 15.547L10.3741 13.5256L9.63268 13.1549L6.94027 13.6036L6.41366 11.4972L5.2011 8.82954ZM7.95559 11.4802L8.05962 11.8964L9.86722 11.5951L11.3726 12.3478L14.0824 11.9714L18.9544 14.8135C19.3063 13.9447 19.5 12.995 19.5 12C19.5 8.93729 17.6642 6.30336 15.033 5.13856L15.5377 6.1481L11.9787 9.70711L9.35371 10.0821L7.95559 11.4802ZM18.2539 16.1414C16.9774 18.0652 14.8369 19.366 12.3859 19.4902L12.9011 18.6555L10.6853 15.578L12.0853 13.7632L13.7748 13.5286L18.2539 16.1414ZM12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3Z"
-                          fill="#080341"
-                        />
-                      </svg>
-                      <span>EN</span>
-                    </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m6 9 6 6 6-6" />
-                    </svg>
-                  </button>
-                </li>
               </div>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <!-- Start block -->
-    <section class="bg-white dark:bg-gray-900">
-      <div
-        class="grid max-w-screen-xl px-4 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
-      >
-        <div class="place-self-center lg:col-span-7">
-          <h1
-            class="max-w-2xl mb-4 text-4xl mt-5 lg:mt-0 font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white"
-          >
-            جودة
-            <span class="hover:text-primary transition-all"
-              >عالم من المجربين!</span
+              <div class="flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0 0.205322)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl">Customer Journey Mapping</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0 0.205322)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl">Customer Feedback and Insights</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0 0.205322)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl">Omnichannel Support</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0 0.205322)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl"
+                  >Personalization and Customer Engagement</span
+                >
+              </div>
+            </div>
+
+            <button
+              class="rounded border border-white py-3 px-5 uppercase transition-all hover:bg-white/20"
             >
-          </h1>
-          <p
-            class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
-          >
-            نحن نفتح لكم آفاق تحسين مستوى الجودة من خلال عالم مليء بالتجارب
-            الشيّقة والفرص لتقييم و اختبار الخدمات او الأنظمة.
-          </p>
-          <div class="flex space-y-0 space-x-4">
-            <a
-              href="https://themesberg.com/product/tailwind-css/landing-page"
-              class="items-center gap-2 bg-primary text-white py-3 px-5 rounded-xl"
-            >
-              <span style="font-weight: bold">جرب رحلة عميلك الآن</span>
-            </a>
-            <a
-              href="https://themesberg.com/product/tailwind-css/landing-page"
-              style="background-color: #f8f7fe; margin-right: 20px"
-              class="flex items-center my-2 gap-2 text-black py-3 px-5 rounded-xl"
-            >
-              <span style="font-weight: bold">انضم كمجّرب</span>
-            </a>
+              request
+            </button>
           </div>
         </div>
-        <div class="lg:mt-0 mt-5 lg:col-span-5 lg:flex">
-          <img src="./images/hero.png" alt="hero image" />
-        </div>
-      </div>
-    </section>
-    <!-- End block -->
-    <!-- Start block -->
-    <section class="bg-white dark:bg-gray-900">
-      <div class="max-w-screen-xl px-4 pt-12 pb-8 mx-auto lg:gap-8 xl:gap-0">
-        <h2 class="text-4xl font-bold">اكتشف أفضل المجربين في عالم جودة</h2>
-        <p class="mt-5">سهلناها عليك، اكتشف أفضل المجربين لدينا</p>
+
         <div
-          class="flex mt-5 whitespace-nowrap gap-2.5 lg:gap-5 overflow-x-auto"
-        >
-          <button
-            class="tab transition-all cursor bg-primary text-white rounded-full text-xl py-3 px-5"
-            onclick="setTab(1)"
-            id="tab1"
-          >
-            مجّربي التطبيقات والأنظمة
-          </button>
-          <button
-            class="tab transition-all cursor bg-gray-100 rounded-full text-xl py-3 px-5"
-            onclick="setTab(2)"
-            id="tab2"
-          >
-            مجّربي منافذ البيع والتجزئة
-          </button>
-          <button
-            class="tab transition-all cursor bg-gray-100 rounded-full text-xl py-3 px-5"
-            onclick="setTab(3)"
-            id="tab3"
-          >
-            مجّربي الترفيه والفعاليات
-          </button>
-          <button
-            class="tab transition-all cursor bg-gray-100 rounded-full text-xl py-3 px-5"
-            onclick="setTab(4)"
-            id="tab4"
-          >
-            مجّربي المطاعم والتغذي
-          </button>
-          <button
-            class="tab transition-all cursor bg-gray-100 rounded-full text-xl py-3 px-5"
-            onclick="setTab(5)"
-            id="tab5"
-          >
-            مجّربي الخدمات المالية والتأمين
-          </button>
-          <button
-            class="tab transition-all cursor bbg-gray-100 rounded-full text-xl py-3 px-5"
-            onclick="setTab(6)"
-            id="tab6"
-          >
-            الاختبار اليدوي
-          </button>
-        </div>
-        <div class="swiper mt-6 swiper1 justify-center flex gap-5 flex-wrap">
-          <div class="swiper-wrapper" id="tabs-list"></div>
-          <div class="swiper-pagination swiper-pagination1"></div>
-        </div>
-        <div class="mt-5 flex gap-2.5">
-          <button
-            class="!static text-primary p-2.5 rounded-xl bg-white shadow-[0_5px_55px_rgba(172,172,172,0.25)] flex items-center justify-center"
-            id="button-prev"
-          >
-            <svg
-              width="14"
-              height="13"
-              viewBox="0 0 14 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.00028 5.39344L11.166 5.39344L8.05456 1.6563C7.90907 1.48126 7.83908 1.25559 7.85998 1.02894C7.88087 0.802285 7.99095 0.593218 8.16599 0.447728C8.34104 0.302238 8.56671 0.232242 8.79336 0.253139C9.02001 0.274036 9.22907 0.384114 9.37457 0.559157L13.6603 5.70201C13.6891 5.74292 13.7149 5.78589 13.7374 5.83059C13.7374 5.87344 13.7374 5.89916 13.7974 5.94201C13.8363 6.04029 13.8566 6.14491 13.8574 6.25059C13.8566 6.35626 13.8363 6.46088 13.7974 6.55916C13.7974 6.60201 13.7974 6.62773 13.7374 6.67058C13.7149 6.71528 13.6891 6.75825 13.6603 6.79916L9.37457 11.942C9.29397 12.0388 9.19305 12.1166 9.07898 12.1699C8.96491 12.2232 8.84049 12.2508 8.71456 12.2506C8.51429 12.251 8.3202 12.1812 8.16599 12.0534C8.0792 11.9815 8.00746 11.8931 7.95487 11.7934C7.90228 11.6937 7.86988 11.5845 7.85953 11.4723C7.84918 11.36 7.86108 11.2468 7.89455 11.1391C7.92801 11.0315 7.98239 10.9315 8.05456 10.8449L11.166 7.10773L1.00028 7.10773C0.77295 7.10773 0.554933 7.01742 0.394187 6.85668C0.233441 6.69593 0.143136 6.47791 0.143136 6.25059C0.143136 6.02326 0.233441 5.80524 0.394187 5.64449C0.554933 5.48375 0.77295 5.39344 1.00028 5.39344Z"
-                fill="currentColor"
-              />
-            </svg>
-          </button>
-          <button
-            id="button-next"
-            class="!static p-2.5 text-primary rounded-xl bg-white shadow-[0_5px_55px_rgba(172,172,172,0.25)] flex items-center justify-center"
-          >
-            <svg
-              width="14"
-              height="13"
-              viewBox="0 0 14 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.9997 7.60656L2.83401 7.60656L5.94544 11.3437C6.09093 11.5187 6.16092 11.7444 6.14002 11.9711C6.11913 12.1977 6.00905 12.4068 5.83401 12.5523C5.65896 12.6978 5.43329 12.7678 5.20664 12.7469C4.97999 12.726 4.77093 12.6159 4.62543 12.4408L0.339721 7.29799C0.310887 7.25708 0.285103 7.21411 0.262578 7.16941C0.262578 7.12656 0.262578 7.10084 0.202578 7.05799C0.163727 6.95971 0.143385 6.85509 0.142578 6.74941C0.143385 6.64374 0.163727 6.53912 0.202578 6.44084C0.202578 6.39799 0.202578 6.37227 0.262578 6.32942C0.285103 6.28472 0.310887 6.24175 0.339721 6.20084L4.62543 1.05799C4.70603 0.96123 4.80695 0.883418 4.92102 0.830086C5.03509 0.776753 5.15951 0.74921 5.28544 0.749414C5.48571 0.749023 5.6798 0.818773 5.83401 0.946557C5.9208 1.01851 5.99254 1.10689 6.04513 1.20661C6.09772 1.30634 6.13012 1.41546 6.14047 1.52772C6.15082 1.63999 6.13892 1.75319 6.10545 1.86086C6.07199 1.96852 6.01761 2.06852 5.94544 2.15513L2.83401 5.89227L12.9997 5.89227C13.227 5.89227 13.4451 5.98258 13.6058 6.14332C13.7666 6.30407 13.8569 6.52209 13.8569 6.74941C13.8569 6.97674 13.7666 7.19476 13.6058 7.35551C13.4451 7.51625 13.227 7.60656 12.9997 7.60656Z"
-                fill="currentColor"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- End block -->
-    <!-- Start block -->
-    <section class="pb-10 lg:pb-20" style="background-color: #eef5f5">
-      <div
-        class="max-w-screen-xl flex-col gap-8 px-4 pt-10 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:pt-28"
-      >
-        <h2 class="text-4xl font-bold">
-          جسر بين
-          <span class="hover:text-primary transition-all"
-            >المختبرين والشركات</span
-          >
-          لـ جودة أفضل
-        </h2>
-        <p class="mt-6" style="color: #495490; font-weight: 100">
-          نفتح لكم آفاق تحسين مستوى الجودة من خلال عالم مليء بالمجرّبين الخبراء
-          لمشاركة تقييماتهم وتقاريرهم من خلال تنفيذ اختبارات ممنهجة ودقيقة
-          للخدمات او الأنظمة. 
-        </p>
-      </div>
-
-      <div
-        class="max-w-screen-xl gap-8 px-4 pb-8 mx-auto lg:gap-8 xl:gap-0 grid lg:grid-rows-1 md:grid-rows-2 grid-rows-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 grid-flow-col gap-4"
-      >
-        <div class="feature-box">
-          <lottie-player
-            autoplay
-            loop
-            mode="normal"
-            src="./animations/2.json"
-            style="max-height: 70px; max-width: 70px"
-          >
-          </lottie-player>
-          <h5 class="font-bold mt-6">الوصول إلى مختبريين متخصصين</h5>
-          <p class="mt-4">
-            اعثر على مختبرين متخصصين يمتلكون المهارات المناسبة لتلبية احتياجات
-            البرامج الخاصة.
-          </p>
-        </div>
-        <div class="feature-box">
-          <lottie-player
-            autoplay
-            loop
-            mode="normal"
-            src="./animations/1.json"
-            style="max-height: 70px; max-width: 70px"
-          >
-          </lottie-player>
-          <h5 class="font-bold mt-6">مختبرين متخفيين</h5>
-          <p class="mt-4">
-            الان يمكنك اختبار اى مكان تريده من خلال تعيين مختبر/مجرب بدلاً عنك
-          </p>
-        </div>
-        <div class="feature-box">
-          <lottie-player
-            autoplay
-            loop
-            mode="normal"
-            src="./animations/3.json"
-            style="max-height: 70px; max-width: 70px"
-          >
-          </lottie-player>
-          <h5 class="font-bold mt-6">دعم اختبار مرن</h5>
-          <p class="mt-4">
-            إدارة احتياجات الاختبار المتغيرة دون إثقال الفرق الداخلية.
-          </p>
-        </div>
-        <div class="feature-box">
-          <lottie-player
-            autoplay
-            loop
-            mode="normal"
-            src="./animations/4.json"
-            style="max-height: 70px; max-width: 70px"
-          >
-          </lottie-player>
-          <h5 class="font-bold mt-6">حلول اختبار ميسورة التكلفة</h5>
-          <p class="mt-4">
-            تحقيق التوازن بين الحاجة إلى اختبار شامل والقيود المالية.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- End block -->
-
-    <!-- Start block -->
-    <section class="bg-white flex items-center justify-center dark:bg-gray-900">
-      <img
-        class="cursor sm:block hidden"
-        style="max-height: 600px; max-width: 90%"
-        src="./images/banner.png"
-      />
-      <img
-        class="cursor my-12 sm:hidden"
-        style="max-height: 600px; max-width: 90%"
-        src="./images/banner-mobile.jpeg"
-      />
-    </section>
-    <!-- End block -->
-
-    <!-- Start block -->
-    <section class="bg-white dark:bg-gray-900">
-      <div
-        class="flex max-w-screen-xl py-16 px-4 pb-8 mx-auto gap-8 xl:gap-0 flex-col lg:flex-row items-center"
-      >
-        <div class="flex-[7]">
-          <div
-            class="max-w-screen-xl flex-col pb-4 gap-8 px-4 mx-auto lg:gap-8 xl:gap-0"
-          >
-            <h2 class="text-4xl font-bold">جرّب معنا</h2>
-          </div>
-
-          <div class="mt-8 step-box" onclick="selectStep(1)">
-            <div class="flex-row step-row">
-              <i
-                style="color: #a6a6a6"
-                class="bi bi-check-circle-fill selected"
-              ></i>
-              <p class="bold-title mr-2">مرونة وحرية في أداء المهام</p>
-            </div>
-            <p style="color: #a6a6a6" class="step-details mt-2">
-              استمتع بالمرونة في اختيار المهام التي تناسبك مهما كان موقع تواجدك
-              او امكانياتك.
-            </p>
-          </div>
-
-          <div class="mt-8 step-box" onclick="selectStep(2)">
-            <div class="flex-row step-row">
-              <i
-                style="color: #a6a6a6"
-                class="bi bi-check-circle-fill non-selected"
-              ></i>
-              <p class="title mr-2">حقق دخل</p>
-            </div>
-            <p style="color: #a6a6a6" class="step-details remove mt-2">
-              الحصول على مقابل مالي نظير التزامك وخوضك للتجربة ومشاركة تقييمك
-              بشكل دقيق ومفصّل وبنّاء
-            </p>
-          </div>
-
-          <div class="mt-8 step-box" onclick="selectStep(3)">
-            <div class="flex-row step-row">
-              <i
-                style="color: #a6a6a6"
-                class="bi bi-check-circle-fill non-selected"
-              ></i>
-              <p class="title mr-2">تطوير مهاراتك واكتساب مهارات جديدة</p>
-            </div>
-            <p style="color: #a6a6a6" class="step-details remove mt-2">
-              خوض تجارب مفيدة؛ كل مهمة تخوضها وتجرّبها تساعدك في تنمية إمكانياتك
-              وقدراتك وتحسين مستواك. 
-            </p>
-          </div>
-        </div>
-        <div
-          style="justify-content: center"
-          class="flex-[5] mt-12 lg:mt-0 flex items-center"
+          class="relative z-10 flex w-full flex-col items-center gap-20 bg-[#0E227D] py-10 px-5 lg:py-[136px] lg:px-[160px]"
         >
           <img
-            id="step-image"
-            style="max-width: 400px"
-            src="./images/step1.png"
-            alt="hero image"
+            src="./images/arrows-background.png"
+            class="absolute top-0 left-0 h-full w-full object-cover"
           />
-        </div>
-      </div>
-    </section>
-    <!-- End block -->
+          <div
+            class="absolute top-0 left-0 bottom-0 right-0 z-10 h-full w-full bg-[#0E227D] opacity-90"
+          ></div>
 
-    <!-- Start block -->
-    <section class="bg-white dark:bg-gray-900">
-      <div
-        class="max-w-screen-xl flex-col gap-8 px-4 pt-10 pb-8 mx-auto lg:gap-8 xl:gap-0"
-      >
-        <h2 class="text-4xl font-bold">تقييمات عملائنا</h2>
-        <div class="swiper swiper2 mt-2 lg:mt-6">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="bg-white border p-7 rounded-2xl flex flex-col gap-2">
-                <h2 class="text-2xl font-bold">خالد أبو شعر</h2>
-                <p class="text-[#495490]">
-                  رئيس قسم تكنولوجيا المعلومات، شركة بروج للتأمين التعاوني
-                </p>
-                <div class="flex items-center gap-1.5">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M9.99221 0.6259C7.86946 0.6259 7.66876 4.32328 6.40496 5.62965C5.14118 6.936 1.21217 5.44234 0.666284 7.76106C0.121545 10.081 3.65604 10.8681 4.09183 12.8584C4.52991 14.8488 2.37046 17.6452 4.21569 19.037C6.06092 20.4275 8.04721 17.2801 9.99221 17.2801C11.9373 17.2801 13.9235 20.4275 15.7688 19.037C17.614 17.6452 15.4557 14.8488 15.8926 12.8584C16.3295 10.8681 19.8629 10.081 19.3181 7.76106C18.7734 5.44234 14.8433 6.936 13.5806 5.62965C12.3168 4.32328 12.115 0.6259 9.99221 0.6259Z"
-                      fill="#29A5A8"
-                    />
-                  </svg>
-
-                  <p class="font-bold text-lg">5.0</p>
-                </div>
-                <p class="mt-2">نحن راضون عن خدماتهم لقد تجاوزوا توقعاتنا</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="bg-white p-7 border rounded-2xl flex flex-col gap-2">
-                <h2 class="text-2xl font-bold">خالد أبو شعر</h2>
-                <p class="text-[#495490]">
-                  رئيس قسم تكنولوجيا المعلومات، شركة بروج للتأمين التعاوني
-                </p>
-                <div class="flex items-center gap-1.5">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M9.99221 0.6259C7.86946 0.6259 7.66876 4.32328 6.40496 5.62965C5.14118 6.936 1.21217 5.44234 0.666284 7.76106C0.121545 10.081 3.65604 10.8681 4.09183 12.8584C4.52991 14.8488 2.37046 17.6452 4.21569 19.037C6.06092 20.4275 8.04721 17.2801 9.99221 17.2801C11.9373 17.2801 13.9235 20.4275 15.7688 19.037C17.614 17.6452 15.4557 14.8488 15.8926 12.8584C16.3295 10.8681 19.8629 10.081 19.3181 7.76106C18.7734 5.44234 14.8433 6.936 13.5806 5.62965C12.3168 4.32328 12.115 0.6259 9.99221 0.6259Z"
-                      fill="#29A5A8"
-                    />
-                  </svg>
-
-                  <p class="font-bold text-lg">5.0</p>
-                </div>
-                <p class="mt-2">نحن راضون عن خدماتهم لقد تجاوزوا توقعاتنا</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="bg-white p-7 border rounded-2xl flex flex-col gap-2">
-                <h2 class="text-2xl font-bold">خالد أبو شعر</h2>
-                <p class="text-[#495490]">
-                  رئيس قسم تكنولوجيا المعلومات، شركة بروج للتأمين التعاوني
-                </p>
-                <div class="flex items-center gap-1.5">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M9.99221 0.6259C7.86946 0.6259 7.66876 4.32328 6.40496 5.62965C5.14118 6.936 1.21217 5.44234 0.666284 7.76106C0.121545 10.081 3.65604 10.8681 4.09183 12.8584C4.52991 14.8488 2.37046 17.6452 4.21569 19.037C6.06092 20.4275 8.04721 17.2801 9.99221 17.2801C11.9373 17.2801 13.9235 20.4275 15.7688 19.037C17.614 17.6452 15.4557 14.8488 15.8926 12.8584C16.3295 10.8681 19.8629 10.081 19.3181 7.76106C18.7734 5.44234 14.8433 6.936 13.5806 5.62965C12.3168 4.32328 12.115 0.6259 9.99221 0.6259Z"
-                      fill="#29A5A8"
-                    />
-                  </svg>
-
-                  <p class="font-bold text-lg">5.0</p>
-                </div>
-                <p class="mt-2">نحن راضون عن خدماتهم لقد تجاوزوا توقعاتنا</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="bg-white p-7 border rounded-2xl flex flex-col gap-2">
-                <h2 class="text-2xl font-bold">خالد أبو شعر</h2>
-                <p class="text-[#495490]">
-                  رئيس قسم تكنولوجيا المعلومات، شركة بروج للتأمين التعاوني
-                </p>
-                <div class="flex items-center gap-1.5">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M9.99221 0.6259C7.86946 0.6259 7.66876 4.32328 6.40496 5.62965C5.14118 6.936 1.21217 5.44234 0.666284 7.76106C0.121545 10.081 3.65604 10.8681 4.09183 12.8584C4.52991 14.8488 2.37046 17.6452 4.21569 19.037C6.06092 20.4275 8.04721 17.2801 9.99221 17.2801C11.9373 17.2801 13.9235 20.4275 15.7688 19.037C17.614 17.6452 15.4557 14.8488 15.8926 12.8584C16.3295 10.8681 19.8629 10.081 19.3181 7.76106C18.7734 5.44234 14.8433 6.936 13.5806 5.62965C12.3168 4.32328 12.115 0.6259 9.99221 0.6259Z"
-                      fill="#29A5A8"
-                    />
-                  </svg>
-
-                  <p class="font-bold text-lg">5.0</p>
-                </div>
-                <p class="mt-2">نحن راضون عن خدماتهم لقد تجاوزوا توقعاتنا</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-pagination swiper-pagination2"></div>
-        </div>
-
-        <div class="mt-5 flex gap-2.5">
-          <button
-            class="p-2.5 rounded-xl text-primary !static bg-white shadow-[0_5px_55px_rgba(172,172,172,0.25)] flex items-center justify-center"
-            id="swiper-button-prev"
+          <h3
+            class="relative z-20 font-opti text-3xl font-semibold uppercase lg:text-[40px]"
           >
-            <svg
-              width="14"
-              height="13"
-              viewBox="0 0 14 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.00028 5.39344L11.166 5.39344L8.05456 1.6563C7.90907 1.48126 7.83908 1.25559 7.85998 1.02894C7.88087 0.802285 7.99095 0.593218 8.16599 0.447728C8.34104 0.302238 8.56671 0.232242 8.79336 0.253139C9.02001 0.274036 9.22907 0.384114 9.37457 0.559157L13.6603 5.70201C13.6891 5.74292 13.7149 5.78589 13.7374 5.83059C13.7374 5.87344 13.7374 5.89916 13.7974 5.94201C13.8363 6.04029 13.8566 6.14491 13.8574 6.25059C13.8566 6.35626 13.8363 6.46088 13.7974 6.55916C13.7974 6.60201 13.7974 6.62773 13.7374 6.67058C13.7149 6.71528 13.6891 6.75825 13.6603 6.79916L9.37457 11.942C9.29397 12.0388 9.19305 12.1166 9.07898 12.1699C8.96491 12.2232 8.84049 12.2508 8.71456 12.2506C8.51429 12.251 8.3202 12.1812 8.16599 12.0534C8.0792 11.9815 8.00746 11.8931 7.95487 11.7934C7.90228 11.6937 7.86988 11.5845 7.85953 11.4723C7.84918 11.36 7.86108 11.2468 7.89455 11.1391C7.92801 11.0315 7.98239 10.9315 8.05456 10.8449L11.166 7.10773L1.00028 7.10773C0.77295 7.10773 0.554933 7.01742 0.394187 6.85668C0.233441 6.69593 0.143136 6.47791 0.143136 6.25059C0.143136 6.02326 0.233441 5.80524 0.394187 5.64449C0.554933 5.48375 0.77295 5.39344 1.00028 5.39344Z"
-                fill="currentColor"
-              />
-            </svg>
-          </button>
-          <button
-            class="!static p-2.5 text-primary rounded-xl bg-white shadow-[0_5px_55px_rgba(172,172,172,0.25)] flex items-center justify-center"
-            id="swiper-button-next"
+            Products
+          </h3>
+
+          <div
+            class="relative z-20 flex w-full flex-col justify-between gap-5 lg:flex-row"
           >
-            <svg
-              width="14"
-              height="13"
-              viewBox="0 0 14 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.9997 7.60656L2.83401 7.60656L5.94544 11.3437C6.09093 11.5187 6.16092 11.7444 6.14002 11.9711C6.11913 12.1977 6.00905 12.4068 5.83401 12.5523C5.65896 12.6978 5.43329 12.7678 5.20664 12.7469C4.97999 12.726 4.77093 12.6159 4.62543 12.4408L0.339721 7.29799C0.310887 7.25708 0.285103 7.21411 0.262578 7.16941C0.262578 7.12656 0.262578 7.10084 0.202578 7.05799C0.163727 6.95971 0.143385 6.85509 0.142578 6.74941C0.143385 6.64374 0.163727 6.53912 0.202578 6.44084C0.202578 6.39799 0.202578 6.37227 0.262578 6.32942C0.285103 6.28472 0.310887 6.24175 0.339721 6.20084L4.62543 1.05799C4.70603 0.96123 4.80695 0.883418 4.92102 0.830086C5.03509 0.776753 5.15951 0.74921 5.28544 0.749414C5.48571 0.749023 5.6798 0.818773 5.83401 0.946557C5.9208 1.01851 5.99254 1.10689 6.04513 1.20661C6.09772 1.30634 6.13012 1.41546 6.14047 1.52772C6.15082 1.63999 6.13892 1.75319 6.10545 1.86086C6.07199 1.96852 6.01761 2.06852 5.94544 2.15513L2.83401 5.89227L12.9997 5.89227C13.227 5.89227 13.4451 5.98258 13.6058 6.14332C13.7666 6.30407 13.8569 6.52209 13.8569 6.74941C13.8569 6.97674 13.7666 7.19476 13.6058 7.35551C13.4451 7.51625 13.227 7.60656 12.9997 7.60656Z"
-                fill="currentColor"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- End block -->
-
-    <!-- Start block -->
-    <section class="bg-white dark:bg-gray-900">
-      <div
-        style="justify-content: center; align-items: center"
-        class="max-w-screen-xl flex text-center flex-col gap-8 px-4 pt-10 pb-8 mx-auto lg:gap-8 xl:gap-0"
-      >
-        <h2 class="text-4xl font-bold">شركاء النجاح</h2>
-        <img
-          class="my-16 max-w-[80%] hidden sm:block w-full h-auto"
-          src="./images/partners.png"
-        />
-        <img class="my-5 sm:hidden" src="./images/partners-mobile.png" />
-      </div>
-    </section>
-    <!-- End block -->
-
-    <footer
-      class="bg-teal-[#EEF5F5] border-t-4 border-t-primary dark:bg-gray-800"
-    >
-      <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
-        <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
-          <div>
-            <a href="#" class="flex items-center mb-6">
-              <img
-                src="./images/logo.png"
-                class="h-6 sm:h-9"
-                alt="Landwind Logo"
-              />
-            </a>
-            <p>
-              تربط جودة المختبرين المهرة بالشركات، مقدمة حلول اختبار برمجيات
-              موثوقة ومرنة لتلبية جميع الاحتياجات.
-            </p>
-          </div>
-          <div>
-            <h3
-              class="mb-6 text-xl font-bold text-indigo-950 uppercase dark:text-white"
-            >
-              خدمات جودة
-            </h3>
-            <ul class="flex flex-col gap-2.5 text-gray-500 dark:text-gray-400">
-              <li class="flex gap-2 items-center">
-                <a href="#" class="hover:text-primary transition-all"
-                  >اكتشف مجربي عالم جودة</a
-                >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="text-gray-300"
-                >
-                  <path d="m12 19-7-7 7-7" />
-                  <path d="M19 12H5" />
-                </svg>
-              </li>
-              <li class="flex gap-2 items-center">
-                <a href="#" class="hover:text-primary transition-all"
-                  >انضم إلى مجربي عالم جودة</a
-                >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="text-gray-300"
-                >
-                  <path d="m12 19-7-7 7-7" />
-                  <path d="M19 12H5" />
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3
-              class="mb-6 text-xl font-bold text-indigo-950 uppercase dark:text-white"
-            >
-              المساعدة
-            </h3>
-            <ul class="flex flex-col gap-2.5 text-gray-500 dark:text-gray-400">
-              <li class="flex gap-2 items-center">
-                <a href="#" class="hover:text-primary transition-all"
-                  >تواصل معنا</a
-                >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="text-gray-300"
-                >
-                  <path d="m12 19-7-7 7-7" />
-                  <path d="M19 12H5" />
-                </svg>
-              </li>
-              <li class="flex gap-2 items-center">
-                <a href="#" class="hover:text-primary transition-all"
-                  >الأسئلة الشائعة</a
-                >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="text-gray-300"
-                >
-                  <path d="m12 19-7-7 7-7" />
-                  <path d="M19 12H5" />
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3
-              class="mb-6 text-xl font-bold text-indigo-950 uppercase dark:text-white"
-            >
-              روابط هامة
-            </h3>
-            <ul class="flex flex-col gap-2.5 text-gray-500 dark:text-gray-400">
-              <li class="flex gap-2 items-center">
-                <a href="#" class="hover:text-primary transition-all"
-                  >سياسة الخصوصية</a
-                >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="text-gray-300"
-                >
-                  <path d="m12 19-7-7 7-7" />
-                  <path d="M19 12H5" />
-                </svg>
-              </li>
-              <li class="flex gap-2 items-center">
-                <a href="#" class="hover:text-primary transition-all">
-                  التوظيف</a
-                >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="text-gray-300"
-                >
-                  <path d="m12 19-7-7 7-7" />
-                  <path d="M19 12H5" />
-                </svg>
-              </li>
-              <li class="flex gap-2 items-center">
-                <a href="#" class="hover:text-primary transition-all"
-                  >الشروط والأحكام</a
-                >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="text-gray-300"
-                >
-                  <path d="m12 19-7-7 7-7" />
-                  <path d="M19 12H5" />
-                </svg>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="flex justify-between items-center mt-10 flex-col gap-5 lg:flex-row lg:mt-20"
-        >
-          <p class="text-gray-400">جميع الحقوق محفوظة &copy;</p>
-          <div class="flex items-center gap-2">
-            <!-- Youtube -->
-            <a
-              class="bg-white w-12 h-12 shadow-[0_0_3px_rgba(0,0,0,0.1)] p-3 rounded-lg flex items-center justify-center"
-              href="#"
-            >
+            <div class="flex max-w-[262px] flex-col gap-4 lg:gap-8">
               <svg
-                fill="#000000"
-                viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M24.325 8.309s-2.655-.334-8.357-.334c-5.517 0-8.294.334-8.294.334A2.675 2.675 0 0 0 5 10.984v10.034a2.675 2.675 0 0 0 2.674 2.676s2.582.332 8.294.332c5.709 0 8.357-.332 8.357-.332A2.673 2.673 0 0 0 27 21.018V10.982a2.673 2.673 0 0 0-2.675-2.673zM13.061 19.975V12.03L20.195 16l-7.134 3.975z"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-
-            <!-- Instagram -->
-            <a
-              class="bg-white w-12 h-12 shadow-[0_0_3px_rgba(0,0,0,0.1)] p-3 rounded-lg flex items-center justify-center"
-              href="#"
-            >
-              <svg
-                viewBox="0 0 24 24"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-4 h-4"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
+                <g clip-path="url(#clip0_2009_1191)">
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z"
-                    fill="#000000"
-                  ></path>
+                    d="M46.5895 35.1623H45.5669V13.7733C45.5669 11.9216 44.0736 10.415 42.2385 10.415H24.8713C24.3095 9.25207 23.1688 8.41929 21.8222 8.29657V6.22638C21.8222 4.73444 20.3954 3.66185 18.9666 4.07754L6.50666 7.70238C6.33735 7.65944 6.5391 7.69001 3.0427 7.64416C1.72232 7.65326 0.704102 8.68554 0.704102 9.96307V13.7055C0.704102 15.0111 1.76413 16.0843 3.06707 16.0981L3.14385 16.0989V20.438C3.14385 21.9828 4.24748 23.2844 5.70557 23.5877V35.1623H4.68323C4.29323 35.1623 3.97729 35.4783 3.97729 35.8683V39.741C3.97729 42.0964 5.87535 44.0126 8.20869 44.0126H43.0694C45.3996 44.0126 47.2954 42.0964 47.2954 39.741V35.8683C47.2954 35.4783 46.9795 35.1623 46.5895 35.1623ZM23.8348 12.0404C23.8348 13.2182 22.9578 14.1871 21.8222 14.3553V9.72579C22.9578 9.89388 23.8348 10.8626 23.8348 12.0404ZM19.3609 5.43335C19.8806 5.28129 20.4104 5.67129 20.4104 6.22638V17.8547C20.4104 18.4114 19.8749 18.8076 19.3457 18.6428L7.03954 14.8039V9.01788L19.3609 5.43335ZM2.11598 13.7055V9.96307C2.11598 9.46141 2.51966 9.05604 3.01813 9.05604H3.02798L5.62607 9.08332V14.7131L3.08179 14.6863C2.54938 14.6808 2.11598 14.2407 2.11598 13.7055ZM4.55573 20.438V16.1137C6.39923 16.1241 6.32423 16.1513 6.49241 16.1124L8.10051 16.6141V20.49C8.10051 20.9652 7.9162 21.4094 7.5816 21.7405C7.2486 22.0694 6.81595 22.2304 6.33538 22.2433C5.35401 22.2332 4.55573 21.4232 4.55573 20.438ZM7.11744 23.5596C7.66316 23.425 8.16501 23.1493 8.5746 22.744C9.17938 22.1456 9.51238 21.3453 9.51238 20.49V17.0545L18.9253 19.9909C20.3648 20.4389 21.8223 19.3644 21.8223 17.8547V15.7845C23.7795 15.6062 25.3541 13.9152 25.2359 11.8269H42.2386C43.2955 11.8269 44.1552 12.7001 44.1552 13.7733V35.1623H31.9892C31.6418 35.1623 31.346 35.4154 31.2918 35.7584L31.0423 37.3446H20.2346L19.9804 35.7568C19.9258 35.4141 19.6302 35.1623 19.2835 35.1623H7.11744V23.5596ZM45.8835 39.741C45.8835 41.3179 44.621 42.6007 43.0694 42.6007H8.20869C6.65394 42.6007 5.38907 41.3178 5.38907 39.741V36.5742H18.6813L18.9355 38.162C18.9901 38.5047 19.2857 38.7565 19.6324 38.7565H31.6456C31.9931 38.7565 32.2889 38.5035 32.343 38.1604L32.5926 36.5742H45.8834V39.741H45.8835Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M37.396 31.12C37.786 31.12 38.102 30.8041 38.102 30.4141C38.102 30.0241 37.786 29.7081 37.396 29.7081H35.1278V22.773C35.1278 22.383 34.8118 22.067 34.4218 22.067C34.0318 22.067 33.7159 22.383 33.7159 22.773V29.7081H30.735V15.4852C30.735 15.0952 30.4191 14.7793 30.0291 14.7793C29.6391 14.7793 29.3231 15.0952 29.3231 15.4852V29.7081H26.342V22.1282C26.342 21.7382 26.026 21.4222 25.636 21.4222C25.246 21.4222 24.9301 21.7382 24.9301 22.1282V29.7081H21.949V24.6934C21.949 24.3034 21.633 23.9874 21.243 23.9874C20.853 23.9874 20.5371 24.3034 20.5371 24.6934V29.7081H17.556V22.3279C17.556 21.9379 17.2401 21.6219 16.8501 21.6219C16.4601 21.6219 16.1441 21.9379 16.1441 22.3279V29.7081H13.8759C13.4859 29.7081 13.1699 30.0241 13.1699 30.4141C13.1699 30.8041 13.4859 31.12 13.8759 31.12H37.396Z"
+                    fill="white"
+                  />
                 </g>
+                <defs>
+                  <clipPath id="clip0_2009_1191">
+                    <rect width="48" height="48" fill="white" />
+                  </clipPath>
+                </defs>
               </svg>
-            </a>
 
-            <!-- Linkedin -->
-            <a
-              class="bg-white w-12 h-12 shadow-[0_0_3px_rgba(0,0,0,0.1)] p-3 rounded-lg flex items-center justify-center"
-              href="#"
-            >
-              <svg
-                fill="#000000"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 512 512"
-                xml:space="preserve"
-                class="w-4 h-4"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <g id="7935ec95c421cee6d86eb22ecd125aef">
-                    <path
-                      style="
-                        display: inline;
-                        fill-rule: evenodd;
-                        clip-rule: evenodd;
-                      "
-                      d="M116.504,500.219V170.654H6.975v329.564H116.504 L116.504,500.219z M61.751,125.674c38.183,0,61.968-25.328,61.968-56.953c-0.722-32.328-23.785-56.941-61.252-56.941 C24.994,11.781,0.5,36.394,0.5,68.722c0,31.625,23.772,56.953,60.53,56.953H61.751L61.751,125.674z M177.124,500.219 c0,0,1.437-298.643,0-329.564H286.67v47.794h-0.727c14.404-22.49,40.354-55.533,99.44-55.533 c72.085,0,126.116,47.103,126.116,148.333v188.971H401.971V323.912c0-44.301-15.848-74.531-55.497-74.531 c-30.254,0-48.284,20.38-56.202,40.08c-2.897,7.012-3.602,16.861-3.602,26.711v184.047H177.124L177.124,500.219z"
-                    ></path>
-                  </g>
-                </g>
-              </svg>
-            </a>
+              <p>Digital Commercialization</p>
+              <p class="text-sm text-[#C6C6C8]">
+                We leverage the power of digital, turning growth into revenue.
+                Using our holistic solutions for commercialization, Xplere helps
+                your organization uncover new revenue sources and optimize
+                existing ones for a better top and bottom line.
+              </p>
+            </div>
 
-            <!-- Facebook -->
-            <a
-              class="bg-white w-12 h-12 shadow-[0_0_3px_rgba(0,0,0,0.1)] p-3 rounded-lg flex items-center justify-center"
-              href="#"
-            >
-              <svg
-                fill="#000000"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 512 512"
-                xml:space="preserve"
-                class="w-4 h-4"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <g id="7935ec95c421cee6d86eb22ecd11b7e3">
-                    <path
-                      style="display: inline"
-                      d="M283.122,122.174c0,5.24,0,22.319,0,46.583h83.424l-9.045,74.367h-74.379 c0,114.688,0,268.375,0,268.375h-98.726c0,0,0-151.653,0-268.375h-51.443v-74.367h51.443c0-29.492,0-50.463,0-56.302 c0-27.82-2.096-41.02,9.725-62.578C205.948,28.32,239.308-0.174,297.007,0.512c57.713,0.711,82.04,6.263,82.04,6.263 l-12.501,79.257c0,0-36.853-9.731-54.942-6.263C293.539,83.238,283.122,94.366,283.122,122.174z"
-                    ></path>
-                  </g>
-                </g>
-              </svg>
-            </a>
+            <div
+              class="h-px w-full bg-white opacity-30 lg:h-[unset] lg:min-h-full lg:w-px"
+            ></div>
 
-            <!-- Twitter -->
-            <a
-              class="bg-white w-12 h-12 shadow-[0_0_3px_rgba(0,0,0,0.1)] p-3 rounded-lg flex items-center justify-center"
-              href="#"
-            >
+            <div class="flex max-w-[262px] flex-col gap-4 lg:gap-8">
               <svg
-                fill="#000000"
-                version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 512 512"
-                xml:space="preserve"
-                class="w-4 h-4"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <g id="7935ec95c421cee6d86eb22ecd12f847">
-                    <path
-                      style="display: inline"
-                      d="M459.186,151.787c0.203,4.501,0.305,9.023,0.305,13.565 c0,138.542-105.461,298.285-298.274,298.285c-59.209,0-114.322-17.357-160.716-47.104c8.212,0.973,16.546,1.47,25.012,1.47 c49.121,0,94.318-16.759,130.209-44.884c-45.887-0.841-84.596-31.154-97.938-72.804c6.408,1.227,12.968,1.886,19.73,1.886 c9.55,0,18.816-1.287,27.617-3.68c-47.955-9.633-84.1-52.001-84.1-102.795c0-0.446,0-0.882,0.011-1.318 c14.133,7.847,30.294,12.562,47.488,13.109c-28.134-18.796-46.637-50.885-46.637-87.262c0-19.212,5.16-37.218,14.193-52.7 c51.707,63.426,128.941,105.156,216.072,109.536c-1.784-7.675-2.718-15.674-2.718-23.896c0-57.891,46.941-104.832,104.832-104.832 c30.173,0,57.404,12.734,76.525,33.102c23.887-4.694,46.313-13.423,66.569-25.438c-7.827,24.485-24.434,45.025-46.089,58.002 c21.209-2.535,41.426-8.171,60.222-16.505C497.448,118.542,479.666,137.004,459.186,151.787z"
-                    ></path>
-                  </g>
-                </g>
+                <path
+                  d="M7.03125 16.9688C9.62306 16.9688 11.9967 15.5499 13.226 13.266C13.8448 12.1163 15.3035 11.3438 16.8557 11.3438H19.8942C21.4137 11.3438 22.8017 12.0982 23.4302 13.266C24.6595 15.5499 27.0332 16.9688 29.625 16.9688C33.502 16.9688 36.6562 13.8145 36.6562 9.9375C36.6562 6.06047 33.502 2.90625 29.625 2.90625C27.0332 2.90625 24.6595 4.32506 23.4303 6.609C22.8018 7.77675 21.4138 8.53125 19.8943 8.53125C18.8316 8.53125 17.9184 8.53125 16.8558 8.53125C15.3036 8.53125 13.8449 7.75875 13.2261 6.609C11.9967 4.32506 9.62306 2.90625 7.03125 2.90625C3.15422 2.90625 0 6.06047 0 9.9375C0 13.8145 3.15422 16.9688 7.03125 16.9688ZM25.9069 7.94194C26.6449 6.57066 28.0696 5.71875 29.625 5.71875C31.9512 5.71875 33.8438 7.61128 33.8438 9.9375C33.8438 12.2637 31.9512 14.1562 29.625 14.1562C28.0696 14.1562 26.6449 13.3043 25.9069 11.9331C25.4841 11.1475 24.8967 10.4736 24.1919 9.9375C24.8966 9.40144 25.4841 8.72737 25.9069 7.94194ZM7.03125 5.71875C8.58666 5.71875 10.0114 6.57066 10.7494 7.94194C11.1694 8.72231 11.7728 9.39825 12.5008 9.9375C11.7727 10.4768 11.1694 11.1527 10.7494 11.9331C10.0114 13.3043 8.58666 14.1562 7.03125 14.1562C4.70503 14.1562 2.8125 12.2637 2.8125 9.9375C2.8125 7.61128 4.70503 5.71875 7.03125 5.71875Z"
+                  fill="white"
+                />
+                <path
+                  d="M28.2188 8.53125H31.0312V11.3438H28.2188V8.53125Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.03125 45.0938C9.62306 45.0938 11.9967 43.6749 13.226 41.391C13.8545 40.2233 15.2424 39.4688 16.7619 39.4688H19.8942C21.4137 39.4688 22.8017 40.2233 23.4302 41.391C24.6595 43.6749 27.0332 45.0938 29.625 45.0938C33.502 45.0938 36.6562 41.9395 36.6562 38.0625C36.6562 34.1855 33.502 31.0312 29.625 31.0312C27.0332 31.0312 24.6595 32.4501 23.4303 34.734C22.8018 35.9017 21.4138 36.6562 19.8943 36.6562C18.8032 36.6562 17.8692 36.6562 16.762 36.6562C15.2425 36.6562 13.8546 35.9017 13.2261 34.734C11.9967 32.4501 9.62306 31.0312 7.03125 31.0312C3.15422 31.0312 0 34.1855 0 38.0625C0 41.9395 3.15422 45.0938 7.03125 45.0938ZM25.9069 36.0669C26.6449 34.6956 28.0696 33.8438 29.625 33.8438C31.9512 33.8438 33.8438 35.7363 33.8438 38.0625C33.8438 40.3887 31.9512 42.2812 29.625 42.2812C28.0696 42.2812 26.6449 41.4294 25.9069 40.0581C25.4841 39.2725 24.8967 38.5986 24.1919 38.0625C24.8966 37.5264 25.4841 36.8524 25.9069 36.0669ZM7.03125 33.8438C8.58666 33.8438 10.0114 34.6956 10.7494 36.0669C11.1722 36.8525 11.7595 37.5264 12.4643 38.0625C11.7595 38.5986 11.1722 39.2726 10.7494 40.0581C10.0114 41.4294 8.58666 42.2812 7.03125 42.2812C4.70503 42.2812 2.8125 40.3887 2.8125 38.0625C2.8125 35.7363 4.70503 33.8438 7.03125 33.8438Z"
+                  fill="white"
+                />
+                <path
+                  d="M28.2188 36.6562H31.0312V39.4688H28.2188V36.6562Z"
+                  fill="white"
+                />
+                <path
+                  d="M34.6803 20.6715C34.0518 21.8393 32.6638 22.5938 31.1443 22.5938C30.0816 22.5938 29.1684 22.5938 28.1057 22.5938C26.5862 22.5938 25.1982 21.8392 24.5697 20.6715C23.3405 18.3876 20.9668 16.9688 18.375 16.9688C14.498 16.9688 11.3438 20.123 11.3438 24C11.3438 27.877 14.498 31.0312 18.375 31.0312C20.9668 31.0312 23.3405 29.6124 24.5697 27.3285C25.1982 26.1608 26.5862 25.4062 28.1057 25.4062H31.1443C32.6638 25.4062 34.0518 26.1607 34.6803 27.3285C35.9095 29.6124 38.2832 31.0312 40.875 31.0312C44.7616 31.0312 48 27.8874 48 24C48 20.1134 44.7624 16.9688 40.875 16.9688C38.2832 16.9688 35.9095 18.3876 34.6803 20.6715ZM22.0931 25.9956C21.3551 27.3669 19.9304 28.2188 18.375 28.2188C16.0488 28.2188 14.1562 26.3262 14.1562 24C14.1562 21.6738 16.0488 19.7812 18.375 19.7812C19.9304 19.7812 21.3551 20.6331 22.0931 22.0044C22.5159 22.79 23.1033 23.4639 23.8081 24C23.1033 24.5361 22.5159 25.2101 22.0931 25.9956ZM37.1568 22.0044C37.8949 20.6332 39.3196 19.7812 40.875 19.7812C43.2127 19.7812 45.1875 21.7132 45.1875 24C45.1875 26.2868 43.2127 28.2188 40.875 28.2188C39.3196 28.2188 37.8949 27.3668 37.1568 25.9956C36.7341 25.21 36.1466 24.536 35.4419 24C36.1466 23.4639 36.7341 22.7899 37.1568 22.0044Z"
+                  fill="white"
+                />
+                <path
+                  d="M16.9688 22.5938H19.7812V25.4062H16.9688V22.5938Z"
+                  fill="white"
+                />
               </svg>
-            </a>
+
+              <p>Technology</p>
+              <p class="text-sm text-[#C6C6C8]">
+                We use the best-in-class technological tools to drive
+                sustainable growth for our clients. Technological adoption
+                across multiple organizational areas is how we approach each
+                project. Ultimately, this means higher efficiency, data-driven
+                decision making and better cost savings in the long run for our
+                clients.
+              </p>
+            </div>
+
+            <div
+              class="h-px w-full bg-white opacity-30 lg:h-[unset] lg:min-h-full lg:w-px"
+            ></div>
+
+            <div class="flex max-w-[262px] flex-col gap-4 lg:gap-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_2009_1147)">
+                  <path
+                    d="M29.0584 34.9763L27.02 33.9236C22.8179 31.7534 20.2038 27.4671 20.198 22.7376L20.193 18.567L21.8806 20.2504C23.2739 21.543 25.1668 19.6829 23.8951 18.2873L19.7764 14.1786C19.2827 13.73 18.472 13.5161 17.7612 14.2069L13.8904 18.297C13.3596 18.8577 13.3468 19.7518 13.8966 20.2936C14.4578 20.8471 15.3635 20.8316 15.9056 20.2592L17.3806 18.7007L17.3855 22.7409C17.3925 28.5256 20.5897 33.768 25.7295 36.4224L27.7679 37.4751C30.8286 39.0558 32.8547 43.2088 33.2512 46.762C33.3303 47.4698 33.9369 48.0007 34.6492 47.9999C35.4811 47.9988 36.1389 47.279 36.0469 46.4522C35.5481 41.9705 32.9648 36.9937 29.0584 34.9763Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M14.7782 8.64033C15.3273 9.18952 16.2178 9.18952 16.7669 8.64033L18.8924 6.51483L21.0179 8.64033C21.567 9.18952 22.4575 9.18952 23.0066 8.64033C23.5558 8.09114 23.5558 7.2008 23.0066 6.65161L20.8811 4.52611L23.0066 2.40061C23.5558 1.85142 23.5558 0.961078 23.0066 0.411891C22.4575 -0.137297 21.5671 -0.137297 21.0179 0.411891L18.8924 2.53739L16.7669 0.411891C16.2178 -0.137297 15.3274 -0.137297 14.7782 0.411891C14.229 0.961078 14.229 1.85142 14.7782 2.40061L16.9037 4.52611L14.7782 6.65161C14.2289 7.2008 14.2289 8.09114 14.7782 8.64033Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M39.8591 11.0864C35.37 11.0864 31.7178 14.7386 31.7178 19.2278C32.1651 30.0284 47.5549 30.0252 48.0005 19.2277C48.0005 14.7386 44.3482 11.0864 39.8591 11.0864ZM39.8591 24.5566C36.9208 24.5566 34.5303 22.1661 34.5303 19.2278C34.823 12.1584 44.8963 12.1604 45.188 19.2278C45.188 22.1661 42.7974 24.5566 39.8591 24.5566Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M8.14144 31.7173C3.65222 31.7173 0 35.3694 0 39.8585C0.447187 50.6591 15.8372 50.656 16.2828 39.8584C16.2828 35.3694 12.6306 31.7173 8.14144 31.7173ZM8.14144 45.1874C5.20303 45.1874 2.8125 42.7969 2.8125 39.8585C3.10519 32.7891 13.1786 32.7911 13.4703 39.8585C13.4703 42.7969 11.0797 45.1874 8.14144 45.1874Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2009_1147">
+                    <rect width="48" height="48" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p>Sports Analysis</p>
+              <p class="text-sm text-[#C6C6C8]">
+                The intersection of technology and sports is where the future
+                is. Xplere does this and more, today. Our sports data ecosystem
+                covers the whole spectrum in-depth, taking you from extraction
+                of sports data through our intelligence platforms and cameras to
+                understanding the context in our world-class platforms for
+                player performance and medical data
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container flex flex-col gap-10 px-5 pb-16 lg:py-16">
+          <div
+            class="flex flex-col items-center justify-between gap-3 lg:flex-row"
+          >
+            <img
+              src="./images/footer-logo.png"
+              alt="logo"
+              class="h-[72px] w-auto"
+            />
+            <button
+              class="rounded border border-white py-3 px-5 uppercase transition-all hover:bg-white/20"
+            >
+              Contact us
+            </button>
+          </div>
+
+          <div class="h-px min-w-full bg-white opacity-30"></div>
+
+          <div class="flex items-center justify-between">
+            <spna>All rights reserved © XPLERE.</spna>
+            <div class="flex items-center gap-4">
+              <!-- Instagram -->
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M19.7267 7.11945C19.7092 6.37307 19.5694 5.6346 19.3129 4.93346C19.0865 4.33236 18.7302 3.78866 18.2694 3.34118C17.8219 2.88037 17.2783 2.52404 16.6772 2.29763C15.976 2.0411 15.2376 1.90129 14.4912 1.88379C13.5376 1.82979 13.2318 1.82979 10.7849 1.82975C8.33803 1.8297 8.03217 1.8297 7.07861 1.88366C6.33223 1.90114 5.59376 2.04092 4.89262 2.29743C4.29152 2.52381 3.74781 2.88012 3.30034 3.34092C2.83923 3.78636 2.48546 4.33084 2.26579 4.93316C2.00144 5.63244 1.85844 6.37172 1.84295 7.11914C1.78895 8.0727 1.78895 8.37856 1.78891 10.8254C1.78886 13.2723 1.78886 13.5781 1.84282 14.5317C1.85828 15.2791 2.00126 16.0184 2.26558 16.7177C2.48523 17.32 2.83898 17.8645 3.30007 18.31C3.74754 18.7708 4.29123 19.1271 4.89232 19.3535C5.59345 19.6101 6.33191 19.7499 7.0783 19.7674C8.03186 19.8214 8.33772 19.8214 10.7846 19.8214C13.2314 19.8215 13.5373 19.8215 14.4909 19.7675C15.2373 19.75 15.9757 19.6102 16.6769 19.3537C17.2737 19.119 17.8157 18.7638 18.2692 18.3103C18.7227 17.8569 19.0779 17.3148 19.3127 16.718C19.5692 16.0169 19.709 15.2784 19.7265 14.532C19.7266 13.5785 19.7805 13.2726 19.7806 10.8257C19.7806 8.37887 19.7806 8.07301 19.7267 7.11945ZM18.1073 14.424C18.1007 14.9951 17.9973 15.5608 17.8014 16.0973C17.6509 16.4853 17.4211 16.8376 17.1268 17.1319C16.8325 17.4262 16.4802 17.6559 16.0922 17.8064C15.5557 18.0023 14.99 18.1057 14.4189 18.1123C13.5193 18.1572 13.1865 18.1662 10.8206 18.1662C8.45469 18.1661 8.12184 18.1661 7.22226 18.1121C6.62919 18.1254 6.03842 18.0341 5.47707 17.8422C5.08908 17.6917 4.73671 17.462 4.44243 17.1677C4.14816 16.8734 3.91843 16.521 3.7679 16.133C3.56797 15.5852 3.4645 15.0069 3.46207 14.4238C3.46208 13.5242 3.40811 13.1914 3.40816 10.8255C3.4082 8.45955 3.4082 8.1267 3.46219 7.22712C3.46464 6.64399 3.56814 6.0657 3.76808 5.51792C3.91863 5.12992 4.14837 4.77755 4.44265 4.48327C4.73694 4.189 5.08932 3.95927 5.47732 3.80874C6.02511 3.60881 6.60341 3.50534 7.18653 3.50291C8.08612 3.50292 8.41896 3.44896 10.7849 3.449C13.1508 3.44904 13.4836 3.44904 14.3832 3.50303C14.9542 3.50959 15.52 3.61303 16.0564 3.80892C16.4444 3.95947 16.7968 4.18921 17.0911 4.4835C17.3853 4.77778 17.6151 5.13016 17.7656 5.51816C17.9778 6.06376 18.0935 6.64212 18.1074 7.22737C18.1524 8.12696 18.1614 8.4598 18.1613 10.8257C18.1613 13.1916 18.1523 13.5245 18.1073 14.424Z"
+                    fill="#C0CAC9"
+                  />
+                  <path
+                    d="M10.785 6.20174C9.87048 6.20172 8.9765 6.47289 8.2161 6.98096C7.4557 7.48902 6.86304 8.21116 6.51306 9.05605C6.16307 9.90094 6.07149 10.8306 6.24988 11.7276C6.42828 12.6245 6.86865 13.4484 7.51529 14.0951C8.16194 14.7418 8.98583 15.1822 9.88276 15.3606C10.7797 15.539 11.7094 15.4475 12.5543 15.0975C13.3992 14.7476 14.1214 14.1549 14.6295 13.3945C15.1376 12.6342 15.4088 11.7402 15.4088 10.8257C15.4088 9.59936 14.9217 8.42325 14.0545 7.55609C13.1874 6.68894 12.0113 6.20176 10.785 6.20174ZM10.7849 13.8212C10.1924 13.8212 9.61322 13.6455 9.1206 13.3163C8.62798 12.9872 8.24403 12.5193 8.01731 11.9719C7.79059 11.4245 7.73127 10.8222 7.84687 10.2411C7.96247 9.66004 8.24778 9.12628 8.66673 8.70734C9.08568 8.28841 9.61946 8.00311 10.2005 7.88754C10.7816 7.77196 11.384 7.83129 11.9313 8.05803C12.4787 8.28477 12.9465 8.66874 13.2757 9.16137C13.6049 9.654 13.7805 10.2332 13.7805 10.8257C13.7805 11.219 13.703 11.6086 13.5525 11.972C13.4019 12.3355 13.1813 12.6657 12.9031 12.9439C12.6249 13.222 12.2947 13.4427 11.9312 13.5932C11.5678 13.7437 11.1782 13.8212 10.7849 13.8212Z"
+                    fill="#C0CAC9"
+                  />
+                  <path
+                    d="M15.5895 4.9424C15.3759 4.9424 15.1672 5.00572 14.9896 5.12435C14.8121 5.24299 14.6737 5.41161 14.5919 5.60889C14.5102 5.80618 14.4888 6.02327 14.5305 6.23271C14.5721 6.44215 14.675 6.63453 14.826 6.78553C14.977 6.93653 15.1693 7.03937 15.3788 7.08103C15.5882 7.1227 15.8053 7.10132 16.0026 7.0196C16.1999 6.93789 16.3685 6.7995 16.4872 6.62195C16.6058 6.4444 16.6691 6.23565 16.6691 6.02211C16.6691 5.73576 16.5554 5.46113 16.3529 5.25865C16.1504 5.05616 15.8758 4.94241 15.5895 4.9424Z"
+                    fill="#C0CAC9"
+                  />
+                </svg>
+              </a>
+
+              <!-- X -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_2105_3461)">
+                  <path
+                    d="M6.58301 5.71924L14.3495 15.8736H15.5395L7.86138 5.71924H6.58301Z"
+                    fill="#C0CAC9"
+                  />
+                  <path
+                    d="M11.0801 0.330078C5.28145 0.330078 0.580078 5.03145 0.580078 10.8301C0.580078 16.6287 5.28145 21.3301 11.0801 21.3301C16.8787 21.3301 21.5801 16.6287 21.5801 10.8301C21.5801 5.03145 16.8787 0.330078 11.0801 0.330078ZM13.7602 17.1581L10.374 12.735L6.5047 17.1581H4.35395L9.37033 11.4233L4.08008 4.50208H8.50933L11.5666 8.54545L15.1042 4.50208H17.2523L12.5615 9.86233L18.0801 17.1572L13.7602 17.1581Z"
+                    fill="#C0CAC9"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2105_3461">
+                    <rect
+                      width="21"
+                      height="21"
+                      fill="white"
+                      transform="translate(0.580078 0.330078)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <!-- Linkedin -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="22"
+                viewBox="0 0 23 22"
+                fill="none"
+              >
+                <path
+                  d="M17.7066 17.1616L15.043 17.1615L15.043 12.9847C15.0431 11.9898 15.0224 10.7088 13.6541 10.7088C12.2652 10.7088 12.0529 11.7882 12.0528 12.9118L12.0528 17.1597L9.38819 17.1596L9.38834 8.57669L11.9477 8.57673L11.9476 9.74619L11.9827 9.74619C12.239 9.30822 12.6093 8.94793 13.0541 8.70368C13.4989 8.45942 14.0017 8.34033 14.5088 8.35908C17.2075 8.35913 17.7077 10.1358 17.7076 12.4486L17.7075 17.1607L17.7066 17.1616ZM6.37926 7.40178C6.07331 7.4016 5.77428 7.31072 5.51997 7.14063C5.26567 6.97054 5.06749 6.72887 4.9505 6.44618C4.8335 6.16348 4.80294 5.85245 4.86268 5.55239C4.92242 5.25233 5.06977 4.97672 5.28611 4.76038C5.50245 4.54405 5.77807 4.39671 6.07813 4.33698C6.37819 4.27726 6.68922 4.30783 6.97191 4.42483C7.2546 4.54184 7.49626 4.74002 7.66634 4.99433C7.83642 5.24865 7.92729 5.54768 7.92747 5.85362C7.9277 6.057 7.88781 6.25843 7.81009 6.44637C7.73237 6.63431 7.61833 6.80507 7.47452 6.94888C7.33071 7.09268 7.15994 7.20671 6.972 7.28442C6.78406 7.36214 6.58263 7.40202 6.37926 7.40178ZM7.71497 17.1614L5.0441 17.1613L5.04425 8.57661L7.71512 8.57666L7.71497 17.1614ZM19.0401 1.82998L3.70669 1.82971C3.53437 1.82757 3.36332 1.85941 3.20331 1.92341C3.0433 1.98741 2.89748 2.08231 2.77416 2.20269C2.65085 2.32308 2.55247 2.46658 2.48465 2.62501C2.41682 2.78343 2.38088 2.95367 2.37888 3.12599L2.37861 18.5251C2.38061 18.6974 2.41654 18.8676 2.48436 19.026C2.55218 19.1845 2.65055 19.328 2.77386 19.4484C2.89717 19.5688 3.04299 19.6637 3.203 19.7277C3.36301 19.7917 3.53406 19.8235 3.70638 19.8214L19.0371 19.8216C19.3857 19.8262 19.7218 19.6923 19.9718 19.4493C20.2217 19.2062 20.3651 18.874 20.3703 18.5254L20.3706 3.12631C20.3651 2.77779 20.2217 2.44565 19.9718 2.20267C19.7219 1.95968 19.3859 1.82566 19.0374 1.82998L19.0401 1.82998Z"
+                  fill="#C0CAC9"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper1", {
-        pagination: ".swiper-pagination1",
-        paginationClickable: true,
-        breakpoints: {
-          810: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          // when window width is >= 640px
-          1274: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        },
-        // Navigation arrows
-        navigation: {
-          nextEl: document.getElementById("button-next"),
-          prevEl: document.getElementById("button-prev"),
-        },
-      });
-
-      const swiper2 = new Swiper(".swiper2", {
-        breakpoints: {
-          810: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          // when window width is >= 640px
-          1274: {
-            slidesPerView: 3,
-            spaceBetween: 32,
-          },
-        },
-        navigation: {
-          nextEl: document.getElementById("swiper-button-next"),
-          prevEl: document.getElementById("swiper-button-prev"),
-        },
-      });
-
-      function selectStep(step) {
-        $("#step-image").prop("src", `./images/step${step}.png`);
-        $(".step-row").children("i").removeClass("selected");
-        $(".step-row").children("p").removeClass("bold-title");
-        $(".step-details").addClass("remove");
-
-        $(".step-row")
-          .eq(step - 1)
-          .children("i")
-          .addClass("selected");
-        $(".step-row")
-          .eq(step - 1)
-          .children("p")
-          .addClass("bold-title");
-        $(".step-details")
-          .eq(step - 1)
-          .removeClass("remove");
-      }
-
-      const tabsData = [
-        [
-          {
-            name: "أمجد حسين",
-            email: "wozihygu@azuretechtalk.net",
-            image: "./images/person1.png",
-          },
-          {
-            name: "محمد علي",
-            email: "sara@example.com",
-            image: "./images/person2.png",
-          },
-          {
-            name: "محمد أحمد",
-            email: "mohamed@example.com",
-            image: "./images/person3.png",
-          },
-          {
-            name: "محمود حسن",
-            email: "leila@example.com",
-            image: "./images/person4.png",
-          },
-        ],
-        [
-          {
-            name: "عادل حسن عبد الله",
-            email: "wozihygu@azuretechtalk.net",
-            image: "./images/person4.png",
-          },
-          {
-            name: "خليل الجمال",
-            email: "sara@example.com",
-            image: "./images/person5.png",
-          },
-          {
-            name: "سهيل حسني",
-            email: "mohamed@example.com",
-            image: "./images/person6.png",
-          },
-          {
-            name: "محمود حسن",
-            email: "leila@example.com",
-            image: "./images/person1.png",
-          },
-        ],
-        [
-          {
-            name: "أمجد حسين",
-            email: "wozihygu@azuretechtalk.net",
-            image: "./images/person1.png",
-          },
-          {
-            name: "محمد علي",
-            email: "sara@example.com",
-            image: "./images/person2.png",
-          },
-          {
-            name: "محمد أحمد",
-            email: "mohamed@example.com",
-            image: "./images/person3.png",
-          },
-          {
-            name: "محمود حسن",
-            email: "leila@example.com",
-            image: "./images/person4.png",
-          },
-        ],
-        [
-          {
-            name: "أمجد حسين",
-            email: "wozihygu@azuretechtalk.net",
-            image: "./images/person1.png",
-          },
-          {
-            name: "محمد علي",
-            email: "sara@example.com",
-            image: "./images/person2.png",
-          },
-          {
-            name: "محمد أحمد",
-            email: "mohamed@example.com",
-            image: "./images/person3.png",
-          },
-          {
-            name: "محمود حسن",
-            email: "leila@example.com",
-            image: "./images/person4.png",
-          },
-        ],
-        [
-          {
-            name: "أمجد حسين",
-            email: "wozihygu@azuretechtalk.net",
-            image: "./images/person1.png",
-          },
-          {
-            name: "محمد علي",
-            email: "sara@example.com",
-            image: "./images/person2.png",
-          },
-          {
-            name: "محمد أحمد",
-            email: "mohamed@example.com",
-            image: "./images/person3.png",
-          },
-          {
-            name: "محمود حسن",
-            email: "leila@example.com",
-            image: "./images/person4.png",
-          },
-        ],
-        [
-          {
-            name: "أمجد حسين",
-            email: "wozihygu@azuretechtalk.net",
-            image: "./images/person1.png",
-          },
-          {
-            name: "محمد علي",
-            email: "sara@example.com",
-            image: "./images/person2.png",
-          },
-          {
-            name: "محمد أحمد",
-            email: "mohamed@example.com",
-            image: "./images/person3.png",
-          },
-          {
-            name: "محمود حسن",
-            email: "leila@example.com",
-            image: "./images/person4.png",
-          },
-        ],
-      ];
-
-      function setTab(newTab) {
-        const tabs = document.querySelectorAll(".tab");
-
-        tabs.forEach((tab, index) => {
-          if (index + 1 === newTab) {
-            tab.classList.remove("bg-gray-100");
-            tab.classList.add("bg-primary", "text-white");
-          } else {
-            tab.classList.remove("bg-primary", "text-white");
-            tab.classList.add("bg-gray-100");
-          }
-        });
-
-        const tabsList = document.getElementById("tabs-list");
-        let htmlData = "";
-        tabsData[newTab - 1].forEach((tab, index) => {
-          htmlData += `<div class="swiper-slide">
-                    <div class="border p-5 rounded-2xl grid gap-5">
-                        <div class="flex lg:items-center gap-5 lg:flex-row flex-col">
-                            <img src="${tab.image}" alt="person" class="w-[127px] h-[129px] object-cover rounded-2xl" />
-                            <div class="flex flex-col md:col-span-1 items-start col-span-2 gap-1">
-                                <div class="flex items-center gap-1">
-                                    <span class="text-xl font-bold">${tab.name}</span>
-                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12.4559 7.60068L8.87938 11.1772C8.77571 11.2808 8.63502 11.3401 8.48692 11.3401C8.33883 11.3401 8.19814 11.2808 8.09447 11.1772L6.30252 9.38523C6.08778 9.17049 6.08778 8.81506 6.30252 8.60032C6.51726 8.38558 6.87269 8.38558 7.08742 8.60032L8.48692 9.99982L11.671 6.81577C11.8857 6.60104 12.2411 6.60104 12.4559 6.81577C12.6706 7.03051 12.6706 7.38594 12.4559 7.60068ZM16.4536 8.06712L15.4466 6.89717C15.2541 6.67502 15.0986 6.26036 15.0986 5.96417V4.70536C15.0986 3.92045 14.4544 3.27624 13.6695 3.27624H12.4106C12.1219 3.27624 11.6998 3.12074 11.4776 2.92821L10.3077 1.92117C9.79677 1.48429 8.96003 1.48429 8.44169 1.92117L7.27915 2.93562C7.057 3.12074 6.63493 3.27624 6.34615 3.27624H5.06512C4.28022 3.27624 3.636 3.92045 3.636 4.70536V5.97157C3.636 6.26036 3.4805 6.67502 3.29538 6.89717L2.29574 8.07452C1.86626 8.58545 1.86626 9.41479 2.29574 9.92572L3.29538 11.1031C3.4805 11.3252 3.636 11.7399 3.636 12.0287V13.2949C3.636 14.0798 4.28022 14.724 5.06512 14.724H6.34615C6.63493 14.724 7.057 14.8795 7.27915 15.072L8.4491 16.0791C8.96003 16.516 9.79677 16.516 10.3151 16.0791L11.4851 15.072C11.7072 14.8795 12.1219 14.724 12.4181 14.724H13.6769C14.4618 14.724 15.106 14.0798 15.106 13.2949V12.0361C15.106 11.7473 15.2615 11.3252 15.454 11.1031L16.4611 9.93312C16.8905 9.42219 16.8905 8.57805 16.4536 8.06712Z"
-                                            fill="#29A5A8" />
-                                    </svg>
-                                </div>
-                                <p>${tab.email}</p>
-                                <div class="bg-primary/10 py-2 px-4 rounded-full mt-2 font-bold text-primary">
-                                    مجرب قابلية الاستخدام
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex gap-5 items-center">
-                            <div class="flex flex-col w-32">
-                                <p class="font-bold text-xl">97%</p>
-                                <p class="text-lg font-bold">معدل الانجاز</p>
-                                <p>73 تقييم</p>
-                            </div>
-                            <div class="flex flex-col">
-                                <div class="flex items-center gap-1">
-                                    <span class="text-xl font-bold text-primary">5</span>
-                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M4.47774 9.73484L3.17932 15.348L8.1133 12.3716L13.0473 15.348L11.7489 9.73484L16.1036 5.95944L10.3506 5.46005L8.1133 0.166504L5.87603 5.46005L0.123047 5.95944L4.47774 9.73484Z"
-                                            fill="#29A5A8" />
-                                    </svg>
-                                </div>
-                                <p class="text-lg font-bold">التقييم العام</p>
-                                <p>73 تقييم</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>`;
-        });
-
-        tabsList.innerHTML = htmlData;
-
-        swiper.update();
-      }
-      setTab(1);
-    </script>
+    </main>
+    <script src="./index.js"></script>
   </body>
 </html>
