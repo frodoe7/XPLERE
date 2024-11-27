@@ -31,21 +31,6 @@ for (let i = 1; i <= 4; i++) {
       }
     });
 
-    // element.addEventListener("mouseleave", function () {
-    //   const image = document.querySelector(`[alt="tech${i}"]`);
-    //   console.log("unhovered");
-    //   if (window.innerWidth >= 768) {
-    //     if (image) {
-    //       image.style.clipPath = "inset(0 100% 0 0)";
-    //       image.style.opacity = "0";
-    //       element.style.color = "#c0cac9";
-    //       element.style.borderColor = "#c0cac9";
-    //     } else {
-    //       console.log("No image found");
-    //     }
-    //   }
-    // });
-
     element.addEventListener("click", function () {
       const image = document.querySelector(`[alt="tech${i}"]`);
       // check if on mobile
