@@ -79,22 +79,18 @@ window.addEventListener("scroll", function () {
   if (!xploreAnimationTriggered) {
     const xploreHead = document.querySelector("#xplore > h2 > div");
     const xploreImage = document.querySelector("#xplore img");
-    // console.log(xploreImage);
     const xploreText = document.querySelector("#xplore p");
 
     if (this.window.scrollY > this.window.innerHeight / 2) {
       xploreAnimationTriggered = true;
       xploreHead.style.transform = "translateY(0)";
-      // xploreImage.style.animation = "1s ease-in-out forwards reveal";
       xploreImage.style.clipPath = "inset(0 0 0 0)";
       xploreText.style.transform = "translateY(0)";
     } else {
       xploreHead.style.transform = "translateY(-100%)";
-      // xploreImage.style.animation = "none";
       xploreImage.style.clipPath = "inset(100% 0 0 0)";
       xploreText.style.transform = "translateY(100%)";
     }
-    // xploreAnimationTriggered = true;
   }
 });
 
