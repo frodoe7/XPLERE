@@ -1,870 +1,614 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xplere</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="English" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xplere</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 
-    <!-- Social media share -->
-    <link href="./output.css" rel="stylesheet" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="language" content="English" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-  </head>
+  <!-- Social media share -->
+  <link href="./output.css" rel="stylesheet" />
 
-  <body class="overflow-x-hidden bg-background font-opti">
-    <nav class="mt-[51px] hidden w-full px-16 text-nav lg:block">
-      <ul
-        class="grid grid-cols-[1fr_auto_1fr] items-center text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit"
-      >
-        <!-- Left Links -->
-        <div class="flex justify-evenly">
-          <li
-            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
-          >
-            <a href="#">products</a>
-            <div
-              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
-            ></div>
-          </li>
-          <li
-            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
-          >
-            <a href="#">services</a>
-            <div
-              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
-            ></div>
-          </li>
-        </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+</head>
 
-        <!-- Center Logo -->
-        <li class="z-10 cursor-pointer">
-          <a href="#">
-            <img src="./images/logo.png" alt="logo" />
-          </a>
+<body class="overflow-x-hidden bg-background font-opti">
+  <nav class="mt-[51px] hidden w-full px-16 text-nav lg:block">
+    <ul
+      class="grid grid-cols-[1fr_auto_1fr] items-center text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit">
+      <!-- Left Links -->
+      <div class="flex justify-evenly">
+        <li class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary">
+          <a href="#products">products</a>
+          <div class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"></div>
         </li>
+        <li class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary">
+          <a href="#services">services</a>
+          <div class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"></div>
+        </li>
+      </div>
 
-        <!-- Right Links -->
-        <div class="flex justify-evenly">
-          <li
-            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
-          >
-            <a href="#">about</a>
-            <div
-              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
-            ></div>
-          </li>
-          <li
-            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
-          >
-            <a href="#">vision</a>
-            <div
-              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
-            ></div>
-          </li>
-        </div>
-      </ul>
-    </nav>
+      <!-- Center Logo -->
+      <li class="z-10 cursor-pointer">
+        <a href="#">
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+      </li>
 
-    <!-- Mobile nav -->
-    <nav
-      class="mt-[51px] flex w-full items-center justify-between px-5 text-nav lg:hidden"
-    >
-      <a href="#">
-        <img src="./images/logo.png" alt="logo" class="h-5 lg:h-7" />
-      </a>
+      <!-- Right Links -->
+      <div class="flex justify-evenly">
+        <li class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary">
+          <a href="#about">about</a>
+          <div class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"></div>
+        </li>
+        <li class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary">
+          <a href="#vision">vision</a>
+          <div class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"></div>
+        </li>
+      </div>
+    </ul>
+  </nav>
 
-      <button id="open-nav">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <line x1="4" x2="20" y1="12" y2="12" />
-          <line x1="4" x2="20" y1="6" y2="6" />
-          <line x1="4" x2="20" y1="18" y2="18" />
+  <!-- Mobile nav -->
+  <nav class="mt-[51px] flex w-full items-center justify-between px-5 text-nav lg:hidden">
+    <a href="#">
+      <img src="./images/logo.png" alt="logo" class="h-5 lg:h-7" />
+    </a>
+
+    <button id="open-nav">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" x2="20" y1="12" y2="12" />
+        <line x1="4" x2="20" y1="6" y2="6" />
+        <line x1="4" x2="20" y1="18" y2="18" />
+      </svg>
+    </button>
+
+    <ul
+      class="fixed top-0 left-0 z-50 flex h-screen w-screen translate-x-full flex-col items-center justify-center gap-5 bg-white text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit transition-transform duration-500"
+      id="mobile-nav">
+      <button class="absolute top-8 right-8" id="close-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
         </svg>
       </button>
 
-      <ul
-        class="fixed top-0 left-0 z-50 flex h-screen w-screen translate-x-full flex-col items-center justify-center gap-5 bg-white text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit transition-transform duration-500"
-        id="mobile-nav"
-      >
-        <button class="absolute top-8 right-8" id="close-nav">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M18 6 6 18" />
-            <path d="m6 6 12 12" />
-          </svg>
-        </button>
+      <li class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary">
+        <a href="#products">products</a>
+      </li>
+      <li class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary">
+        <a href="#services">services</a>
+      </li>
+      <li class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary">
+        <a href="#about">about</a>
+      </li>
+      <li class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary">
+        <a href="#vision">vision</a>
+      </li>
+    </ul>
+  </nav>
 
-        <li
-          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
-        >
-          <a href="#">products</a>
-        </li>
-        <li
-          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
-        >
-          <a href="#">services</a>
-        </li>
-        <li
-          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
-        >
-          <a href="#">about</a>
-        </li>
-        <li
-          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
-        >
-          <a href="#">vision</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- </header> -->
-    <main>
-      <section
-        class="absolute top-0 left-0 -z-50 h-screen max-h-screen min-h-screen w-full"
-      >
-        <video
-          autoplay
-          loop
-          muted
-          playsinline
-          class="max-h-full min-h-full w-full object-cover"
-        >
-          <source src="./videos/Slider Video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div
-          class="absolute inset-0 z-0 bg-gradient-to-t from-black via-black/70 to-transparent"
-        ></div>
-      </section>
-      <section
-        class="relative mt-[47vh] mb-[calc(53vh-250px)] lg:mb-[calc(53vh-350px)]"
-      >
-        <div class="relative text-center">
-          <h1
-            class="flex flex-col gap-2.5 text-center text-3xl font-medium uppercase leading-[60px] tracking-wide text-white lg:gap-[33px] lg:text-[80px]"
-          >
-            <span class="leading-[25px] lg:leading-[inherit]">unlock</span>
-            <div class="h-10 overflow-hidden lg:h-[80px]">
-              <div class="flex animate-slideWord flex-col gap-10">
-                <div>growth</div>
-                <div>technologies</div>
-                <div>revenue</div>
-                <div>engagement</div>
-                <div>potential</div>
-                <div>you</div>
-              </div>
-            </div>
-          </h1>
-        </div>
-        <div class="text-center">
-          <button
-            class="z-[50] mt-8 rounded-[5px] border border-white bg-transparent px-8 py-[13px] font-ubuntu text-base font-medium uppercase leading-[18.58px] tracking-wide text-white transition-all duration-1000 hover:bg-slate-50/25 lg:mt-[50px]"
-          >
-            <a href="#xplore"> learn more </a>
-          </button>
-        </div>
-      </section>
-      <section></section>
-      <section class="relative h-[1000px] w-full object-cover pl-16 uppercase">
-        <div
-          class="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-black via-black to-transparent transform-preserve-3d"
-        >
-          <div class="relative flex w-7/12 flex-col items-center" id="xplore">
-            <h2
-              class="z-[2] overflow-hidden text-center text-3xl leading-snug tracking-wide text-white lg:text-[50px]"
-            >
-              <div
-                class="-translate-y-[100%] transition-all duration-1000 ease-out"
-              >
-                <span
-                  class="bg-gradient-to-r from-[#0d1a66] to-[#2659a0] bg-clip-text text-transparent"
-                >
-                  xplore
-                </span>
-                <br />
-                the possibilities of
-                <br />
-                tomorrow. today.
-              </div>
-            </h2>
-            <div class="relative my-10 lg:-top-10 lg:my-0">
-              <img
-                src="./images/vr.png"
-                alt="vr"
-                class="z-[1] h-auto w-[550px] transition-all duration-[1.5s] ease-out"
-                style="clip-path: inset(100% 0 0 0)"
-              />
-            </div>
-            <div class="overflow-hidden">
-              <p
-                class="translate-y-[100%] text-center font-ubuntu text-lg font-normal normal-case leading-[30px] tracking-wide text-[#c0cac9] transition-all duration-1000 ease-out"
-              >
-                Xplere uses the intersection of technology, commercialization
-                and growth to find value for our clients in the sports,
-                entertainment and leisure industries. Our aim is to help our
-                clients discover a path for growth that is sustainable, rooted
-                in technology and takes advantage of their natural strengths.
-              </p>
+  <!-- </header> -->
+  <main>
+    <section class="absolute top-0 left-0 -z-50 h-screen max-h-screen min-h-screen w-full">
+      <video autoplay loop muted playsinline class="max-h-full min-h-full w-full object-cover">
+        <source src="./videos/Slider Video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="absolute inset-0 z-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
+    </section>
+    <section class="relative mt-[47vh] mb-[calc(53vh-250px)] lg:mb-[calc(53vh-350px)]">
+      <div class="relative text-center">
+        <h1
+          class="flex flex-col gap-2.5 text-center text-3xl font-medium uppercase leading-[60px] tracking-wide text-white lg:gap-[33px] lg:text-[80px]">
+          <span class="leading-[25px] lg:leading-[inherit]">unlock</span>
+          <div class="h-10 overflow-hidden lg:h-[80px]">
+            <div class="flex animate-slideWord flex-col gap-10">
+              <div>growth</div>
+              <div>technologies</div>
+              <div>revenue</div>
+              <div>engagement</div>
+              <div>potential</div>
+              <div>you</div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="relative px-5 lg:pl-16">
-        <div
-          class="mb-6 font-opti text-4xl font-medium uppercase leading-normal text-white lg:mb-[51px] lg:text-[100px] lg:leading-[100px]"
-        >
-          We <br />use
-        </div>
-      </section>
-      <div class="mb-10 px-5 lg:px-16">
-        <hr class="mb-4 h-0 w-full border-[3px] border-white" />
+        </h1>
       </div>
-      <section>
-        <div class="mb-10 flex flex-col gap-14 px-5 lg:flex-row lg:px-16">
-          <div
-            id="opts"
-            class="relative h-[616px] w-[600px] max-w-full overflow-hidden"
-          >
-            <img
-              src="./images/tech1.png"
-              alt="tech1"
-              class="absolute h-full w-full object-cover opacity-0 transition-all duration-[1.5s]"
-              style="clip-path: inset(0 0 0 0); opacity: 1"
-            />
-            <img
-              src="./images/tech2.png"
-              alt="tech2"
-              class="absolute h-full w-full object-cover opacity-0 transition-all duration-[1.5s]"
-              style="clip-path: inset(0 100% 0 0)"
-            />
-            <img
-              src="./images/tech3.png"
-              alt="tech3"
-              class="absolute h-full w-full object-cover opacity-0 transition-all duration-[1.5s]"
-              style="clip-path: inset(0 100% 0 0)"
-            />
-            <img
-              src="./images/tech4.png"
-              alt="tech4"
-              class="absolute h-full w-full object-cover opacity-0 transition-all duration-[1.5s]"
-              style="clip-path: inset(0 100% 0 0)"
-            />
-          </div>
-          <div
-            class="flex flex-col gap-8 text-xl font-medium uppercase leading-normal text-white lg:gap-12 lg:text-[50px] lg:leading-[54.14px]"
-          >
-            <div
-              id="opt-1"
-              class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12"
-              style="color: #63e7ff; border-color: #63e7ff"
-            >
-              consulting services
-            </div>
-            <div
-              id="opt-2"
-              class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12"
-            >
-              digital commercialization products
-            </div>
-            <div
-              id="opt-3"
-              class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12"
-            >
-              technology products
-            </div>
-            <div
-              id="opt-4"
-              class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12"
-            >
-              sports analysis products
-            </div>
-          </div>
-        </div>
-        <p
-          class="p-5 text-center text-xl font-medium uppercase leading-normal text-white lg:p-24 lg:text-[40px] lg:leading-[60px]"
-        >
-          to help organizations in the sports, entertainment and leisure
-          industries reach their true potential.
-        </p>
-      </section>
-
+      <div class="text-center">
+        <button
+          class="z-[50] mt-8 rounded-[5px] border border-white bg-transparent px-8 py-[13px] font-ubuntu text-base font-medium uppercase leading-[18.58px] tracking-wide text-white transition-all duration-1000 hover:bg-slate-50/25 lg:mt-[50px]">
+          <a href="#vision"> learn more </a>
+        </button>
+      </div>
+    </section>
+    <section></section>
+    <section id="vision" class="relative h-[1000px] w-full object-cover pl-16 uppercase">
       <div
-        class="flex flex-col items-center bg-background font-ubuntu text-white"
-      >
-        <div
-          class="relative flex w-full flex-col items-center gap-20 pb-10 lg:pb-20"
-        >
-          <div class="absolute top-0 left-0 bottom-0 right-0 h-full w-full">
-            <img
-              src="./images/services-background.png"
-              class="h-full w-full object-cover"
-            />
-            <div class="absolute inset-0 z-10 bg-fadeImage"></div>
+        class="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-black via-black to-transparent transform-preserve-3d">
+        <div class="relative flex w-7/12 flex-col items-center" id="xplore">
+          <h2 class="z-[2] overflow-hidden text-center text-3xl leading-snug tracking-wide text-white lg:text-[50px]">
+            <div class="-translate-y-[100%] transition-all duration-1000 ease-out">
+              <span class="bg-gradient-to-r from-[#0d1a66] to-[#2659a0] bg-clip-text text-transparent">
+                xplore
+              </span>
+              <br />
+              the possibilities of
+              <br />
+              tomorrow. today.
+            </div>
+          </h2>
+          <div class="relative my-10 lg:-top-10 lg:my-0">
+            <img src="./images/vr.png" alt="vr" class="z-[1] h-auto w-[550px] transition-all duration-[1.5s] ease-out"
+              style="clip-path: inset(100% 0 0 0)" />
           </div>
+          <div class="overflow-hidden">
+            <p
+              class="translate-y-[100%] text-center font-ubuntu text-lg font-normal normal-case leading-[30px] tracking-wide text-[#c0cac9] transition-all duration-1000 ease-out">
+              Xplere uses the intersection of technology, commercialization
+              and growth to find value for our clients in the sports,
+              entertainment and leisure industries. Our aim is to help our
+              clients discover a path for growth that is sustainable, rooted
+              in technology and takes advantage of their natural strengths.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="relative px-5 lg:pl-16">
+      <div
+        class="mb-6 font-opti text-4xl font-medium uppercase leading-normal text-white lg:mb-[51px] lg:text-[100px] lg:leading-[100px]">
+        We <br />use
+      </div>
+    </section>
+    <div class="mb-10 px-5 lg:px-16">
+      <hr class="mb-4 h-0 w-full border-[3px] border-white" />
+    </div>
+    <section>
+      <div class="mb-10 flex flex-col gap-14 px-5 lg:flex-row lg:px-16">
+        <div id="opts" class="relative h-[616px] w-[600px] max-w-full overflow-hidden">
+          <img src="./images/tech1.png" alt="tech1"
+            class="absolute h-full w-full object-cover opacity-0 transition-all duration-[1.5s]"
+            style="clip-path: inset(0 0 0 0); opacity: 1" />
+          <img src="./images/tech2.png" alt="tech2"
+            class="absolute h-full w-full object-cover opacity-0 transition-all duration-[1.5s]"
+            style="clip-path: inset(0 100% 0 0)" />
+          <img src="./images/tech3.png" alt="tech3"
+            class="absolute h-full w-full object-cover opacity-0 transition-all duration-[1.5s]"
+            style="clip-path: inset(0 100% 0 0)" />
+          <img src="./images/tech4.png" alt="tech4"
+            class="absolute h-full w-full object-cover opacity-0 transition-all duration-[1.5s]"
+            style="clip-path: inset(0 100% 0 0)" />
+        </div>
+        <div
+          class="flex flex-col gap-8 text-xl font-medium uppercase leading-normal text-white lg:gap-12 lg:text-[50px] lg:leading-[54.14px]">
+          <div id="opt-1"
+            class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12"
+            style="color: #63e7ff; border-color: #63e7ff">
+            consulting services
+          </div>
+          <div id="opt-2"
+            class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12">
+            digital commercialization products
+          </div>
+          <div id="opt-3"
+            class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12">
+            technology products
+          </div>
+          <div id="opt-4"
+            class="cursor-default border-b-2 border-white pb-8 transition-all duration-1000 hover:border-primary hover:text-primary lg:pb-12">
+            sports analysis products
+          </div>
+        </div>
+      </div>
+      <p
+        class="p-5 text-center text-xl font-medium uppercase leading-normal text-white lg:p-24 lg:text-[40px] lg:leading-[60px]">
+        to help organizations in the sports, entertainment and leisure
+        industries reach their true potential.
+      </p>
+    </section>
 
-          <div class="flex w-full flex-col items-center gap-20 px-5">
-            <h3
-              class="relative z-10 mt-20 font-opti text-3xl font-semibold uppercase lg:text-[40px]"
-            >
-              Services
-            </h3>
+    <div id="services" class="flex flex-col items-center bg-background font-ubuntu text-white">
+      <div class="relative flex w-full flex-col items-center gap-20 pb-10 lg:pb-20">
+        <div class="absolute top-0 left-0 bottom-0 right-0 h-full w-full">
+          <img src="./images/services-background.png" class="h-full w-full object-cover" />
+          <div class="absolute inset-0 z-10 bg-fadeImage"></div>
+        </div>
 
-            <div
-              class="container relative z-10 mx-5 flex flex-col items-start gap-10 rounded border border-border bg-[rgba(2,3,26,0.4)] p-5 transition-all duration-500 hover:border-[#63E7FF] hover:bg-[rgba(99,231,255,0.1)] lg:p-[72px]"
-            >
-              <h4
-                class="self-center text-center font-opti text-xl uppercase lg:self-start lg:text-left lg:text-[34px]"
-              >
-                Consulting
-              </h4>
-              <div class="flex max-w-3xl flex-col gap-6">
-                <p class="opacity-80 lg:text-lg">
-                  We use expertise, data and insights to determine the right
-                  path for you. Our consultancy services look at your long-term
-                  objectives, industry realities and a holistic understanding of
-                  the market to build a future-proof plan that elevates your
-                  organization to the next level.
-                </p>
+        <div class="flex w-full flex-col items-center gap-20 px-5">
+          <h3 class="relative z-10 mt-20 font-opti text-3xl font-semibold uppercase lg:text-[40px]">
+            Services
+          </h3>
 
-                <div class="flex items-center gap-3">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2109_55)">
-                      <path
-                        d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
-                        fill="white"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2109_55">
-                        <rect
-                          width="24"
-                          height="24"
-                          fill="white"
-                          transform="translate(0 0.205322)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="lg:text-xl"
-                    >Consulting for Host Cities & Major Events</span
-                  >
-                </div>
+          <div
+            class="container relative z-10 mx-5 flex flex-col items-start gap-10 rounded border border-border bg-[rgba(2,3,26,0.4)] p-5 transition-all duration-500 hover:border-[#63E7FF] hover:bg-[rgba(99,231,255,0.1)] lg:p-[72px]">
+            <h4 class="self-center text-center font-opti text-xl uppercase lg:self-start lg:text-left lg:text-[34px]">
+              Consulting
+            </h4>
+            <div class="flex max-w-3xl flex-col gap-6">
+              <p class="opacity-80 lg:text-lg">
+                We use expertise, data and insights to determine the right
+                path for you. Our consultancy services look at your long-term
+                objectives, industry realities and a holistic understanding of
+                the market to build a future-proof plan that elevates your
+                organization to the next level.
+              </p>
 
-                <div class="flex items-center gap-3">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2109_55)">
-                      <path
-                        d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
-                        fill="white"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2109_55">
-                        <rect
-                          width="24"
-                          height="24"
-                          fill="white"
-                          transform="translate(0 0.205322)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="lg:text-xl"
-                    >Consulting for Rights Holders and Sports Clubs</span
-                  >
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2109_55)">
-                      <path
-                        d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
-                        fill="white"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2109_55">
-                        <rect
-                          width="24"
-                          height="24"
-                          fill="white"
-                          transform="translate(0 0.205322)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="lg:text-xl"
-                    >Insights, Research and Evaluations</span
-                  >
-                </div>
+              <div class="flex items-center gap-3">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.205322)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl">Consulting for Host Cities & Major Events</span>
               </div>
 
-              <button
-                class="rounded border border-white py-3 px-5 uppercase transition-all hover:bg-white/20"
-              >
-                request
-              </button>
-            </div>
-
-            <div
-              class="container relative z-10 flex flex-col items-start gap-10 rounded border border-border bg-[rgba(2,3,26,0.4)] p-5 transition-all duration-500 hover:border-[#63E7FF] hover:bg-[rgba(99,231,255,0.1)] lg:p-[72px]"
-            >
-              <h4
-                class="self-center text-center font-opti text-xl uppercase lg:self-start lg:text-left lg:text-[34px]"
-              >
-                Digital Transformation
-              </h4>
-              <div class="flex max-w-3xl flex-col gap-6">
-                <p class="opacity-80 lg:text-lg">
-                  A leaner, digital oriented organization always punches above
-                  its weight. This is where we come in and leverage our
-                  extensive experience to overhaul key areas through digital
-                  solutions that range from fan engagement to CRM systems.
-                </p>
-
-                <div class="flex items-center gap-3">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2109_55)">
-                      <path
-                        d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
-                        fill="white"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2109_55">
-                        <rect
-                          width="24"
-                          height="24"
-                          fill="white"
-                          transform="translate(0 0.205322)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="lg:text-xl"
-                    >Customer Experience and Engagement</span
-                  >
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2109_55)">
-                      <path
-                        d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
-                        fill="white"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2109_55">
-                        <rect
-                          width="24"
-                          height="24"
-                          fill="white"
-                          transform="translate(0 0.205322)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="lg:text-xl">Customer Journey Mapping</span>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2109_55)">
-                      <path
-                        d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
-                        fill="white"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2109_55">
-                        <rect
-                          width="24"
-                          height="24"
-                          fill="white"
-                          transform="translate(0 0.205322)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="lg:text-xl">Customer Feedback and Insights</span>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2109_55)">
-                      <path
-                        d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
-                        fill="white"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2109_55">
-                        <rect
-                          width="24"
-                          height="24"
-                          fill="white"
-                          transform="translate(0 0.205322)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="lg:text-xl">Omnichannel Support</span>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2109_55)">
-                      <path
-                        d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
-                        fill="white"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2109_55">
-                        <rect
-                          width="24"
-                          height="24"
-                          fill="white"
-                          transform="translate(0 0.205322)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="lg:text-xl"
-                    >Personalization and Customer Engagement</span
-                  >
-                </div>
+              <div class="flex items-center gap-3">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.205322)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl">Consulting for Rights Holders and Sports Clubs</span>
               </div>
 
-              <button
-                class="rounded border border-white py-3 px-5 uppercase transition-all hover:bg-white/20"
-              >
-                request
-              </button>
+              <div class="flex items-center gap-3">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.205322)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl">Insights, Research and Evaluations</span>
+              </div>
             </div>
+
+            <a href="#contact"><button
+                class="rounded border border-white py-3 px-5 uppercase transition-all hover:bg-white/20">
+                request
+              </button></a>
           </div>
 
           <div
-            class="relative z-10 flex w-full flex-col items-center gap-20 border-y border-x-0 border-border bg-[rgba(2,3,26,0.4)] py-10 px-5 transition-all duration-500 hover:border-[#63E7FF] hover:bg-[rgba(99,231,255,0.1)] lg:py-[136px] lg:px-[160px]"
-          >
-            <h3
-              class="relative z-20 font-opti text-3xl font-semibold uppercase lg:text-[40px]"
-            >
-              Products
-            </h3>
+            class="container relative z-10 flex flex-col items-start gap-10 rounded border border-border bg-[rgba(2,3,26,0.4)] p-5 transition-all duration-500 hover:border-[#63E7FF] hover:bg-[rgba(99,231,255,0.1)] lg:p-[72px]">
+            <h4 class="self-center text-center font-opti text-xl uppercase lg:self-start lg:text-left lg:text-[34px]">
+              Digital Transformation
+            </h4>
+            <div class="flex max-w-3xl flex-col gap-6">
+              <p class="opacity-80 lg:text-lg">
+                A leaner, digital oriented organization always punches above
+                its weight. This is where we come in and leverage our
+                extensive experience to overhaul key areas through digital
+                solutions that range from fan engagement to CRM systems.
+              </p>
 
-            <div
-              class="relative z-20 flex w-full flex-col justify-between gap-5 lg:flex-row"
-            >
-              <div class="flex max-w-[262px] flex-col gap-4 lg:gap-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_2009_1191)">
+              <div class="flex items-center gap-3">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2109_55)">
                     <path
-                      d="M46.5895 35.1623H45.5669V13.7733C45.5669 11.9216 44.0736 10.415 42.2385 10.415H24.8713C24.3095 9.25207 23.1688 8.41929 21.8222 8.29657V6.22638C21.8222 4.73444 20.3954 3.66185 18.9666 4.07754L6.50666 7.70238C6.33735 7.65944 6.5391 7.69001 3.0427 7.64416C1.72232 7.65326 0.704102 8.68554 0.704102 9.96307V13.7055C0.704102 15.0111 1.76413 16.0843 3.06707 16.0981L3.14385 16.0989V20.438C3.14385 21.9828 4.24748 23.2844 5.70557 23.5877V35.1623H4.68323C4.29323 35.1623 3.97729 35.4783 3.97729 35.8683V39.741C3.97729 42.0964 5.87535 44.0126 8.20869 44.0126H43.0694C45.3996 44.0126 47.2954 42.0964 47.2954 39.741V35.8683C47.2954 35.4783 46.9795 35.1623 46.5895 35.1623ZM23.8348 12.0404C23.8348 13.2182 22.9578 14.1871 21.8222 14.3553V9.72579C22.9578 9.89388 23.8348 10.8626 23.8348 12.0404ZM19.3609 5.43335C19.8806 5.28129 20.4104 5.67129 20.4104 6.22638V17.8547C20.4104 18.4114 19.8749 18.8076 19.3457 18.6428L7.03954 14.8039V9.01788L19.3609 5.43335ZM2.11598 13.7055V9.96307C2.11598 9.46141 2.51966 9.05604 3.01813 9.05604H3.02798L5.62607 9.08332V14.7131L3.08179 14.6863C2.54938 14.6808 2.11598 14.2407 2.11598 13.7055ZM4.55573 20.438V16.1137C6.39923 16.1241 6.32423 16.1513 6.49241 16.1124L8.10051 16.6141V20.49C8.10051 20.9652 7.9162 21.4094 7.5816 21.7405C7.2486 22.0694 6.81595 22.2304 6.33538 22.2433C5.35401 22.2332 4.55573 21.4232 4.55573 20.438ZM7.11744 23.5596C7.66316 23.425 8.16501 23.1493 8.5746 22.744C9.17938 22.1456 9.51238 21.3453 9.51238 20.49V17.0545L18.9253 19.9909C20.3648 20.4389 21.8223 19.3644 21.8223 17.8547V15.7845C23.7795 15.6062 25.3541 13.9152 25.2359 11.8269H42.2386C43.2955 11.8269 44.1552 12.7001 44.1552 13.7733V35.1623H31.9892C31.6418 35.1623 31.346 35.4154 31.2918 35.7584L31.0423 37.3446H20.2346L19.9804 35.7568C19.9258 35.4141 19.6302 35.1623 19.2835 35.1623H7.11744V23.5596ZM45.8835 39.741C45.8835 41.3179 44.621 42.6007 43.0694 42.6007H8.20869C6.65394 42.6007 5.38907 41.3178 5.38907 39.741V36.5742H18.6813L18.9355 38.162C18.9901 38.5047 19.2857 38.7565 19.6324 38.7565H31.6456C31.9931 38.7565 32.2889 38.5035 32.343 38.1604L32.5926 36.5742H45.8834V39.741H45.8835Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M37.396 31.12C37.786 31.12 38.102 30.8041 38.102 30.4141C38.102 30.0241 37.786 29.7081 37.396 29.7081H35.1278V22.773C35.1278 22.383 34.8118 22.067 34.4218 22.067C34.0318 22.067 33.7159 22.383 33.7159 22.773V29.7081H30.735V15.4852C30.735 15.0952 30.4191 14.7793 30.0291 14.7793C29.6391 14.7793 29.3231 15.0952 29.3231 15.4852V29.7081H26.342V22.1282C26.342 21.7382 26.026 21.4222 25.636 21.4222C25.246 21.4222 24.9301 21.7382 24.9301 22.1282V29.7081H21.949V24.6934C21.949 24.3034 21.633 23.9874 21.243 23.9874C20.853 23.9874 20.5371 24.3034 20.5371 24.6934V29.7081H17.556V22.3279C17.556 21.9379 17.2401 21.6219 16.8501 21.6219C16.4601 21.6219 16.1441 21.9379 16.1441 22.3279V29.7081H13.8759C13.4859 29.7081 13.1699 30.0241 13.1699 30.4141C13.1699 30.8041 13.4859 31.12 13.8759 31.12H37.396Z"
-                      fill="white"
-                    />
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_2009_1191">
-                      <rect width="48" height="48" fill="white" />
+                    <clipPath id="clip0_2109_55">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.205322)" />
                     </clipPath>
                   </defs>
                 </svg>
-
-                <p>Digital Commercialization</p>
-                <p class="text-sm text-[#C6C6C8]">
-                  We leverage the power of digital, turning growth into revenue.
-                  Using our holistic solutions for commercialization, Xplere
-                  helps your organization uncover new revenue sources and
-                  optimize existing ones for a better top and bottom line.
-                </p>
+                <span class="lg:text-xl">Customer Experience and Engagement</span>
               </div>
 
-              <div
-                class="h-px w-full bg-white opacity-30 lg:h-[unset] lg:min-h-full lg:w-px"
-              ></div>
-
-              <div class="flex max-w-[262px] flex-col gap-4 lg:gap-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                >
-                  <path
-                    d="M7.03125 16.9688C9.62306 16.9688 11.9967 15.5499 13.226 13.266C13.8448 12.1163 15.3035 11.3438 16.8557 11.3438H19.8942C21.4137 11.3438 22.8017 12.0982 23.4302 13.266C24.6595 15.5499 27.0332 16.9688 29.625 16.9688C33.502 16.9688 36.6562 13.8145 36.6562 9.9375C36.6562 6.06047 33.502 2.90625 29.625 2.90625C27.0332 2.90625 24.6595 4.32506 23.4303 6.609C22.8018 7.77675 21.4138 8.53125 19.8943 8.53125C18.8316 8.53125 17.9184 8.53125 16.8558 8.53125C15.3036 8.53125 13.8449 7.75875 13.2261 6.609C11.9967 4.32506 9.62306 2.90625 7.03125 2.90625C3.15422 2.90625 0 6.06047 0 9.9375C0 13.8145 3.15422 16.9688 7.03125 16.9688ZM25.9069 7.94194C26.6449 6.57066 28.0696 5.71875 29.625 5.71875C31.9512 5.71875 33.8438 7.61128 33.8438 9.9375C33.8438 12.2637 31.9512 14.1562 29.625 14.1562C28.0696 14.1562 26.6449 13.3043 25.9069 11.9331C25.4841 11.1475 24.8967 10.4736 24.1919 9.9375C24.8966 9.40144 25.4841 8.72737 25.9069 7.94194ZM7.03125 5.71875C8.58666 5.71875 10.0114 6.57066 10.7494 7.94194C11.1694 8.72231 11.7728 9.39825 12.5008 9.9375C11.7727 10.4768 11.1694 11.1527 10.7494 11.9331C10.0114 13.3043 8.58666 14.1562 7.03125 14.1562C4.70503 14.1562 2.8125 12.2637 2.8125 9.9375C2.8125 7.61128 4.70503 5.71875 7.03125 5.71875Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M28.2188 8.53125H31.0312V11.3438H28.2188V8.53125Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M7.03125 45.0938C9.62306 45.0938 11.9967 43.6749 13.226 41.391C13.8545 40.2233 15.2424 39.4688 16.7619 39.4688H19.8942C21.4137 39.4688 22.8017 40.2233 23.4302 41.391C24.6595 43.6749 27.0332 45.0938 29.625 45.0938C33.502 45.0938 36.6562 41.9395 36.6562 38.0625C36.6562 34.1855 33.502 31.0312 29.625 31.0312C27.0332 31.0312 24.6595 32.4501 23.4303 34.734C22.8018 35.9017 21.4138 36.6562 19.8943 36.6562C18.8032 36.6562 17.8692 36.6562 16.762 36.6562C15.2425 36.6562 13.8546 35.9017 13.2261 34.734C11.9967 32.4501 9.62306 31.0312 7.03125 31.0312C3.15422 31.0312 0 34.1855 0 38.0625C0 41.9395 3.15422 45.0938 7.03125 45.0938ZM25.9069 36.0669C26.6449 34.6956 28.0696 33.8438 29.625 33.8438C31.9512 33.8438 33.8438 35.7363 33.8438 38.0625C33.8438 40.3887 31.9512 42.2812 29.625 42.2812C28.0696 42.2812 26.6449 41.4294 25.9069 40.0581C25.4841 39.2725 24.8967 38.5986 24.1919 38.0625C24.8966 37.5264 25.4841 36.8524 25.9069 36.0669ZM7.03125 33.8438C8.58666 33.8438 10.0114 34.6956 10.7494 36.0669C11.1722 36.8525 11.7595 37.5264 12.4643 38.0625C11.7595 38.5986 11.1722 39.2726 10.7494 40.0581C10.0114 41.4294 8.58666 42.2812 7.03125 42.2812C4.70503 42.2812 2.8125 40.3887 2.8125 38.0625C2.8125 35.7363 4.70503 33.8438 7.03125 33.8438Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M28.2188 36.6562H31.0312V39.4688H28.2188V36.6562Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M34.6803 20.6715C34.0518 21.8393 32.6638 22.5938 31.1443 22.5938C30.0816 22.5938 29.1684 22.5938 28.1057 22.5938C26.5862 22.5938 25.1982 21.8392 24.5697 20.6715C23.3405 18.3876 20.9668 16.9688 18.375 16.9688C14.498 16.9688 11.3438 20.123 11.3438 24C11.3438 27.877 14.498 31.0312 18.375 31.0312C20.9668 31.0312 23.3405 29.6124 24.5697 27.3285C25.1982 26.1608 26.5862 25.4062 28.1057 25.4062H31.1443C32.6638 25.4062 34.0518 26.1607 34.6803 27.3285C35.9095 29.6124 38.2832 31.0312 40.875 31.0312C44.7616 31.0312 48 27.8874 48 24C48 20.1134 44.7624 16.9688 40.875 16.9688C38.2832 16.9688 35.9095 18.3876 34.6803 20.6715ZM22.0931 25.9956C21.3551 27.3669 19.9304 28.2188 18.375 28.2188C16.0488 28.2188 14.1562 26.3262 14.1562 24C14.1562 21.6738 16.0488 19.7812 18.375 19.7812C19.9304 19.7812 21.3551 20.6331 22.0931 22.0044C22.5159 22.79 23.1033 23.4639 23.8081 24C23.1033 24.5361 22.5159 25.2101 22.0931 25.9956ZM37.1568 22.0044C37.8949 20.6332 39.3196 19.7812 40.875 19.7812C43.2127 19.7812 45.1875 21.7132 45.1875 24C45.1875 26.2868 43.2127 28.2188 40.875 28.2188C39.3196 28.2188 37.8949 27.3668 37.1568 25.9956C36.7341 25.21 36.1466 24.536 35.4419 24C36.1466 23.4639 36.7341 22.7899 37.1568 22.0044Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M16.9688 22.5938H19.7812V25.4062H16.9688V22.5938Z"
-                    fill="white"
-                  />
-                </svg>
-
-                <p>Technology</p>
-                <p class="text-sm text-[#C6C6C8]">
-                  We use the best-in-class technological tools to drive
-                  sustainable growth for our clients. Technological adoption
-                  across multiple organizational areas is how we approach each
-                  project. Ultimately, this means higher efficiency, data-driven
-                  decision making and better cost savings in the long run for
-                  our clients.
-                </p>
-              </div>
-
-              <div
-                class="h-px w-full bg-white opacity-30 lg:h-[unset] lg:min-h-full lg:w-px"
-              ></div>
-
-              <div class="flex max-w-[262px] flex-col gap-4 lg:gap-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_2009_1147)">
+              <div class="flex items-center gap-3">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2109_55)">
                     <path
-                      d="M29.0584 34.9763L27.02 33.9236C22.8179 31.7534 20.2038 27.4671 20.198 22.7376L20.193 18.567L21.8806 20.2504C23.2739 21.543 25.1668 19.6829 23.8951 18.2873L19.7764 14.1786C19.2827 13.73 18.472 13.5161 17.7612 14.2069L13.8904 18.297C13.3596 18.8577 13.3468 19.7518 13.8966 20.2936C14.4578 20.8471 15.3635 20.8316 15.9056 20.2592L17.3806 18.7007L17.3855 22.7409C17.3925 28.5256 20.5897 33.768 25.7295 36.4224L27.7679 37.4751C30.8286 39.0558 32.8547 43.2088 33.2512 46.762C33.3303 47.4698 33.9369 48.0007 34.6492 47.9999C35.4811 47.9988 36.1389 47.279 36.0469 46.4522C35.5481 41.9705 32.9648 36.9937 29.0584 34.9763Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M14.7782 8.64033C15.3273 9.18952 16.2178 9.18952 16.7669 8.64033L18.8924 6.51483L21.0179 8.64033C21.567 9.18952 22.4575 9.18952 23.0066 8.64033C23.5558 8.09114 23.5558 7.2008 23.0066 6.65161L20.8811 4.52611L23.0066 2.40061C23.5558 1.85142 23.5558 0.961078 23.0066 0.411891C22.4575 -0.137297 21.5671 -0.137297 21.0179 0.411891L18.8924 2.53739L16.7669 0.411891C16.2178 -0.137297 15.3274 -0.137297 14.7782 0.411891C14.229 0.961078 14.229 1.85142 14.7782 2.40061L16.9037 4.52611L14.7782 6.65161C14.2289 7.2008 14.2289 8.09114 14.7782 8.64033Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M39.8591 11.0864C35.37 11.0864 31.7178 14.7386 31.7178 19.2278C32.1651 30.0284 47.5549 30.0252 48.0005 19.2277C48.0005 14.7386 44.3482 11.0864 39.8591 11.0864ZM39.8591 24.5566C36.9208 24.5566 34.5303 22.1661 34.5303 19.2278C34.823 12.1584 44.8963 12.1604 45.188 19.2278C45.188 22.1661 42.7974 24.5566 39.8591 24.5566Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M8.14144 31.7173C3.65222 31.7173 0 35.3694 0 39.8585C0.447187 50.6591 15.8372 50.656 16.2828 39.8584C16.2828 35.3694 12.6306 31.7173 8.14144 31.7173ZM8.14144 45.1874C5.20303 45.1874 2.8125 42.7969 2.8125 39.8585C3.10519 32.7891 13.1786 32.7911 13.4703 39.8585C13.4703 42.7969 11.0797 45.1874 8.14144 45.1874Z"
-                      fill="white"
-                    />
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_2009_1147">
-                      <rect width="48" height="48" fill="white" />
+                    <clipPath id="clip0_2109_55">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.205322)" />
                     </clipPath>
                   </defs>
                 </svg>
+                <span class="lg:text-xl">Customer Journey Mapping</span>
+              </div>
 
-                <p>Sports Analysis</p>
-                <p class="text-sm text-[#C6C6C8]">
-                  The intersection of technology and sports is where the future
-                  is. Xplere does this and more, today. Our sports data
-                  ecosystem covers the whole spectrum in-depth, taking you from
-                  extraction of sports data through our intelligence platforms
-                  and cameras to understanding the context in our world-class
-                  platforms for player performance and medical data
-                </p>
+              <div class="flex items-center gap-3">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.205322)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl">Customer Feedback and Insights</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.205322)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl">Omnichannel Support</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2109_55)">
+                    <path
+                      d="M7.08 9.92532L5.4 11.6053L10.8 17.0053L22.8 5.00532L21.12 3.32532L10.8 13.6453L7.08 9.92532ZM21.6 12.2053C21.6 17.4853 17.28 21.8053 12 21.8053C6.72 21.8053 2.4 17.4853 2.4 12.2053C2.4 6.92532 6.72 2.60532 12 2.60532C12.96 2.60532 13.8 2.72532 14.64 2.96532L16.56 1.04532C15.12 0.565322 13.56 0.205322 12 0.205322C5.4 0.205322 0 5.60532 0 12.2053C0 18.8053 5.4 24.2053 12 24.2053C18.6 24.2053 24 18.8053 24 12.2053H21.6Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_55">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.205322)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="lg:text-xl">Personalization and Customer Engagement</span>
               </div>
             </div>
+
+            <a href="#contact"><button
+                class="rounded border border-white py-3 px-5 uppercase transition-all hover:bg-white/20">
+                request
+              </button></a>
           </div>
         </div>
 
-        <!-- Footer -->
-        <div class="container flex flex-col gap-10 px-5 py-16">
-          <div
-            class="flex flex-col items-center justify-between gap-3 lg:flex-row"
-          >
-            <img
-              src="./images/footer-logo.png"
-              alt="logo"
-              class="h-[72px] w-auto"
-            />
-            <button
-              class="rounded border border-white py-3 px-5 uppercase transition-all hover:bg-white/20"
-            >
-              Contact us
-            </button>
-          </div>
+        <div id="products"
+          class="relative z-10 flex w-full flex-col items-center gap-20 border-y border-x-0 border-border bg-[rgba(2,3,26,0.4)] py-10 px-5 transition-all duration-500 hover:border-[#63E7FF] hover:bg-[rgba(99,231,255,0.1)] lg:py-[136px] lg:px-[160px]">
+          <h3 class="relative z-20 font-opti text-3xl font-semibold uppercase lg:text-[40px]">
+            Products
+          </h3>
 
-          <div class="h-px min-w-full bg-white opacity-30"></div>
-
-          <div class="flex items-center justify-between">
-            <spna>All rights reserved © XPLERE.</spna>
-            <div class="flex items-center gap-4">
-              <!-- Instagram -->
-              <a href="#">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 22 22"
-                  fill="none"
-                >
+          <div class="relative z-20 flex w-full flex-col justify-between gap-5 lg:flex-row">
+            <div class="flex max-w-[262px] flex-col gap-4 lg:gap-8">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <g clip-path="url(#clip0_2009_1191)">
                   <path
-                    d="M19.7267 7.11945C19.7092 6.37307 19.5694 5.6346 19.3129 4.93346C19.0865 4.33236 18.7302 3.78866 18.2694 3.34118C17.8219 2.88037 17.2783 2.52404 16.6772 2.29763C15.976 2.0411 15.2376 1.90129 14.4912 1.88379C13.5376 1.82979 13.2318 1.82979 10.7849 1.82975C8.33803 1.8297 8.03217 1.8297 7.07861 1.88366C6.33223 1.90114 5.59376 2.04092 4.89262 2.29743C4.29152 2.52381 3.74781 2.88012 3.30034 3.34092C2.83923 3.78636 2.48546 4.33084 2.26579 4.93316C2.00144 5.63244 1.85844 6.37172 1.84295 7.11914C1.78895 8.0727 1.78895 8.37856 1.78891 10.8254C1.78886 13.2723 1.78886 13.5781 1.84282 14.5317C1.85828 15.2791 2.00126 16.0184 2.26558 16.7177C2.48523 17.32 2.83898 17.8645 3.30007 18.31C3.74754 18.7708 4.29123 19.1271 4.89232 19.3535C5.59345 19.6101 6.33191 19.7499 7.0783 19.7674C8.03186 19.8214 8.33772 19.8214 10.7846 19.8214C13.2314 19.8215 13.5373 19.8215 14.4909 19.7675C15.2373 19.75 15.9757 19.6102 16.6769 19.3537C17.2737 19.119 17.8157 18.7638 18.2692 18.3103C18.7227 17.8569 19.0779 17.3148 19.3127 16.718C19.5692 16.0169 19.709 15.2784 19.7265 14.532C19.7266 13.5785 19.7805 13.2726 19.7806 10.8257C19.7806 8.37887 19.7806 8.07301 19.7267 7.11945ZM18.1073 14.424C18.1007 14.9951 17.9973 15.5608 17.8014 16.0973C17.6509 16.4853 17.4211 16.8376 17.1268 17.1319C16.8325 17.4262 16.4802 17.6559 16.0922 17.8064C15.5557 18.0023 14.99 18.1057 14.4189 18.1123C13.5193 18.1572 13.1865 18.1662 10.8206 18.1662C8.45469 18.1661 8.12184 18.1661 7.22226 18.1121C6.62919 18.1254 6.03842 18.0341 5.47707 17.8422C5.08908 17.6917 4.73671 17.462 4.44243 17.1677C4.14816 16.8734 3.91843 16.521 3.7679 16.133C3.56797 15.5852 3.4645 15.0069 3.46207 14.4238C3.46208 13.5242 3.40811 13.1914 3.40816 10.8255C3.4082 8.45955 3.4082 8.1267 3.46219 7.22712C3.46464 6.64399 3.56814 6.0657 3.76808 5.51792C3.91863 5.12992 4.14837 4.77755 4.44265 4.48327C4.73694 4.189 5.08932 3.95927 5.47732 3.80874C6.02511 3.60881 6.60341 3.50534 7.18653 3.50291C8.08612 3.50292 8.41896 3.44896 10.7849 3.449C13.1508 3.44904 13.4836 3.44904 14.3832 3.50303C14.9542 3.50959 15.52 3.61303 16.0564 3.80892C16.4444 3.95947 16.7968 4.18921 17.0911 4.4835C17.3853 4.77778 17.6151 5.13016 17.7656 5.51816C17.9778 6.06376 18.0935 6.64212 18.1074 7.22737C18.1524 8.12696 18.1614 8.4598 18.1613 10.8257C18.1613 13.1916 18.1523 13.5245 18.1073 14.424Z"
-                    fill="#C0CAC9"
-                  />
+                    d="M46.5895 35.1623H45.5669V13.7733C45.5669 11.9216 44.0736 10.415 42.2385 10.415H24.8713C24.3095 9.25207 23.1688 8.41929 21.8222 8.29657V6.22638C21.8222 4.73444 20.3954 3.66185 18.9666 4.07754L6.50666 7.70238C6.33735 7.65944 6.5391 7.69001 3.0427 7.64416C1.72232 7.65326 0.704102 8.68554 0.704102 9.96307V13.7055C0.704102 15.0111 1.76413 16.0843 3.06707 16.0981L3.14385 16.0989V20.438C3.14385 21.9828 4.24748 23.2844 5.70557 23.5877V35.1623H4.68323C4.29323 35.1623 3.97729 35.4783 3.97729 35.8683V39.741C3.97729 42.0964 5.87535 44.0126 8.20869 44.0126H43.0694C45.3996 44.0126 47.2954 42.0964 47.2954 39.741V35.8683C47.2954 35.4783 46.9795 35.1623 46.5895 35.1623ZM23.8348 12.0404C23.8348 13.2182 22.9578 14.1871 21.8222 14.3553V9.72579C22.9578 9.89388 23.8348 10.8626 23.8348 12.0404ZM19.3609 5.43335C19.8806 5.28129 20.4104 5.67129 20.4104 6.22638V17.8547C20.4104 18.4114 19.8749 18.8076 19.3457 18.6428L7.03954 14.8039V9.01788L19.3609 5.43335ZM2.11598 13.7055V9.96307C2.11598 9.46141 2.51966 9.05604 3.01813 9.05604H3.02798L5.62607 9.08332V14.7131L3.08179 14.6863C2.54938 14.6808 2.11598 14.2407 2.11598 13.7055ZM4.55573 20.438V16.1137C6.39923 16.1241 6.32423 16.1513 6.49241 16.1124L8.10051 16.6141V20.49C8.10051 20.9652 7.9162 21.4094 7.5816 21.7405C7.2486 22.0694 6.81595 22.2304 6.33538 22.2433C5.35401 22.2332 4.55573 21.4232 4.55573 20.438ZM7.11744 23.5596C7.66316 23.425 8.16501 23.1493 8.5746 22.744C9.17938 22.1456 9.51238 21.3453 9.51238 20.49V17.0545L18.9253 19.9909C20.3648 20.4389 21.8223 19.3644 21.8223 17.8547V15.7845C23.7795 15.6062 25.3541 13.9152 25.2359 11.8269H42.2386C43.2955 11.8269 44.1552 12.7001 44.1552 13.7733V35.1623H31.9892C31.6418 35.1623 31.346 35.4154 31.2918 35.7584L31.0423 37.3446H20.2346L19.9804 35.7568C19.9258 35.4141 19.6302 35.1623 19.2835 35.1623H7.11744V23.5596ZM45.8835 39.741C45.8835 41.3179 44.621 42.6007 43.0694 42.6007H8.20869C6.65394 42.6007 5.38907 41.3178 5.38907 39.741V36.5742H18.6813L18.9355 38.162C18.9901 38.5047 19.2857 38.7565 19.6324 38.7565H31.6456C31.9931 38.7565 32.2889 38.5035 32.343 38.1604L32.5926 36.5742H45.8834V39.741H45.8835Z"
+                    fill="white" />
                   <path
-                    d="M10.785 6.20174C9.87048 6.20172 8.9765 6.47289 8.2161 6.98096C7.4557 7.48902 6.86304 8.21116 6.51306 9.05605C6.16307 9.90094 6.07149 10.8306 6.24988 11.7276C6.42828 12.6245 6.86865 13.4484 7.51529 14.0951C8.16194 14.7418 8.98583 15.1822 9.88276 15.3606C10.7797 15.539 11.7094 15.4475 12.5543 15.0975C13.3992 14.7476 14.1214 14.1549 14.6295 13.3945C15.1376 12.6342 15.4088 11.7402 15.4088 10.8257C15.4088 9.59936 14.9217 8.42325 14.0545 7.55609C13.1874 6.68894 12.0113 6.20176 10.785 6.20174ZM10.7849 13.8212C10.1924 13.8212 9.61322 13.6455 9.1206 13.3163C8.62798 12.9872 8.24403 12.5193 8.01731 11.9719C7.79059 11.4245 7.73127 10.8222 7.84687 10.2411C7.96247 9.66004 8.24778 9.12628 8.66673 8.70734C9.08568 8.28841 9.61946 8.00311 10.2005 7.88754C10.7816 7.77196 11.384 7.83129 11.9313 8.05803C12.4787 8.28477 12.9465 8.66874 13.2757 9.16137C13.6049 9.654 13.7805 10.2332 13.7805 10.8257C13.7805 11.219 13.703 11.6086 13.5525 11.972C13.4019 12.3355 13.1813 12.6657 12.9031 12.9439C12.6249 13.222 12.2947 13.4427 11.9312 13.5932C11.5678 13.7437 11.1782 13.8212 10.7849 13.8212Z"
-                    fill="#C0CAC9"
-                  />
-                  <path
-                    d="M15.5895 4.9424C15.3759 4.9424 15.1672 5.00572 14.9896 5.12435C14.8121 5.24299 14.6737 5.41161 14.5919 5.60889C14.5102 5.80618 14.4888 6.02327 14.5305 6.23271C14.5721 6.44215 14.675 6.63453 14.826 6.78553C14.977 6.93653 15.1693 7.03937 15.3788 7.08103C15.5882 7.1227 15.8053 7.10132 16.0026 7.0196C16.1999 6.93789 16.3685 6.7995 16.4872 6.62195C16.6058 6.4444 16.6691 6.23565 16.6691 6.02211C16.6691 5.73576 16.5554 5.46113 16.3529 5.25865C16.1504 5.05616 15.8758 4.94241 15.5895 4.9424Z"
-                    fill="#C0CAC9"
-                  />
-                </svg>
-              </a>
-
-              <!-- X -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_2105_3461)">
-                  <path
-                    d="M6.58301 5.71924L14.3495 15.8736H15.5395L7.86138 5.71924H6.58301Z"
-                    fill="#C0CAC9"
-                  />
-                  <path
-                    d="M11.0801 0.330078C5.28145 0.330078 0.580078 5.03145 0.580078 10.8301C0.580078 16.6287 5.28145 21.3301 11.0801 21.3301C16.8787 21.3301 21.5801 16.6287 21.5801 10.8301C21.5801 5.03145 16.8787 0.330078 11.0801 0.330078ZM13.7602 17.1581L10.374 12.735L6.5047 17.1581H4.35395L9.37033 11.4233L4.08008 4.50208H8.50933L11.5666 8.54545L15.1042 4.50208H17.2523L12.5615 9.86233L18.0801 17.1572L13.7602 17.1581Z"
-                    fill="#C0CAC9"
-                  />
+                    d="M37.396 31.12C37.786 31.12 38.102 30.8041 38.102 30.4141C38.102 30.0241 37.786 29.7081 37.396 29.7081H35.1278V22.773C35.1278 22.383 34.8118 22.067 34.4218 22.067C34.0318 22.067 33.7159 22.383 33.7159 22.773V29.7081H30.735V15.4852C30.735 15.0952 30.4191 14.7793 30.0291 14.7793C29.6391 14.7793 29.3231 15.0952 29.3231 15.4852V29.7081H26.342V22.1282C26.342 21.7382 26.026 21.4222 25.636 21.4222C25.246 21.4222 24.9301 21.7382 24.9301 22.1282V29.7081H21.949V24.6934C21.949 24.3034 21.633 23.9874 21.243 23.9874C20.853 23.9874 20.5371 24.3034 20.5371 24.6934V29.7081H17.556V22.3279C17.556 21.9379 17.2401 21.6219 16.8501 21.6219C16.4601 21.6219 16.1441 21.9379 16.1441 22.3279V29.7081H13.8759C13.4859 29.7081 13.1699 30.0241 13.1699 30.4141C13.1699 30.8041 13.4859 31.12 13.8759 31.12H37.396Z"
+                    fill="white" />
                 </g>
                 <defs>
-                  <clipPath id="clip0_2105_3461">
-                    <rect
-                      width="21"
-                      height="21"
-                      fill="white"
-                      transform="translate(0.580078 0.330078)"
-                    />
+                  <clipPath id="clip0_2009_1191">
+                    <rect width="48" height="48" fill="white" />
                   </clipPath>
                 </defs>
               </svg>
 
-              <!-- Linkedin -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="23"
-                height="22"
-                viewBox="0 0 23 22"
-                fill="none"
-              >
+              <p>Digital Commercialization</p>
+              <p class="text-sm text-[#C6C6C8]">
+                We leverage the power of digital, turning growth into revenue.
+                Using our holistic solutions for commercialization, Xplere
+                helps your organization uncover new revenue sources and
+                optimize existing ones for a better top and bottom line.
+              </p>
+            </div>
+
+            <div class="h-px w-full bg-white opacity-30 lg:h-[unset] lg:min-h-full lg:w-px"></div>
+
+            <div class="flex max-w-[262px] flex-col gap-4 lg:gap-8">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <path
-                  d="M17.7066 17.1616L15.043 17.1615L15.043 12.9847C15.0431 11.9898 15.0224 10.7088 13.6541 10.7088C12.2652 10.7088 12.0529 11.7882 12.0528 12.9118L12.0528 17.1597L9.38819 17.1596L9.38834 8.57669L11.9477 8.57673L11.9476 9.74619L11.9827 9.74619C12.239 9.30822 12.6093 8.94793 13.0541 8.70368C13.4989 8.45942 14.0017 8.34033 14.5088 8.35908C17.2075 8.35913 17.7077 10.1358 17.7076 12.4486L17.7075 17.1607L17.7066 17.1616ZM6.37926 7.40178C6.07331 7.4016 5.77428 7.31072 5.51997 7.14063C5.26567 6.97054 5.06749 6.72887 4.9505 6.44618C4.8335 6.16348 4.80294 5.85245 4.86268 5.55239C4.92242 5.25233 5.06977 4.97672 5.28611 4.76038C5.50245 4.54405 5.77807 4.39671 6.07813 4.33698C6.37819 4.27726 6.68922 4.30783 6.97191 4.42483C7.2546 4.54184 7.49626 4.74002 7.66634 4.99433C7.83642 5.24865 7.92729 5.54768 7.92747 5.85362C7.9277 6.057 7.88781 6.25843 7.81009 6.44637C7.73237 6.63431 7.61833 6.80507 7.47452 6.94888C7.33071 7.09268 7.15994 7.20671 6.972 7.28442C6.78406 7.36214 6.58263 7.40202 6.37926 7.40178ZM7.71497 17.1614L5.0441 17.1613L5.04425 8.57661L7.71512 8.57666L7.71497 17.1614ZM19.0401 1.82998L3.70669 1.82971C3.53437 1.82757 3.36332 1.85941 3.20331 1.92341C3.0433 1.98741 2.89748 2.08231 2.77416 2.20269C2.65085 2.32308 2.55247 2.46658 2.48465 2.62501C2.41682 2.78343 2.38088 2.95367 2.37888 3.12599L2.37861 18.5251C2.38061 18.6974 2.41654 18.8676 2.48436 19.026C2.55218 19.1845 2.65055 19.328 2.77386 19.4484C2.89717 19.5688 3.04299 19.6637 3.203 19.7277C3.36301 19.7917 3.53406 19.8235 3.70638 19.8214L19.0371 19.8216C19.3857 19.8262 19.7218 19.6923 19.9718 19.4493C20.2217 19.2062 20.3651 18.874 20.3703 18.5254L20.3706 3.12631C20.3651 2.77779 20.2217 2.44565 19.9718 2.20267C19.7219 1.95968 19.3859 1.82566 19.0374 1.82998L19.0401 1.82998Z"
-                  fill="#C0CAC9"
-                />
+                  d="M7.03125 16.9688C9.62306 16.9688 11.9967 15.5499 13.226 13.266C13.8448 12.1163 15.3035 11.3438 16.8557 11.3438H19.8942C21.4137 11.3438 22.8017 12.0982 23.4302 13.266C24.6595 15.5499 27.0332 16.9688 29.625 16.9688C33.502 16.9688 36.6562 13.8145 36.6562 9.9375C36.6562 6.06047 33.502 2.90625 29.625 2.90625C27.0332 2.90625 24.6595 4.32506 23.4303 6.609C22.8018 7.77675 21.4138 8.53125 19.8943 8.53125C18.8316 8.53125 17.9184 8.53125 16.8558 8.53125C15.3036 8.53125 13.8449 7.75875 13.2261 6.609C11.9967 4.32506 9.62306 2.90625 7.03125 2.90625C3.15422 2.90625 0 6.06047 0 9.9375C0 13.8145 3.15422 16.9688 7.03125 16.9688ZM25.9069 7.94194C26.6449 6.57066 28.0696 5.71875 29.625 5.71875C31.9512 5.71875 33.8438 7.61128 33.8438 9.9375C33.8438 12.2637 31.9512 14.1562 29.625 14.1562C28.0696 14.1562 26.6449 13.3043 25.9069 11.9331C25.4841 11.1475 24.8967 10.4736 24.1919 9.9375C24.8966 9.40144 25.4841 8.72737 25.9069 7.94194ZM7.03125 5.71875C8.58666 5.71875 10.0114 6.57066 10.7494 7.94194C11.1694 8.72231 11.7728 9.39825 12.5008 9.9375C11.7727 10.4768 11.1694 11.1527 10.7494 11.9331C10.0114 13.3043 8.58666 14.1562 7.03125 14.1562C4.70503 14.1562 2.8125 12.2637 2.8125 9.9375C2.8125 7.61128 4.70503 5.71875 7.03125 5.71875Z"
+                  fill="white" />
+                <path d="M28.2188 8.53125H31.0312V11.3438H28.2188V8.53125Z" fill="white" />
+                <path
+                  d="M7.03125 45.0938C9.62306 45.0938 11.9967 43.6749 13.226 41.391C13.8545 40.2233 15.2424 39.4688 16.7619 39.4688H19.8942C21.4137 39.4688 22.8017 40.2233 23.4302 41.391C24.6595 43.6749 27.0332 45.0938 29.625 45.0938C33.502 45.0938 36.6562 41.9395 36.6562 38.0625C36.6562 34.1855 33.502 31.0312 29.625 31.0312C27.0332 31.0312 24.6595 32.4501 23.4303 34.734C22.8018 35.9017 21.4138 36.6562 19.8943 36.6562C18.8032 36.6562 17.8692 36.6562 16.762 36.6562C15.2425 36.6562 13.8546 35.9017 13.2261 34.734C11.9967 32.4501 9.62306 31.0312 7.03125 31.0312C3.15422 31.0312 0 34.1855 0 38.0625C0 41.9395 3.15422 45.0938 7.03125 45.0938ZM25.9069 36.0669C26.6449 34.6956 28.0696 33.8438 29.625 33.8438C31.9512 33.8438 33.8438 35.7363 33.8438 38.0625C33.8438 40.3887 31.9512 42.2812 29.625 42.2812C28.0696 42.2812 26.6449 41.4294 25.9069 40.0581C25.4841 39.2725 24.8967 38.5986 24.1919 38.0625C24.8966 37.5264 25.4841 36.8524 25.9069 36.0669ZM7.03125 33.8438C8.58666 33.8438 10.0114 34.6956 10.7494 36.0669C11.1722 36.8525 11.7595 37.5264 12.4643 38.0625C11.7595 38.5986 11.1722 39.2726 10.7494 40.0581C10.0114 41.4294 8.58666 42.2812 7.03125 42.2812C4.70503 42.2812 2.8125 40.3887 2.8125 38.0625C2.8125 35.7363 4.70503 33.8438 7.03125 33.8438Z"
+                  fill="white" />
+                <path d="M28.2188 36.6562H31.0312V39.4688H28.2188V36.6562Z" fill="white" />
+                <path
+                  d="M34.6803 20.6715C34.0518 21.8393 32.6638 22.5938 31.1443 22.5938C30.0816 22.5938 29.1684 22.5938 28.1057 22.5938C26.5862 22.5938 25.1982 21.8392 24.5697 20.6715C23.3405 18.3876 20.9668 16.9688 18.375 16.9688C14.498 16.9688 11.3438 20.123 11.3438 24C11.3438 27.877 14.498 31.0312 18.375 31.0312C20.9668 31.0312 23.3405 29.6124 24.5697 27.3285C25.1982 26.1608 26.5862 25.4062 28.1057 25.4062H31.1443C32.6638 25.4062 34.0518 26.1607 34.6803 27.3285C35.9095 29.6124 38.2832 31.0312 40.875 31.0312C44.7616 31.0312 48 27.8874 48 24C48 20.1134 44.7624 16.9688 40.875 16.9688C38.2832 16.9688 35.9095 18.3876 34.6803 20.6715ZM22.0931 25.9956C21.3551 27.3669 19.9304 28.2188 18.375 28.2188C16.0488 28.2188 14.1562 26.3262 14.1562 24C14.1562 21.6738 16.0488 19.7812 18.375 19.7812C19.9304 19.7812 21.3551 20.6331 22.0931 22.0044C22.5159 22.79 23.1033 23.4639 23.8081 24C23.1033 24.5361 22.5159 25.2101 22.0931 25.9956ZM37.1568 22.0044C37.8949 20.6332 39.3196 19.7812 40.875 19.7812C43.2127 19.7812 45.1875 21.7132 45.1875 24C45.1875 26.2868 43.2127 28.2188 40.875 28.2188C39.3196 28.2188 37.8949 27.3668 37.1568 25.9956C36.7341 25.21 36.1466 24.536 35.4419 24C36.1466 23.4639 36.7341 22.7899 37.1568 22.0044Z"
+                  fill="white" />
+                <path d="M16.9688 22.5938H19.7812V25.4062H16.9688V22.5938Z" fill="white" />
               </svg>
+
+              <p>Technology</p>
+              <p class="text-sm text-[#C6C6C8]">
+                We use the best-in-class technological tools to drive
+                sustainable growth for our clients. Technological adoption
+                across multiple organizational areas is how we approach each
+                project. Ultimately, this means higher efficiency, data-driven
+                decision making and better cost savings in the long run for
+                our clients.
+              </p>
+            </div>
+
+            <div class="h-px w-full bg-white opacity-30 lg:h-[unset] lg:min-h-full lg:w-px"></div>
+
+            <div class="flex max-w-[262px] flex-col gap-4 lg:gap-8">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <g clip-path="url(#clip0_2009_1147)">
+                  <path
+                    d="M29.0584 34.9763L27.02 33.9236C22.8179 31.7534 20.2038 27.4671 20.198 22.7376L20.193 18.567L21.8806 20.2504C23.2739 21.543 25.1668 19.6829 23.8951 18.2873L19.7764 14.1786C19.2827 13.73 18.472 13.5161 17.7612 14.2069L13.8904 18.297C13.3596 18.8577 13.3468 19.7518 13.8966 20.2936C14.4578 20.8471 15.3635 20.8316 15.9056 20.2592L17.3806 18.7007L17.3855 22.7409C17.3925 28.5256 20.5897 33.768 25.7295 36.4224L27.7679 37.4751C30.8286 39.0558 32.8547 43.2088 33.2512 46.762C33.3303 47.4698 33.9369 48.0007 34.6492 47.9999C35.4811 47.9988 36.1389 47.279 36.0469 46.4522C35.5481 41.9705 32.9648 36.9937 29.0584 34.9763Z"
+                    fill="white" />
+                  <path
+                    d="M14.7782 8.64033C15.3273 9.18952 16.2178 9.18952 16.7669 8.64033L18.8924 6.51483L21.0179 8.64033C21.567 9.18952 22.4575 9.18952 23.0066 8.64033C23.5558 8.09114 23.5558 7.2008 23.0066 6.65161L20.8811 4.52611L23.0066 2.40061C23.5558 1.85142 23.5558 0.961078 23.0066 0.411891C22.4575 -0.137297 21.5671 -0.137297 21.0179 0.411891L18.8924 2.53739L16.7669 0.411891C16.2178 -0.137297 15.3274 -0.137297 14.7782 0.411891C14.229 0.961078 14.229 1.85142 14.7782 2.40061L16.9037 4.52611L14.7782 6.65161C14.2289 7.2008 14.2289 8.09114 14.7782 8.64033Z"
+                    fill="white" />
+                  <path
+                    d="M39.8591 11.0864C35.37 11.0864 31.7178 14.7386 31.7178 19.2278C32.1651 30.0284 47.5549 30.0252 48.0005 19.2277C48.0005 14.7386 44.3482 11.0864 39.8591 11.0864ZM39.8591 24.5566C36.9208 24.5566 34.5303 22.1661 34.5303 19.2278C34.823 12.1584 44.8963 12.1604 45.188 19.2278C45.188 22.1661 42.7974 24.5566 39.8591 24.5566Z"
+                    fill="white" />
+                  <path
+                    d="M8.14144 31.7173C3.65222 31.7173 0 35.3694 0 39.8585C0.447187 50.6591 15.8372 50.656 16.2828 39.8584C16.2828 35.3694 12.6306 31.7173 8.14144 31.7173ZM8.14144 45.1874C5.20303 45.1874 2.8125 42.7969 2.8125 39.8585C3.10519 32.7891 13.1786 32.7911 13.4703 39.8585C13.4703 42.7969 11.0797 45.1874 8.14144 45.1874Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2009_1147">
+                    <rect width="48" height="48" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p>Sports Analysis</p>
+              <p class="text-sm text-[#C6C6C8]">
+                The intersection of technology and sports is where the future
+                is. Xplere does this and more, today. Our sports data
+                ecosystem covers the whole spectrum in-depth, taking you from
+                extraction of sports data through our intelligence platforms
+                and cameras to understanding the context in our world-class
+                platforms for player performance and medical data
+              </p>
             </div>
           </div>
         </div>
+
+        <h3 id="contact" class="relative z-20 font-opti text-3xl font-semibold uppercase lg:text-[40px]">
+          For inquiries
+        </h3>
+
+        <div
+          style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: -32px;z-index: 100;">
+          <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <svg fill="#FFFFFF" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 483.3 483.3" xml:space="preserve">
+              <g>
+                <g>
+                  <path d="M424.3,57.75H59.1c-32.6,0-59.1,26.5-59.1,59.1v249.6c0,32.6,26.5,59.1,59.1,59.1h365.1c32.6,0,59.1-26.5,59.1-59.1
+                 v-249.5C483.4,84.35,456.9,57.75,424.3,57.75z M456.4,366.45c0,17.7-14.4,32.1-32.1,32.1H59.1c-17.7,0-32.1-14.4-32.1-32.1v-249.5
+                 c0-17.7,14.4-32.1,32.1-32.1h365.1c17.7,0,32.1,14.4,32.1,32.1v249.5H456.4z" />
+                  <path
+                    d="M304.8,238.55l118.2-106c5.5-5,6-13.5,1-19.1c-5-5.5-13.5-6-19.1-1l-163,146.3l-31.8-28.4c-0.1-0.1-0.2-0.2-0.2-0.3
+                 c-0.7-0.7-1.4-1.3-2.2-1.9L78.3,112.35c-5.6-5-14.1-4.5-19.1,1.1c-5,5.6-4.5,14.1,1.1,19.1l119.6,106.9L60.8,350.95
+                 c-5.4,5.1-5.7,13.6-0.6,19.1c2.7,2.8,6.3,4.3,9.9,4.3c3.3,0,6.6-1.2,9.2-3.6l120.9-113.1l32.8,29.3c2.6,2.3,5.8,3.4,9,3.4
+                 c3.2,0,6.5-1.2,9-3.5l33.7-30.2l120.2,114.2c2.6,2.5,6,3.7,9.3,3.7c3.6,0,7.1-1.4,9.8-4.2c5.1-5.4,4.9-14-0.5-19.1L304.8,238.55z" />
+                </g>
+              </g>
+            </svg>
+            <a class="hover-text" href="mailto:info@xplere.com"
+              style="margin-left: 8px;font-size: 22px;">info@xplere.com</a>
+          </div>
+
+          <div
+            style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-left: 24px;">
+            <svg fill="#FFFFFF" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 473.806 473.806" xml:space="preserve">
+              <g>
+                <g>
+                  <path d="M374.456,293.506c-9.7-10.1-21.4-15.5-33.8-15.5c-12.3,0-24.1,5.3-34.2,15.4l-31.6,31.5c-2.6-1.4-5.2-2.7-7.7-4
+                 c-3.6-1.8-7-3.5-9.9-5.3c-29.6-18.8-56.5-43.3-82.3-75c-12.5-15.8-20.9-29.1-27-42.6c8.2-7.5,15.8-15.3,23.2-22.8
+                 c2.8-2.8,5.6-5.7,8.4-8.5c21-21,21-48.2,0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5c-6-6.2-12.3-12.6-18.8-18.6
+                 c-9.7-9.6-21.3-14.7-33.5-14.7s-24,5.1-34,14.7c-0.1,0.1-0.1,0.1-0.2,0.2l-34,34.3c-12.8,12.8-20.1,28.4-21.7,46.5
+                 c-2.4,29.2,6.2,56.4,12.8,74.2c16.2,43.7,40.4,84.2,76.5,127.6c43.8,52.3,96.5,93.6,156.7,122.7c23,10.9,53.7,23.8,88,26
+                 c2.1,0.1,4.3,0.2,6.3,0.2c23.1,0,42.5-8.3,57.7-24.8c0.1-0.2,0.3-0.3,0.4-0.5c5.2-6.3,11.2-12,17.5-18.1c4.3-4.1,8.7-8.4,13-12.9
+                 c9.9-10.3,15.1-22.3,15.1-34.6c0-12.4-5.3-24.3-15.4-34.3L374.456,293.506z M410.256,398.806
+                 C410.156,398.806,410.156,398.906,410.256,398.806c-3.9,4.2-7.9,8-12.2,12.2c-6.5,6.2-13.1,12.7-19.3,20
+                 c-10.1,10.8-22,15.9-37.6,15.9c-1.5,0-3.1,0-4.6-0.1c-29.7-1.9-57.3-13.5-78-23.4c-56.6-27.4-106.3-66.3-147.6-115.6
+                 c-34.1-41.1-56.9-79.1-72-119.9c-9.3-24.9-12.7-44.3-11.2-62.6c1-11.7,5.5-21.4,13.8-29.7l34.1-34.1c4.9-4.6,10.1-7.1,15.2-7.1
+                 c6.3,0,11.4,3.8,14.6,7c0.1,0.1,0.2,0.2,0.3,0.3c6.1,5.7,11.9,11.6,18,17.9c3.1,3.2,6.3,6.4,9.5,9.7l27.3,27.3
+                 c10.6,10.6,10.6,20.4,0,31c-2.9,2.9-5.7,5.8-8.6,8.6c-8.4,8.6-16.4,16.6-25.1,24.4c-0.2,0.2-0.4,0.3-0.5,0.5
+                 c-8.6,8.6-7,17-5.2,22.7c0.1,0.3,0.2,0.6,0.3,0.9c7.1,17.2,17.1,33.4,32.3,52.7l0.1,0.1c27.6,34,56.7,60.5,88.8,80.8
+                 c4.1,2.6,8.3,4.7,12.3,6.7c3.6,1.8,7,3.5,9.9,5.3c0.4,0.2,0.8,0.5,1.2,0.7c3.4,1.7,6.6,2.5,9.9,2.5c8.3,0,13.5-5.2,15.2-6.9
+                 l34.2-34.2c3.4-3.4,8.8-7.5,15.1-7.5c6.2,0,11.3,3.9,14.4,7.3c0.1,0.1,0.1,0.1,0.2,0.2l55.1,55.1
+                 C420.456,377.706,420.456,388.206,410.256,398.806z" />
+                  <path d="M256.056,112.706c26.2,4.4,50,16.8,69,35.8s31.3,42.8,35.8,69c1.1,6.6,6.8,11.2,13.3,11.2c0.8,0,1.5-0.1,2.3-0.2
+                 c7.4-1.2,12.3-8.2,11.1-15.6c-5.4-31.7-20.4-60.6-43.3-83.5s-51.8-37.9-83.5-43.3c-7.4-1.2-14.3,3.7-15.6,11
+                 S248.656,111.506,256.056,112.706z" />
+                  <path d="M473.256,209.006c-8.9-52.2-33.5-99.7-71.3-137.5s-85.3-62.4-137.5-71.3c-7.3-1.3-14.2,3.7-15.5,11
+                 c-1.2,7.4,3.7,14.3,11.1,15.6c46.6,7.9,89.1,30,122.9,63.7c33.8,33.8,55.8,76.3,63.7,122.9c1.1,6.6,6.8,11.2,13.3,11.2
+                 c0.8,0,1.5-0.1,2.3-0.2C469.556,223.306,474.556,216.306,473.256,209.006z" />
+                </g>
+              </g>
+            </svg>
+            <a class="hover-text" href="tel:920033213" style="margin-left: 8px;font-size: 22px;">920033213</a>
+          </div>
+        </div>
       </div>
-    </main>
-    <script src="./index.js"></script>
-  </body>
+
+      <!-- Footer -->
+      <div class="container flex flex-col gap-10 px-5 py-16">
+        <div class="flex flex-col items-center justify-between gap-3 lg:flex-row">
+          <img src="./images/footer-logo.png" alt="logo" class="h-[72px] w-auto" />
+        </div>
+
+        <div class="h-px min-w-full bg-white opacity-30"></div>
+
+        <div class="flex items-center justify-between">
+          <spna>All rights reserved © XPLERE.</spna>
+          <div class="flex items-center gap-4">
+            <a target="_blank" href="https://www.instagram.com/xplere/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M19.7267 7.11945C19.7092 6.37307 19.5694 5.6346 19.3129 4.93346C19.0865 4.33236 18.7302 3.78866 18.2694 3.34118C17.8219 2.88037 17.2783 2.52404 16.6772 2.29763C15.976 2.0411 15.2376 1.90129 14.4912 1.88379C13.5376 1.82979 13.2318 1.82979 10.7849 1.82975C8.33803 1.8297 8.03217 1.8297 7.07861 1.88366C6.33223 1.90114 5.59376 2.04092 4.89262 2.29743C4.29152 2.52381 3.74781 2.88012 3.30034 3.34092C2.83923 3.78636 2.48546 4.33084 2.26579 4.93316C2.00144 5.63244 1.85844 6.37172 1.84295 7.11914C1.78895 8.0727 1.78895 8.37856 1.78891 10.8254C1.78886 13.2723 1.78886 13.5781 1.84282 14.5317C1.85828 15.2791 2.00126 16.0184 2.26558 16.7177C2.48523 17.32 2.83898 17.8645 3.30007 18.31C3.74754 18.7708 4.29123 19.1271 4.89232 19.3535C5.59345 19.6101 6.33191 19.7499 7.0783 19.7674C8.03186 19.8214 8.33772 19.8214 10.7846 19.8214C13.2314 19.8215 13.5373 19.8215 14.4909 19.7675C15.2373 19.75 15.9757 19.6102 16.6769 19.3537C17.2737 19.119 17.8157 18.7638 18.2692 18.3103C18.7227 17.8569 19.0779 17.3148 19.3127 16.718C19.5692 16.0169 19.709 15.2784 19.7265 14.532C19.7266 13.5785 19.7805 13.2726 19.7806 10.8257C19.7806 8.37887 19.7806 8.07301 19.7267 7.11945ZM18.1073 14.424C18.1007 14.9951 17.9973 15.5608 17.8014 16.0973C17.6509 16.4853 17.4211 16.8376 17.1268 17.1319C16.8325 17.4262 16.4802 17.6559 16.0922 17.8064C15.5557 18.0023 14.99 18.1057 14.4189 18.1123C13.5193 18.1572 13.1865 18.1662 10.8206 18.1662C8.45469 18.1661 8.12184 18.1661 7.22226 18.1121C6.62919 18.1254 6.03842 18.0341 5.47707 17.8422C5.08908 17.6917 4.73671 17.462 4.44243 17.1677C4.14816 16.8734 3.91843 16.521 3.7679 16.133C3.56797 15.5852 3.4645 15.0069 3.46207 14.4238C3.46208 13.5242 3.40811 13.1914 3.40816 10.8255C3.4082 8.45955 3.4082 8.1267 3.46219 7.22712C3.46464 6.64399 3.56814 6.0657 3.76808 5.51792C3.91863 5.12992 4.14837 4.77755 4.44265 4.48327C4.73694 4.189 5.08932 3.95927 5.47732 3.80874C6.02511 3.60881 6.60341 3.50534 7.18653 3.50291C8.08612 3.50292 8.41896 3.44896 10.7849 3.449C13.1508 3.44904 13.4836 3.44904 14.3832 3.50303C14.9542 3.50959 15.52 3.61303 16.0564 3.80892C16.4444 3.95947 16.7968 4.18921 17.0911 4.4835C17.3853 4.77778 17.6151 5.13016 17.7656 5.51816C17.9778 6.06376 18.0935 6.64212 18.1074 7.22737C18.1524 8.12696 18.1614 8.4598 18.1613 10.8257C18.1613 13.1916 18.1523 13.5245 18.1073 14.424Z"
+                  fill="#C0CAC9" />
+                <path
+                  d="M10.785 6.20174C9.87048 6.20172 8.9765 6.47289 8.2161 6.98096C7.4557 7.48902 6.86304 8.21116 6.51306 9.05605C6.16307 9.90094 6.07149 10.8306 6.24988 11.7276C6.42828 12.6245 6.86865 13.4484 7.51529 14.0951C8.16194 14.7418 8.98583 15.1822 9.88276 15.3606C10.7797 15.539 11.7094 15.4475 12.5543 15.0975C13.3992 14.7476 14.1214 14.1549 14.6295 13.3945C15.1376 12.6342 15.4088 11.7402 15.4088 10.8257C15.4088 9.59936 14.9217 8.42325 14.0545 7.55609C13.1874 6.68894 12.0113 6.20176 10.785 6.20174ZM10.7849 13.8212C10.1924 13.8212 9.61322 13.6455 9.1206 13.3163C8.62798 12.9872 8.24403 12.5193 8.01731 11.9719C7.79059 11.4245 7.73127 10.8222 7.84687 10.2411C7.96247 9.66004 8.24778 9.12628 8.66673 8.70734C9.08568 8.28841 9.61946 8.00311 10.2005 7.88754C10.7816 7.77196 11.384 7.83129 11.9313 8.05803C12.4787 8.28477 12.9465 8.66874 13.2757 9.16137C13.6049 9.654 13.7805 10.2332 13.7805 10.8257C13.7805 11.219 13.703 11.6086 13.5525 11.972C13.4019 12.3355 13.1813 12.6657 12.9031 12.9439C12.6249 13.222 12.2947 13.4427 11.9312 13.5932C11.5678 13.7437 11.1782 13.8212 10.7849 13.8212Z"
+                  fill="#C0CAC9" />
+                <path
+                  d="M15.5895 4.9424C15.3759 4.9424 15.1672 5.00572 14.9896 5.12435C14.8121 5.24299 14.6737 5.41161 14.5919 5.60889C14.5102 5.80618 14.4888 6.02327 14.5305 6.23271C14.5721 6.44215 14.675 6.63453 14.826 6.78553C14.977 6.93653 15.1693 7.03937 15.3788 7.08103C15.5882 7.1227 15.8053 7.10132 16.0026 7.0196C16.1999 6.93789 16.3685 6.7995 16.4872 6.62195C16.6058 6.4444 16.6691 6.23565 16.6691 6.02211C16.6691 5.73576 16.5554 5.46113 16.3529 5.25865C16.1504 5.05616 15.8758 4.94241 15.5895 4.9424Z"
+                  fill="#C0CAC9" />
+              </svg>
+            </a>
+
+            <a target="_blank" href="https://x.com/xplere">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <g clip-path="url(#clip0_2105_3461)">
+                  <path d="M6.58301 5.71924L14.3495 15.8736H15.5395L7.86138 5.71924H6.58301Z" fill="#C0CAC9" />
+                  <path
+                    d="M11.0801 0.330078C5.28145 0.330078 0.580078 5.03145 0.580078 10.8301C0.580078 16.6287 5.28145 21.3301 11.0801 21.3301C16.8787 21.3301 21.5801 16.6287 21.5801 10.8301C21.5801 5.03145 16.8787 0.330078 11.0801 0.330078ZM13.7602 17.1581L10.374 12.735L6.5047 17.1581H4.35395L9.37033 11.4233L4.08008 4.50208H8.50933L11.5666 8.54545L15.1042 4.50208H17.2523L12.5615 9.86233L18.0801 17.1572L13.7602 17.1581Z"
+                    fill="#C0CAC9" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2105_3461">
+                    <rect width="21" height="21" fill="white" transform="translate(0.580078 0.330078)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
 </html>

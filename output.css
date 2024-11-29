@@ -51,6 +51,10 @@ html {
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   /* 1 */
@@ -170,6 +174,10 @@ table {
   /* 2 */
   border-collapse: collapse;
   /* 3 */
+}
+
+.hover-text:hover {
+  color: rgb(99, 231, 255);
 }
 
 /*
