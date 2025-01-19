@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xplere - Products</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+
+    <!-- Social media share -->
+    <link href="./styles/output.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+
+  <body class="overflow-x-hidden bg-background font-opti">
+    <nav class="mt-[51px] hidden w-full px-16 text-nav lg:block">
+      <ul
+        class="grid grid-cols-[1fr_auto_1fr] items-center text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit"
+      >
+        <!-- Left Links -->
+        <div class="flex justify-evenly">
+          <li
+            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+          >
+            <a href="/products.html">products</a>
+            <div
+              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+            ></div>
+          </li>
+          <li
+            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+          >
+            <a href="/services.html">services</a>
+            <div
+              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+            ></div>
+          </li>
+        </div>
+
+        <!-- Center Logo -->
+        <li class="z-10 cursor-pointer">
+          <a href="/">
+            <img src="../images/logo.png" alt="logo" class="text-primary" />
+          </a>
+        </li>
+
+        <!-- Right Links -->
+        <div class="flex justify-evenly">
+          <li
+            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+          >
+            <a href="/about.html">about</a>
+            <div
+              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+            ></div>
+          </li>
+          <li
+            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+          >
+            <a href="/contact.html">contact</a>
+            <div
+              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+            ></div>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Mobile nav -->
+    <nav
+      class="mt-[51px] flex w-full items-center justify-between px-5 text-nav lg:hidden"
+    >
+      <a href="/">
+        <img src="../images/logo.png" alt="logo" class="h-5 lg:h-7" />
+      </a>
+
+      <button
+        id="open-nav"
+        onclick="document.getElementById('mobile-nav').style.transform = 'translateX(0)';"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+      </button>
+
+      <ul
+        class="fixed top-0 left-0 z-50 flex h-screen w-screen translate-x-full flex-col items-center justify-center gap-5 bg-white text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit transition-transform duration-500"
+        id="mobile-nav"
+      >
+        <button
+          class="absolute top-8 right-8"
+          id="close-nav"
+          onclick="document.getElementById('mobile-nav').style.transform = 'translateX(100%)';"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="/products.html">products</a>
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="/services.html">services</a>
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="/about.html">about</a>
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="/contact.html">contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="flex flex-col items-stretch gap-8 lg:gap-20">
+      <div
+        class="relative flex min-h-[calc(100vh-150px)] flex-col items-center justify-center gap-10 px-5"
+      >
+        <div class="overflow-hidden">
+          <div
+            class="translate-y-full animate-riseText text-center text-[27px] uppercase leading-[35px] text-white lg:text-[60px] lg:leading-[65px]"
+          >
+            <p>
+              <span class="text-primaryDark">products</span>
+              4 digital <br />
+              transformation & <br />
+              performance
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-5 text-lg lg:flex-row">
+          <p class="uppercase text-white">01.our products</p>
+          <div class="h-px w-12 bg-white"></div>
+          <p class="text-center font-ubuntu text-white/80 lg:text-left">
+            We leverage the power of digital, turning growth into <br />
+            revenue. Using our holistic solutions for <br />
+            commercialization
+          </p>
+        </div>
+
+        <svg
+          width="546"
+          height="499"
+          viewBox="0 0 546 499"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute hidden animate-moveBall lg:inline-block"
+        >
+          <g filter="url(#filter0_f_4160_457)">
+            <path
+              d="M127.607 201.455C126.667 104.135 187.553 146.113 267.685 142.653C347.818 139.194 416.853 91.6065 417.793 188.927C418.732 286.247 354.534 367.946 274.401 371.405C194.268 374.865 128.546 298.776 127.607 201.455Z"
+              fill="url(#paint0_linear_4160_457)"
+              fill-opacity="0.8"
+            />
+          </g>
+          <g filter="url(#filter1_f_4160_457)">
+            <path
+              d="M176.364 230.855C175.473 180.108 209.579 215.609 259.302 208.861C309.025 202.113 355.535 155.671 356.426 206.419C357.317 257.167 317.731 303.776 268.008 310.524C218.285 317.272 177.255 281.603 176.364 230.855Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_4160_457"
+              x="0.2957"
+              y="0.696091"
+              width="544.807"
+              height="498.122"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="63.65"
+                result="effect1_foregroundBlur_4160_457"
+              />
+            </filter>
+            <filter
+              id="filter1_f_4160_457"
+              x="14.1477"
+              y="20.778"
+              width="504.494"
+              height="452.766"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="81.1"
+                result="effect1_foregroundBlur_4160_457"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear_4160_457"
+              x1="178.197"
+              y1="333.171"
+              x2="385.342"
+              y2="294.012"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#029AB5" />
+              <stop offset="1" stop-color="#029AB5" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div
+        class="container grid items-center justify-between gap-5 font-ubuntu text-white lg:grid-cols-2"
+      >
+        <div class="flex flex-col gap-5">
+          <div class="flex items-center gap-2">
+            <p class="text-lg text-white/80">Xplere stands behind</p>
+            <div class="h-px w-12 bg-white"></div>
+          </div>
+
+          <p
+            class="font-opti text-2xl capitalize leading-normal lg:text-[43px]"
+          >
+            digital
+            <span class="text-primaryDark">commercialization</span>
+            products
+          </p>
+
+          <a
+            href="/services.html"
+            class="mt-3 self-start rounded-md border border-lightBlue bg-lightBlue px-5 py-3 text-center text-base uppercase transition-colors duration-300 hover:border-white hover:bg-white/20 lg:mt-6"
+          >
+            request a service
+          </a>
+        </div>
+        <p class="text-white/80 lg:text-lg">
+          We help transform organizations into agile, digital-driven entities,
+          leveraging our expertise to optimize key areas with solutions from fan
+          engagement to CRM systems. We leverage the power of digital, turning
+          growth into revenue. Using our holistic solutions for
+          commercialization, Xplere helps your organization uncover new revenue
+          sources and optimize existing ones for a better top and bottom line.
+        </p>
+      </div>
+
+      <div
+        class="container grid items-stretch gap-8 font-ubuntu text-white/80 lg:grid-cols-2"
+      >
+        <div
+          class="flex gap-4 rounded-[20px] bg-[#050721] p-7 [clip-path:polygon(90%_0,100%_30%,100%_100%,0_100%,0_0)] lg:gap-8"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="min-w-[30px]"
+          >
+            <g clip-path="url(#clip0_4189_2724)">
+              <path
+                d="M20 0H10C8.34301 0.00198482 6.75445 0.661102 5.58277 1.83277C4.4111 3.00445 3.75198 4.59301 3.75 6.25V28.75C3.75018 28.9774 3.81236 29.2004 3.92985 29.395C4.04735 29.5897 4.2157 29.7486 4.4168 29.8546C4.61789 29.9607 4.84411 30.0099 5.0711 29.997C5.29809 29.9841 5.51725 29.9095 5.705 29.7813L8.3375 27.9825L10.97 29.7813C11.178 29.9237 11.4242 29.9999 11.6762 29.9999C11.9283 29.9999 12.1745 29.9237 12.3825 29.7813L15.0075 27.9825L17.6325 29.7813C17.8406 29.9239 18.087 30.0003 18.3394 30.0003C18.5917 30.0003 18.8381 29.9239 19.0463 29.7813L21.6712 27.9837L24.2963 29.78C24.4839 29.9078 24.7028 29.9821 24.9295 29.9949C25.1562 30.0077 25.3821 29.9586 25.5829 29.8527C25.7838 29.7468 25.952 29.5882 26.0695 29.3939C26.1871 29.1997 26.2494 28.9771 26.25 28.75V6.25C26.248 4.59301 25.5889 3.00445 24.4172 1.83277C23.2456 0.661102 21.657 0.00198482 20 0ZM23.75 26.375L22.375 25.435C22.1668 25.292 21.9201 25.2155 21.6675 25.2155C21.4149 25.2155 21.1682 25.292 20.96 25.435L18.335 27.2338L15.71 25.435C15.5019 25.2923 15.2555 25.2159 15.0031 25.2159C14.7508 25.2159 14.5044 25.2923 14.2963 25.435L11.6712 27.2338L9.04625 25.435C8.83839 25.2928 8.59244 25.2168 8.34063 25.2168C8.08881 25.2168 7.84286 25.2928 7.635 25.435L6.25 26.375V6.25C6.25 5.25544 6.64509 4.30161 7.34835 3.59835C8.05161 2.89509 9.00544 2.5 10 2.5H20C20.9946 2.5 21.9484 2.89509 22.6517 3.59835C23.3549 4.30161 23.75 5.25544 23.75 6.25V26.375Z"
+                fill="white"
+              />
+              <path
+                d="M20 10H10C9.30964 10 8.75 10.5596 8.75 11.25C8.75 11.9404 9.30964 12.5 10 12.5H20C20.6904 12.5 21.25 11.9404 21.25 11.25C21.25 10.5596 20.6904 10 20 10Z"
+                fill="white"
+              />
+              <path
+                d="M17.5 15H10C9.30964 15 8.75 15.5596 8.75 16.25C8.75 16.9404 9.30964 17.5 10 17.5H17.5C18.1904 17.5 18.75 16.9404 18.75 16.25C18.75 15.5596 18.1904 15 17.5 15Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4189_2724">
+                <rect width="30" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <div>
+            <h4 class="font-opti text-lg text-white">
+              Facial-Recognition Ticketing
+            </h4>
+            <p class="mt-2">
+              Cutting-edge ticketing systems that reduce wait-times for fans
+              while lowering operational cost and improving security.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex gap-4 rounded-[20px] bg-[#050721] p-7 [clip-path:polygon(90%_0,100%_30%,100%_100%,0_100%,0_0)] lg:gap-8"
+        >
+          <svg
+            width="37"
+            height="37"
+            viewBox="0 0 37 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="min-w-[30px]"
+          >
+            <path
+              d="M33.9166 23.4087V12.3333C33.9141 10.2897 33.1012 8.33049 31.6562 6.88542C30.2111 5.44036 28.2519 4.62745 26.2083 4.625H10.7916C8.74796 4.62745 6.78873 5.44036 5.34367 6.88542C3.89861 8.33049 3.0857 10.2897 3.08325 12.3333V23.4087C2.05545 23.7707 1.18893 24.4848 0.637179 25.4244C0.0854259 26.3641 -0.115959 27.4688 0.0686921 28.5427C0.253344 29.6166 0.812116 30.5906 1.64604 31.292C2.47996 31.9934 3.53522 32.3771 4.62491 32.375H32.3749C33.4646 32.3771 34.5199 31.9934 35.3538 31.292C36.1877 30.5906 36.7465 29.6166 36.9311 28.5427C37.1158 27.4688 36.9144 26.3641 36.3627 25.4244C35.8109 24.4848 34.9444 23.7707 33.9166 23.4087ZM10.7916 7.70833H26.2083C27.4349 7.70833 28.6113 8.19561 29.4786 9.06296C30.346 9.93032 30.8333 11.1067 30.8333 12.3333V23.125H24.4338C23.9854 23.1247 23.5423 23.2222 23.1355 23.4107C22.7286 23.5992 22.3678 23.8742 22.0781 24.2165L21.6973 24.6667H15.301L14.9217 24.2165C14.632 23.8742 14.2712 23.5992 13.8644 23.4107C13.4575 23.2222 13.0144 23.1247 12.566 23.125H6.16658V12.3333C6.16658 11.1067 6.65386 9.93032 7.52121 9.06296C8.38857 8.19561 9.56495 7.70833 10.7916 7.70833ZM32.3749 29.2917H4.62491C4.21604 29.2917 3.82391 29.1292 3.53479 28.8401C3.24567 28.551 3.08325 28.1589 3.08325 27.75C3.08325 27.3411 3.24567 26.949 3.53479 26.6599C3.82391 26.3708 4.21604 26.2083 4.62491 26.2083H12.5676L12.9468 26.6585C13.2363 27.0006 13.5969 27.2754 14.0035 27.464C14.41 27.6525 14.8528 27.7501 15.301 27.75H21.6973C22.1457 27.7503 22.5888 27.6528 22.9956 27.4643C23.4025 27.2758 23.7633 27.0008 24.053 26.6585L24.4338 26.2083H32.3749C32.7838 26.2083 33.1759 26.3708 33.465 26.6599C33.7542 26.949 33.9166 27.3411 33.9166 27.75C33.9166 28.1589 33.7542 28.551 33.465 28.8401C33.1759 29.1292 32.7838 29.2917 32.3749 29.2917Z"
+              fill="white"
+            />
+          </svg>
+
+          <div>
+            <h4 class="font-opti text-lg text-white">
+              Digital Fan Engagement Platform
+            </h4>
+            <p class="mt-2">
+              Fans are the lifeblood of sport and keeping them engaged is key to
+              success. Our platform enables you to maximize interaction as well
+              as monetization - a key 
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex gap-4 rounded-[20px] bg-[#050721] p-7 [clip-path:polygon(90%_0,100%_30%,100%_100%,0_100%,0_0)] lg:gap-8"
+        >
+          <svg
+            width="37"
+            height="37"
+            viewBox="0 0 37 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="min-w-[30px]"
+          >
+            <g clip-path="url(#clip0_4189_2448)">
+              <path
+                d="M6.16648 18.5C7.11225 18.4998 8.04536 18.7175 8.89342 19.1362C9.74148 19.5549 10.4817 20.1633 11.0566 20.9143L11.1646 20.868C10.7406 19.5545 10.677 18.1513 10.9805 16.8049C11.2841 15.4585 11.9435 14.2182 12.8901 13.2137C13.8366 12.2092 15.0355 11.4773 16.3616 11.0943C17.6876 10.7114 19.0921 10.6915 20.4284 11.0368L20.5687 10.7716C19.4489 9.77528 18.7308 8.40476 18.5491 6.91691C18.3674 5.42906 18.7345 3.92601 19.5817 2.68944C20.4288 1.45288 21.6978 0.567687 23.1509 0.199756C24.6039 -0.168175 26.1413 0.00641215 27.4748 0.690799C28.8083 1.37519 29.8465 2.52239 30.3948 3.91742C30.9431 5.31245 30.9638 6.85955 30.4531 8.26877C29.9424 9.67799 28.9353 10.8526 27.6206 11.5725C26.3059 12.2923 24.7737 12.508 23.3113 12.1792L23.1988 12.3904C24.7404 13.5733 25.7774 15.2957 26.1017 17.2116C26.426 19.1275 26.0135 21.0952 24.9471 22.7195L27.8531 25.4375C29.1667 24.7118 30.6998 24.4899 32.1652 24.8136C33.6305 25.1372 34.9276 25.9841 35.8133 27.1955C36.6991 28.407 37.1126 29.8999 36.9765 31.3944C36.8404 32.8889 36.164 34.2825 35.0741 35.314C33.9841 36.3456 32.5554 36.9442 31.0556 36.9979C29.5559 37.0515 28.0881 36.5564 26.9272 35.6053C25.7663 34.6543 24.9921 33.3125 24.7496 31.8316C24.5072 30.3506 24.813 28.832 25.61 27.5604L22.7764 24.9118C21.2201 25.952 19.3381 26.3895 17.4826 26.1423C15.6271 25.8951 13.9252 24.9803 12.6954 23.569L12.2653 23.7525C12.4519 24.9973 12.2531 26.2694 11.6956 27.398C11.1381 28.5265 10.2486 29.4574 9.14654 30.0656C8.04451 30.6739 6.78273 30.9303 5.5307 30.8004C4.27868 30.6706 3.09637 30.1607 2.14259 29.3393C1.18881 28.5179 0.509239 27.4243 0.195164 26.2054C-0.118912 24.9864 -0.0524508 23.7006 0.38562 22.5205C0.823691 21.3405 1.61239 20.3227 2.64577 19.604C3.67916 18.8853 4.90774 18.5001 6.16648 18.5ZM27.7498 6.16667C27.7498 5.55684 27.569 4.96071 27.2302 4.45366C26.8914 3.94661 26.4098 3.55141 25.8464 3.31804C25.283 3.08467 24.6631 3.02361 24.0649 3.14258C23.4668 3.26155 22.9174 3.55521 22.4862 3.98642C22.055 4.41763 21.7614 4.96703 21.6424 5.56514C21.5234 6.16325 21.5845 6.7832 21.8178 7.34661C22.0512 7.91001 22.4464 8.39156 22.9535 8.73036C23.4605 9.06917 24.0566 9.25 24.6665 9.25C25.4842 9.25 26.2685 8.92515 26.8467 8.34691C27.425 7.76868 27.7498 6.98442 27.7498 6.16667ZM30.8331 33.9167C31.443 33.9167 32.0391 33.7358 32.5462 33.397C33.0532 33.0582 33.4484 32.5767 33.6818 32.0133C33.9151 31.4499 33.9762 30.8299 33.8572 30.2318C33.7383 29.6337 33.4446 29.0843 33.0134 28.6531C32.5822 28.2219 32.0328 27.9282 31.4347 27.8092C30.8366 27.6903 30.2166 27.7513 29.6532 27.9847C29.0898 28.2181 28.6082 28.6133 28.2694 29.1203C27.9306 29.6274 27.7498 30.2235 27.7498 30.8333C27.7498 31.6511 28.0747 32.4353 28.6529 33.0136C29.2311 33.5918 30.0154 33.9167 30.8331 33.9167ZM18.4998 23.125C19.5008 23.123 20.4742 22.7964 21.2737 22.194C22.0732 21.5917 22.6558 20.7462 22.9338 19.7846C23.2118 18.823 23.1703 17.7971 22.8156 16.861C22.4609 15.925 21.812 15.1293 20.9665 14.5934L20.339 14.2589C19.7085 13.9846 19.0248 13.8544 18.3377 13.8777C17.6506 13.9009 16.9772 14.0771 16.3667 14.3933C15.7563 14.7096 15.224 15.158 14.8086 15.7059C14.3932 16.2538 14.1052 16.8874 13.9656 17.5606C13.8259 18.2338 13.8381 18.9297 14.0013 19.5976C14.1645 20.2655 14.4745 20.8886 14.9088 21.4216C15.3431 21.9546 15.8908 22.384 16.512 22.6787C17.1332 22.9734 17.8123 23.1258 18.4998 23.125ZM6.16648 27.75C6.7763 27.75 7.37243 27.5692 7.87948 27.2304C8.38654 26.8916 8.78173 26.41 9.0151 25.8466C9.24847 25.2832 9.30953 24.6632 9.19056 24.0651C9.07159 23.467 8.77793 22.9176 8.34672 22.4864C7.91551 22.0552 7.36611 21.7616 6.768 21.6426C6.1699 21.5236 5.54994 21.5847 4.98653 21.818C4.42313 22.0514 3.94158 22.4466 3.60278 22.9537C3.26397 23.4607 3.08314 24.0568 3.08314 24.6667C3.08314 25.4844 3.40799 26.2687 3.98623 26.8469C4.56447 27.4252 5.34872 27.75 6.16648 27.75Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4189_2448">
+                <rect
+                  width="37"
+                  height="37"
+                  fill="white"
+                  transform="matrix(-1 0 0 1 37 0)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <div>
+            <h4 class="font-opti text-lg text-white">
+              Sponsorship Analytics Platform
+            </h4>
+            <p class="mt-2">
+              Greater insights into your sponsorship inventory coupled with
+              industry-leading evaluations that ultimately leads to higher
+              revenue.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex gap-4 rounded-[20px] bg-[#050721] p-7 [clip-path:polygon(90%_0,100%_30%,100%_100%,0_100%,0_0)] lg:gap-8"
+        >
+          <svg
+            width="37"
+            height="37"
+            viewBox="0 0 37 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="min-w-[30px]"
+          >
+            <path
+              d="M32.3749 7.71144H31.1832C30.9365 7.3507 30.7145 7.04701 30.5249 6.81578C26.7677 1.79792 20.7906 -0.691741 14.5729 0.166921C6.87058 1.22599 0.771621 7.62819 0.0701481 15.3916C-0.315277 19.6618 0.896498 23.8719 3.48501 27.2479C4.2204 28.2099 4.62433 29.4986 4.62433 30.8784V32.3752C4.62433 34.925 6.69945 37 9.24942 37H20.0413C22.5913 37 24.6664 34.925 24.6664 32.3752H25.428C29.2792 32.3752 32.5645 29.4971 33.0702 25.6771L33.1766 24.8693C33.2876 24.026 32.6956 23.2506 31.8507 23.1396C31.0059 23.0255 30.2319 23.6221 30.1209 24.4654L30.0146 25.2716C29.7108 27.5624 27.739 29.2905 25.428 29.2905H23.1247C22.2722 29.2905 21.583 29.9796 21.583 30.8321V32.3737C21.583 33.2247 20.8923 33.9153 20.0413 33.9153H9.24942C8.39841 33.9153 7.70772 33.2247 7.70772 32.3737V30.8768C7.70772 28.8234 7.07717 26.8672 5.93323 25.3718C3.81802 22.6108 2.82516 19.1639 3.14121 15.666C3.14892 15.5828 3.15817 15.4995 3.16588 15.4163H15.6105C16.2965 18.074 18.7139 20.041 21.583 20.041H32.3749C34.9249 20.041 37 17.9661 37 15.4163V12.3331C37 9.78333 34.9249 7.70835 32.3749 7.70835V7.71144ZM14.9923 3.22234C19.6667 2.57488 24.1607 4.23362 27.275 7.71144H21.583C18.7139 7.71144 16.2965 9.6785 15.6105 12.3362H3.87352C5.57093 7.5619 9.84298 3.92993 14.9907 3.22234H14.9923ZM33.9166 15.4194C33.9166 16.2703 33.2259 16.9609 32.3749 16.9609H21.583C19.8825 16.9609 18.4996 15.5781 18.4996 13.8778C18.4996 12.1774 19.8825 10.7946 21.583 10.7946H32.3749C33.2259 10.7946 33.9166 11.4852 33.9166 12.3362V15.4194Z"
+              fill="white"
+            />
+          </svg>
+
+          <div>
+            <h4 class="font-opti text-lg text-white">
+              Virtual & Augmented Reality exp
+            </h4>
+            <p class="mt-2">
+              Embracing the future of entertainment, today. We combine our
+              Augmented Reality (AR) and Virtual Reality (VR) expertise to craft
+              in-venue and broadcast solutions
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container relative mt-32 flex max-w-[1160px] flex-col gap-[50px] font-ubuntu text-white/80"
+      >
+        <div class="sticky top-0 max-w-4xl self-center text-center">
+          <h3 class="font-opti text-3xl text-white lg:text-[40px]">
+            <span class="text-primaryDark">Technology</span> products
+          </h3>
+          <p class="mt-5 text-white/80">
+            We use expertise, data and insights to determine the right path for
+            you. Our consultancy services look at your long-term objectives,
+            industry realities and a holistic understanding of the market to
+            build a future-proof plan that elevates your organization to the
+            next level.
+          </p>
+        </div>
+
+        <div
+          class="sticky top-0 mt-4 flex flex-col-reverse items-center gap-4 rounded-[20px] bg-[#050721] p-8 lg:flex-row lg:items-end lg:gap-[70px] lg:py-[50px] lg:pl-20 lg:pr-10 lg:[clip-path:polygon(13%_0,100%_0,100%_100%,0_100%,0_25%)]"
+        >
+          <div class="flex flex-1 flex-col gap-5">
+            <h4 class="font-opti text-lg text-white">
+              Digital Products for OTT and Streaming
+            </h4>
+
+            <p>
+              We help build your own content suite including publishing and
+              Over-the-Top (OTT) platforms that allow you to directly connect
+              with your audience and effectively distribute your content.
+            </p>
+
+            <p>
+              We help build your own content suite including publishing and
+              Over-the-Top (OTT) platforms that allow you to directly connect
+              with your audience and effectively distribute your content.
+            </p>
+
+            <a
+              href="/services.html"
+              class="mt-3 self-start rounded-md border border-lightBlue bg-lightBlue px-5 py-3 text-center text-base uppercase transition-colors duration-300 hover:border-white hover:bg-white/20 lg:mt-6"
+            >
+              request a service
+            </a>
+          </div>
+          <img
+            src="./images/digital-products.png"
+            alt=""
+            class="inline-block w-[330px]"
+          />
+        </div>
+
+        <div
+          class="sticky top-0 mt-4 flex flex-col-reverse items-center gap-4 rounded-[20px] bg-[#0D267F] p-8 lg:flex-row lg:items-end lg:gap-[70px] lg:py-[50px] lg:pl-20 lg:pr-10 lg:[clip-path:polygon(13%_0,100%_0,100%_100%,0_100%,0_25%)]"
+        >
+          <div class="flex flex-1 flex-col gap-5">
+            <h4 class="font-opti text-lg text-white">Real-Time Crowd</h4>
+
+            <p>
+              Lower wait-times means higher cost savings, a pivotal feature in
+              the sport and entertainment industries. And using our
+              state-of-the-art crowd management platforms,
+            </p>
+
+            <p>
+              you are able to do just that, not only reducing your own costs but
+              enhancing the experience for all the attendees.
+            </p>
+
+            <a
+              href="/services.html"
+              class="mt-3 self-start rounded-md border border-lightBlue bg-lightBlue px-5 py-3 text-center text-base uppercase transition-colors duration-300 hover:border-white hover:bg-white/20 lg:mt-6"
+            >
+              request a service
+            </a>
+          </div>
+          <img
+            src="./images/real-time.png"
+            alt=""
+            class="inline-block w-[330px]"
+          />
+        </div>
+
+        <div
+          class="sticky top-0 mt-4 flex flex-col-reverse items-center gap-4 rounded-[20px] bg-[#050721] p-8 lg:flex-row lg:items-end lg:gap-[70px] lg:py-[50px] lg:pl-20 lg:pr-10 lg:[clip-path:polygon(13%_0,100%_0,100%_100%,0_100%,0_25%)]"
+        >
+          <div class="flex flex-1 flex-col gap-5">
+            <h4 class="font-opti text-lg text-white">
+              Assistant Referee (VAR) Solutions
+            </h4>
+
+            <p>
+              Low latency and high accuracy VAR solutions help you with an added
+              edge when it comes to refereeing. Our approach to each VAR project
+              is customized and depe ndent on client requirements, with flexible
+              options available for VAR lite,
+            </p>
+
+            <p>
+              portable VAR system and fixed solutions for both stadiums and
+              central locations. 
+            </p>
+
+            <a
+              href="/services.html"
+              class="mt-3 self-start rounded-md border border-lightBlue bg-lightBlue px-5 py-3 text-center text-base uppercase transition-colors duration-300 hover:border-white hover:bg-white/20 lg:mt-6"
+            >
+              request a service
+            </a>
+          </div>
+          <img
+            src="./images/assistance.png"
+            alt=""
+            class="inline-block w-[330px]"
+          />
+        </div>
+
+        <div
+          class="sticky top-0 mt-4 flex flex-col-reverse items-center gap-4 rounded-[20px] bg-[#0D267F] p-8 lg:flex-row lg:items-end lg:gap-[70px] lg:py-[50px] lg:pl-20 lg:pr-10 lg:[clip-path:polygon(13%_0,100%_0,100%_100%,0_100%,0_25%)]"
+        >
+          <div class="flex flex-1 flex-col gap-5">
+            <h4 class="font-opti text-lg text-white">
+              Virtual Assistant Referee (VAR) Solutions
+            </h4>
+
+            <p>
+              Low latency and high accuracy VAR solutions help you with an added
+              edge when it comes to refereeing. Our approach to each VAR project
+              is customized and dependent on client requirements, with flexible
+              options available for VAR lite,
+            </p>
+
+            <p>
+              portable VAR system and fixed solutions for both stadiums and
+              central locations. 
+            </p>
+
+            <a
+              href="/services.html"
+              class="mt-3 self-start rounded-md border border-lightBlue bg-lightBlue px-5 py-3 text-center text-base uppercase transition-colors duration-300 hover:border-white hover:bg-white/20 lg:mt-6"
+            >
+              request a service
+            </a>
+          </div>
+          <img
+            src="./images/virtual.png"
+            alt=""
+            class="inline-block w-[330px]"
+          />
+        </div>
+      </div>
+
+      <div class="container mt-40 max-w-4xl text-center">
+        <h3 class="text-3xl text-white lg:text-[40px]">
+          Sports <span class="text-primaryDark">Analysis</span> Products
+        </h3>
+        <p class="mt-5 font-ubuntu text-white/80">
+          The intersection of technology and sports is where the future is.
+          Xplere does this and more, today. Our sports data ecosystem covers the
+          whole spectrum in-depth, taking you from extraction of sports data
+          through our intelligence platforms and cameras to understanding the
+          context in our world-class platforms for player performance and
+          medical data.
+        </p>
+      </div>
+
+      <div
+        class="container grid gap-5 text-lg text-white md:grid-cols-2 lg:grid-cols-3 lg:gap-[30px]"
+      >
+        <div
+          class="flex flex-col gap-6 rounded-[20px] border border-[#0B0E37] bg-[#050721] pl-7 pr-14 pt-16 pb-7 [clip-path:polygon(0_0,100%_0,100%_calc(100%-70px),calc(100%-70px)_100%,0_100%)]"
+        >
+          <svg
+            width="44"
+            height="45"
+            viewBox="0 0 44 45"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4208_474)">
+              <path
+                d="M44 20.1808C44 17.3062 42.6213 14.6075 40.3333 12.886V12.8475C40.3333 9.36966 37.9005 6.45099 34.6463 5.70116C33.8965 2.44883 30.976 0.0141602 27.5 0.0141602C25.311 0.0141602 23.3438 0.978494 22 2.50199C20.6562 0.97666 18.689 0.0141602 16.5 0.0141602C13.024 0.0141602 10.1035 2.44699 9.35367 5.70116C6.10133 6.45099 3.66667 9.36966 3.66667 12.8475V12.886C1.37867 14.6075 0 17.3043 0 20.1808C0 21.8052 0.430833 23.3653 1.25767 24.7642C0.432667 26.163 0 27.7232 0 29.3475C0 32.4385 1.573 35.2948 4.15617 36.9852C5.47433 41.1615 9.3115 44.0142 13.75 44.0142C17.1563 44.0142 20.174 42.3165 22 39.7205C23.826 42.3147 26.8437 44.0142 30.25 44.0142C34.6903 44.0142 38.5275 41.1615 39.8438 36.9852C42.4252 35.2948 44 32.4385 44 29.3475C44 27.7232 43.5692 26.163 42.7423 24.7642C43.5673 23.3653 44 21.8052 44 20.1808ZM13.75 40.3475C10.7543 40.3475 8.1895 38.3033 7.51483 35.3755C7.39567 34.8603 7.06017 34.4222 6.5945 34.1728C4.78867 33.2048 3.66667 31.3568 3.66667 29.3493C3.66667 28.1118 4.09567 26.9257 4.9115 25.9173C5.45417 25.2445 5.45417 24.2857 4.9115 23.6128C4.0975 22.6063 3.66667 21.4202 3.66667 20.1808C3.66667 18.2192 4.75017 16.3913 6.4955 15.4087C7.17383 15.0273 7.53683 14.2592 7.40117 13.4928C7.3645 13.282 7.33333 13.0693 7.33333 12.8475C7.33333 10.8253 8.97783 9.18083 11 9.18083C12.0138 9.18083 12.8333 8.35949 12.8333 7.34749C12.8333 5.32533 14.4778 3.68083 16.5 3.68083C18.5222 3.68083 20.1667 5.32533 20.1667 7.34749V14.6808H16.0087C15.3743 13.5845 14.19 12.8475 12.8333 12.8475C10.8075 12.8475 9.16667 14.4883 9.16667 16.5142C9.16667 18.54 10.8075 20.1808 12.8333 20.1808C14.19 20.1808 15.3743 19.4438 16.0087 18.3475H20.1667V27.5142H16.0087C15.3743 26.4178 14.19 25.6808 12.8333 25.6808C10.8075 25.6808 9.16667 27.3217 9.16667 29.3475C9.16667 31.3733 10.8075 33.0142 12.8333 33.0142C14.19 33.0142 15.3743 32.2772 16.0087 31.1808H20.1667V33.9308C20.1667 37.4692 17.2883 40.3475 13.75 40.3475ZM39.0885 25.9155C39.9025 26.922 40.3333 28.1082 40.3333 29.3475C40.3333 31.3568 39.2132 33.2048 37.4055 34.171C36.9398 34.4203 36.6043 34.8585 36.4852 35.3737C35.8105 38.3015 33.2438 40.3457 30.25 40.3457C26.7117 40.3457 23.8333 37.4673 23.8333 33.929V25.679H27.5C30.5323 25.679 33 23.2113 33 20.179V19.6877C34.0963 19.0533 34.8333 17.869 34.8333 16.5123C34.8333 14.4865 33.1925 12.8457 31.1667 12.8457C29.1408 12.8457 27.5 14.4865 27.5 16.5123C27.5 17.869 28.237 19.0533 29.3333 19.6877V20.179C29.3333 21.1892 28.512 22.0123 27.5 22.0123H23.8333V7.34749C23.8333 5.32533 25.4778 3.68083 27.5 3.68083C29.5222 3.68083 31.1667 5.32533 31.1667 7.34749C31.1667 8.35949 31.9862 9.18083 33 9.18083C35.0222 9.18083 36.6667 10.8253 36.6667 12.8475C36.6667 13.0693 36.6337 13.282 36.5988 13.4928C36.4632 14.2592 36.8262 15.0273 37.5045 15.4087C39.2498 16.3895 40.3333 18.2192 40.3333 20.1808C40.3333 21.4183 39.9043 22.6045 39.0885 23.6128C38.5458 24.2857 38.5458 25.2427 39.0885 25.9155Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4208_474">
+                <rect
+                  width="44"
+                  height="44"
+                  fill="white"
+                  transform="translate(0 0.0141602)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p>Sports Intelligence Platform</p>
+
+          <p class="font-ubuntu text-base text-white/80">
+            Cutting-edge, AI-based analytics help you understand medical
+            injuries in a more holistic manner unlike ever before, leading to
+            quicker recovery times and better diagnosis
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col gap-6 rounded-[20px] border border-[#0B0E37] bg-[#050721] pl-7 pr-14 pt-16 pb-7 [clip-path:polygon(70px_0,100%_0,100%_100%,0_100%,0_70px)]"
+        >
+          <svg
+            width="41"
+            height="40"
+            viewBox="0 0 41 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4208_469)">
+              <path
+                d="M7.59327 19.8946C8.61084 19.8945 9.61478 20.1287 10.5272 20.5791C11.4397 21.0296 12.2361 21.6842 12.8547 22.4922L12.9708 22.4424C12.5146 21.0292 12.4462 19.5195 12.7728 18.0708C13.0994 16.6222 13.8089 15.2878 14.8273 14.2071C15.8457 13.1263 17.1356 12.3388 18.5623 11.9268C19.989 11.5148 21.5001 11.4934 22.9379 11.8649L23.0888 11.5796C21.884 10.5076 21.1114 9.03305 20.9159 7.43225C20.7204 5.83145 21.1154 4.2143 22.0268 2.88387C22.9383 1.55344 24.3036 0.601049 25.867 0.205188C27.4303 -0.190674 29.0844 -0.00283298 30.5191 0.733507C31.9539 1.46985 33.0709 2.70414 33.6608 4.20507C34.2507 5.706 34.273 7.37054 33.7235 8.88673C33.1741 10.4029 32.0905 11.6667 30.676 12.4412C29.2615 13.2157 27.613 13.4478 26.0396 13.094L25.9186 13.3212C27.5772 14.594 28.6929 16.4471 29.0418 18.5084C29.3907 20.5698 28.9469 22.6868 27.7995 24.4345L30.9262 27.3588C32.3394 26.578 33.9889 26.3393 35.5656 26.6875C37.1422 27.0357 38.5377 27.9469 39.4907 29.2503C40.4436 30.5537 40.8886 32.1599 40.7422 33.7678C40.5958 35.3758 39.868 36.8752 38.6953 37.9851C37.5226 39.0949 35.9854 39.739 34.3718 39.7967C32.7582 39.8544 31.179 39.3217 29.93 38.2985C28.681 37.2752 27.848 35.8316 27.5871 34.2382C27.3262 32.6448 27.6553 31.011 28.5128 29.6428L25.4641 26.7932C23.7896 27.9123 21.7648 28.383 19.7684 28.1171C17.772 27.8512 15.9409 26.8669 14.6178 25.3484L14.1551 25.5458C14.3558 26.8852 14.142 28.2538 13.5421 29.4681C12.9423 30.6823 11.9853 31.6838 10.7996 32.3382C9.61386 32.9926 8.2563 33.2685 6.90923 33.1288C5.56216 32.9891 4.2901 32.4406 3.26392 31.5568C2.23774 30.673 1.50658 29.4964 1.16866 28.1849C0.830742 26.8735 0.902248 25.49 1.37357 24.2204C1.8449 22.9507 2.69347 21.8557 3.8053 21.0825C4.91713 20.3092 6.23898 19.8947 7.59327 19.8946ZM30.815 6.62506C30.815 5.96894 30.6205 5.32756 30.256 4.78201C29.8914 4.23647 29.3733 3.81127 28.7672 3.56018C28.161 3.3091 27.494 3.2434 26.8504 3.37141C26.2069 3.49941 25.6158 3.81536 25.1519 4.27931C24.6879 4.74325 24.372 5.33436 24.244 5.97787C24.116 6.62138 24.1817 7.2884 24.4328 7.89457C24.6839 8.50075 25.1091 9.01885 25.6546 9.38337C26.2001 9.74789 26.8415 9.94246 27.4976 9.94246C28.3775 9.94246 29.2213 9.59295 29.8434 8.97081C30.4655 8.34868 30.815 7.50489 30.815 6.62506ZM34.1324 36.4816C34.7886 36.4816 35.4299 36.2871 35.9755 35.9225C36.521 35.558 36.9462 35.0399 37.1973 34.4337C37.4484 33.8276 37.5141 33.1605 37.3861 32.517C37.2581 31.8735 36.9421 31.2824 36.4782 30.8185C36.0142 30.3545 35.4231 30.0386 34.7796 29.9106C34.1361 29.7826 33.4691 29.8483 32.8629 30.0993C32.2567 30.3504 31.7386 30.7756 31.3741 31.3212C31.0096 31.8667 30.815 32.5081 30.815 33.1642C30.815 34.0441 31.1645 34.8878 31.7867 35.51C32.4088 36.1321 33.2526 36.4816 34.1324 36.4816ZM20.8628 24.8707C21.9399 24.8686 22.9871 24.5172 23.8473 23.8691C24.7075 23.221 25.3343 22.3114 25.6334 21.2767C25.9326 20.2421 25.8879 19.1383 25.5063 18.1312C25.1246 17.1241 24.4265 16.268 23.5168 15.6915L22.8417 15.3316C22.1633 15.0365 21.4277 14.8964 20.6884 14.9214C19.9491 14.9464 19.2247 15.136 18.5679 15.4762C17.911 15.8165 17.3383 16.2989 16.8914 16.8884C16.4445 17.4779 16.1347 18.1596 15.9844 18.8839C15.8342 19.6082 15.8473 20.3569 16.0228 21.0755C16.1984 21.7941 16.5319 22.4646 16.9992 23.038C17.4665 23.6115 18.0558 24.0735 18.7241 24.3906C19.3925 24.7076 20.1231 24.8716 20.8628 24.8707ZM7.59327 29.8468C8.24939 29.8468 8.89077 29.6523 9.43631 29.2877C9.98186 28.9232 10.4071 28.4051 10.6581 27.7989C10.9092 27.1928 10.9749 26.5258 10.8469 25.8822C10.7189 25.2387 10.403 24.6476 9.93902 24.1837C9.47507 23.7197 8.88397 23.4038 8.24046 23.2758C7.59695 23.1478 6.92993 23.2135 6.32375 23.4646C5.71758 23.7156 5.19947 24.1408 4.83495 24.6864C4.47043 25.2319 4.27587 25.8733 4.27587 26.5294C4.27587 27.4093 4.62538 28.2531 5.24751 28.8752C5.86964 29.4973 6.71344 29.8468 7.59327 29.8468Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4208_469">
+                <rect
+                  width="39.8087"
+                  height="39.8087"
+                  fill="white"
+                  transform="matrix(-1 1.16415e-10 -1.16415e-10 1 40.7676 -0.00952148)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p>Analysis & Scouting</p>
+
+          <p class="font-ubuntu text-base text-white/80">
+            Whether it is a training session or a Championship game, our mobile
+            camera offers a simple-to-use solution that captures the entire
+            event with ease.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col gap-6 rounded-[20px] border border-[#0B0E37] bg-[#050721] pl-7 pr-14 pt-16 pb-7 [clip-path:polygon(0_0,calc(100%-70px)_0,100%_70px,100%_100%,0_100%)]"
+        >
+          <svg
+            width="32"
+            height="33"
+            viewBox="0 0 32 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4208_439)">
+              <path
+                d="M16 0.0141602C7.164 0.0141602 0 7.17816 0 16.0142C0 24.8502 7.164 32.0142 16 32.0142C24.836 32.0142 32 24.8502 32 16.0142C32 7.17816 24.836 0.0141602 16 0.0141602ZM17.8787 2.81416C21.456 3.32083 24.5813 5.25149 26.66 8.01416H14.7107L17.8787 2.81416ZM18.9227 10.6795L22.1667 16.0195L18.9187 21.3475H12.992L9.91467 15.8795L13.0853 10.6782L18.9227 10.6795ZM14.8053 2.73683L8.416 13.2182L5.42667 7.90616C7.63733 5.03016 10.9933 3.07683 14.8053 2.73683ZM3.78133 21.3475C3.06533 19.7128 2.66667 17.9102 2.66667 16.0142C2.66667 14.0622 3.088 12.2062 3.84667 10.5328L9.93333 21.3475H3.78133ZM14.1213 29.2142C10.544 28.7075 7.41867 26.7755 5.34 24.0142H17.292L14.1213 29.2142ZM17.196 29.2928L23.724 18.5848L26.8573 23.7448C24.656 26.8288 21.1747 28.9368 17.196 29.2928ZM22.0413 10.6795H28.2187C28.9347 12.3142 29.3333 14.1182 29.3333 16.0142C29.3333 17.7968 28.9813 19.4982 28.3427 21.0542L22.0413 10.6795Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4208_439">
+                <rect
+                  width="32"
+                  height="32"
+                  fill="white"
+                  transform="translate(0 0.0141602)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p>Sports Camera</p>
+
+          <p class="font-ubuntu text-base text-white/80">
+            Whether it is a training session or a Championship game, our mobile
+            camera offers a simple-to-use solution that captures the entire
+            event with ease.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col gap-6 rounded-[20px] border border-[#0B0E37] bg-[#050721] pl-7 pr-14 pt-16 pb-7 [clip-path:polygon(70px_0,100%_0,100%_100%,0_100%,0_70px)]"
+        >
+          <svg
+            width="46"
+            height="47"
+            viewBox="0 0 46 47"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4209_479)">
+              <path
+                d="M46.0708 42.508C46.0708 44.5976 44.3784 46.29 42.2888 46.29C40.8932 46.29 39.6868 45.5242 39.0306 44.399L36.6158 44.399C33.488 44.399 30.9427 41.8537 30.9427 38.726L30.9427 29.2709C30.9427 28.2252 31.7899 27.3799 32.8337 27.3799C33.8776 27.3799 34.7247 28.2252 34.7247 29.2709L34.7247 38.726C34.7247 39.7698 35.5738 40.617 36.6158 40.617L39.0306 40.617C39.6849 39.4918 40.8913 38.726 42.2888 38.726C44.3784 38.726 46.0708 40.4184 46.0708 42.508ZM25.2697 39.2498L25.2697 29.2709C25.2697 28.2252 24.4225 27.3799 23.3787 27.3799C22.3348 27.3799 21.4877 28.2252 21.4877 29.2709L21.4877 39.2498C20.3625 39.9041 19.5966 41.1105 19.5966 42.508C19.5966 44.5976 21.2891 46.29 23.3787 46.29C25.4682 46.29 27.1607 44.5976 27.1607 42.508C27.1607 41.1124 26.3948 39.906 25.2697 39.2498ZM13.9236 27.3799C12.8798 27.3799 12.0326 28.2252 12.0326 29.2709L12.0326 38.726C12.0326 39.7698 11.1835 40.617 10.1416 40.617L7.72676 40.617C7.07247 39.4918 5.86601 38.726 4.46855 38.726C2.37898 38.726 0.686523 40.4184 0.686523 42.508C0.686523 44.5976 2.37898 46.29 4.46855 46.29C5.86411 46.29 7.07058 45.5242 7.72676 44.399L10.1416 44.399C13.2693 44.399 15.8146 41.8537 15.8146 38.726L15.8146 29.2709C15.8146 28.2252 14.9674 27.3799 13.9236 27.3799ZM40.3978 22.5654C40.3978 24.4167 39.8551 26.2037 38.8282 27.7316C38.2458 28.5996 38.4765 29.7739 39.3426 30.3564C40.2106 30.9426 41.3868 30.7062 41.9673 29.842C43.4139 27.6862 44.1779 25.1712 44.1779 22.5654C44.1779 16.3553 39.7643 10.9678 33.6809 9.75567C33.1647 9.65166 32.743 9.33019 32.5274 8.87068C29.8289 3.17684 23.581 -0.0019536 17.3255 1.14589C11.6298 2.18784 7.16324 6.73572 6.21206 12.4617C5.93219 14.1523 5.9511 15.8428 6.26879 17.4899C6.35956 17.9608 6.15344 18.4921 5.72985 18.8779C3.72538 20.699 2.57754 23.2953 2.57754 26.0032C2.57754 28.3765 3.4474 30.657 5.03018 32.4232C5.4046 32.8411 5.92085 33.0529 6.44087 33.0529C6.88904 33.0529 7.341 32.8941 7.70218 32.5707C8.48128 31.8748 8.54557 30.6778 7.84968 29.9006C6.88904 28.8303 6.36145 27.4442 6.36145 26.0032C6.36145 24.36 7.05923 22.7829 8.27705 21.6785C9.67072 20.4096 10.325 18.53 9.98652 16.7694C9.75204 15.5667 9.74069 14.3262 9.94681 13.082C10.6276 8.98792 13.9425 5.60868 18.0101 4.86362C22.6431 4.02212 27.1134 6.27432 29.1141 10.4913C29.8497 12.04 31.2453 13.1255 32.9453 13.4621C37.2644 14.3244 40.3997 18.1518 40.3997 22.5635L40.3978 22.5654Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4209_479">
+                <rect
+                  width="45.3843"
+                  height="45.3843"
+                  fill="white"
+                  transform="translate(0.686523 0.906006)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p>Sports Performance Data</p>
+
+          <p class="font-ubuntu text-base text-white/80">
+            Xplere offers both fixed and mobile solutions to gather player
+            performance data that transforms decision-making and helps push
+            results to the next level.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col gap-6 rounded-[20px] border border-[#0B0E37] bg-[#050721] pl-7 pr-14 pt-16 pb-7 [clip-path:polygon(0_0,100%_0,100%_calc(100%-70px),calc(100%-70px)_100%,0_100%)] md:col-span-2"
+        >
+          <svg
+            width="59"
+            height="60"
+            viewBox="0 0 59 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4209_486)">
+              <path
+                d="M58.999 29.5142C58.999 30.8712 57.9001 31.9725 56.5407 31.9725H50.4784C49.3673 31.9725 48.3913 32.7223 48.1037 33.7917L43.9811 49.1366C43.5115 50.673 42.1988 51.6392 40.6844 51.6392H40.6427C39.1111 51.6219 37.8033 50.6189 37.3878 49.1464L29.3392 16.6325L21.5266 44.2617C21.0571 45.7293 19.8304 46.661 18.38 46.7176C16.8755 46.7987 15.6291 45.9432 15.0735 44.5985L11.1402 33.5999C10.7886 32.6264 9.8594 31.97 8.82444 31.97H2.45736C1.0979 31.97 -0.000976562 30.8687 -0.000976562 29.5117C-0.000976562 28.1547 1.0979 27.0534 2.45736 27.0534H8.8269C11.9342 27.0534 14.722 29.0176 15.7717 31.943L18.0776 38.3986L26.1508 9.84503C26.6449 8.30857 27.938 7.32032 29.4966 7.38669C31.0158 7.41374 32.3138 8.41428 32.7293 9.87453L40.741 42.2409L43.3517 32.5158C44.2146 29.3003 47.1425 27.0534 50.4735 27.0534H56.5358C57.8952 27.0534 58.9941 28.1547 58.9941 29.5117L58.999 29.5142Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4209_486">
+                <rect
+                  width="59"
+                  height="59"
+                  fill="white"
+                  transform="translate(-0.000976562 0.0141602)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p>Enhanced Medical Analytics</p>
+
+          <p class="font-ubuntu text-base text-white/80">
+            Xplere offers bXplere offers both fixed and mobile solutions to
+            gather player performance data that transforms decision-making and
+            helps push results to the next level.oth fixed and mobile solutions
+            to gather player performance data that transforms decision-making
+            and helps push results to the next level.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder" class="contents"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/about.js" type="module"></script>
+  </body>
+</html>

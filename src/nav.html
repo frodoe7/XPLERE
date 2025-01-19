@@ -1,0 +1,129 @@
+<nav class="mt-[51px] hidden w-full px-16 text-nav lg:block">
+  <ul
+    class="grid grid-cols-[1fr_auto_1fr] items-center text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit"
+  >
+    <!-- Left Links -->
+    <div class="flex justify-evenly">
+      <li
+        class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+      >
+        <a href="/products.html">products</a>
+        <div
+          class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+        ></div>
+      </li>
+      <li
+        class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+      >
+        <a href="/services.html">services</a>
+        <div
+          class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+        ></div>
+      </li>
+    </div>
+
+    <!-- Center Logo -->
+    <li class="z-10 cursor-pointer">
+      <a href="/">
+        <img src="../images/logo.png" alt="logo" class="text-primary" />
+      </a>
+    </li>
+
+    <!-- Right Links -->
+    <div class="flex justify-evenly">
+      <li
+        class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+      >
+        <a href="/about.html">about</a>
+        <div
+          class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+        ></div>
+      </li>
+      <li
+        class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+      >
+        <a href="/contact.html">contact</a>
+        <div
+          class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+        ></div>
+      </li>
+    </div>
+  </ul>
+</nav>
+
+<!-- Mobile nav -->
+<nav
+  class="mt-[51px] flex w-full items-center justify-between px-5 text-nav lg:hidden"
+>
+  <a href="/">
+    <img src="../images/logo.png" alt="logo" class="h-5 lg:h-7" />
+  </a>
+
+  <button
+    id="open-nav"
+    onclick="document.getElementById('mobile-nav').style.transform = 'translateX(0)';"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
+    </svg>
+  </button>
+
+  <ul
+    class="fixed top-0 left-0 z-50 flex h-screen w-screen translate-x-full flex-col items-center justify-center gap-5 bg-white text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit transition-transform duration-500"
+    id="mobile-nav"
+  >
+    <button
+      class="absolute top-8 right-8"
+      id="close-nav"
+      onclick="document.getElementById('mobile-nav').style.transform = 'translateX(100%)';"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </svg>
+    </button>
+
+    <li
+      class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+    >
+      <a href="/products.html">products</a>
+    </li>
+    <li
+      class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+    >
+      <a href="/services.html">services</a>
+    </li>
+    <li
+      class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+    >
+      <a href="/about.html">about</a>
+    </li>
+    <li
+      class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+    >
+      <a href="/contact.html">contact</a>
+    </li>
+  </ul>
+</nav>

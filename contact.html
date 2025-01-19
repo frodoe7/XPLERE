@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xplere - Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+
+    <!-- Social media share -->
+    <link href="./styles/output.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+
+  <body class="overflow-x-hidden bg-background font-opti">
+    <!-- Navigation placeholder -->
+    <nav class="mt-[51px] hidden w-full px-16 text-nav lg:block">
+      <ul
+        class="grid grid-cols-[1fr_auto_1fr] items-center text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit"
+      >
+        <!-- Left Links -->
+        <div class="flex justify-evenly">
+          <li
+            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+          >
+            <a href="/products.html">products</a>
+            <div
+              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+            ></div>
+          </li>
+          <li
+            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+          >
+            <a href="/services.html">services</a>
+            <div
+              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+            ></div>
+          </li>
+        </div>
+
+        <!-- Center Logo -->
+        <li class="z-10 cursor-pointer">
+          <a href="/">
+            <img src="../images/logo.png" alt="logo" class="text-primary" />
+          </a>
+        </li>
+
+        <!-- Right Links -->
+        <div class="flex justify-evenly">
+          <li
+            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+          >
+            <a href="/about.html">about</a>
+            <div
+              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+            ></div>
+          </li>
+          <li
+            class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+          >
+            <a href="/contact.html">contact</a>
+            <div
+              class="absolute h-[2px] w-0 bg-primary transition-all duration-1000 group-hover:w-full"
+            ></div>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Mobile nav -->
+    <nav
+      class="mt-[51px] flex w-full items-center justify-between px-5 text-nav lg:hidden"
+    >
+      <a href="/">
+        <img src="../images/logo.png" alt="logo" class="h-5 lg:h-7" />
+      </a>
+
+      <button
+        id="open-nav"
+        onclick="document.getElementById('mobile-nav').style.transform = 'translateX(0)';"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+      </button>
+
+      <ul
+        class="fixed top-0 left-0 z-50 flex h-screen w-screen translate-x-full flex-col items-center justify-center gap-5 bg-white text-xl font-medium uppercase leading-[18.58px] tracking-wide text-inherit transition-transform duration-500"
+        id="mobile-nav"
+      >
+        <button
+          class="absolute top-8 right-8"
+          id="close-nav"
+          onclick="document.getElementById('mobile-nav').style.transform = 'translateX(100%)';"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="/products.html">products</a>
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="/services.html">services</a>
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="/about.html">about</a>
+        </li>
+        <li
+          class="group relative z-10 cursor-pointer transition-colors duration-1000 hover:text-primary"
+        >
+          <a href="/contact.html">contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="flex flex-col items-stretch gap-4">
+      <div
+        class="relative flex min-h-[calc(100vh-150px)] flex-col items-center justify-center gap-10 px-5"
+      >
+        <div class="overflow-hidden">
+          <div
+            class="translate-y-full animate-riseText text-center text-3xl uppercase leading-[35px] text-white lg:text-[60px] lg:leading-[65px]"
+          >
+            <p>
+              <span class="text-primaryDark">contact us</span>
+              for <br />
+              experience
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-5 text-lg lg:flex-row">
+          <p class="uppercase text-white">01.contact us</p>
+          <div class="h-px w-12 bg-white"></div>
+          <p class="text-center font-ubuntu text-white/80 lg:text-left">
+            A showcase of our most inspiring projects. Each one is a <br />
+            journey of innovation, <br />
+             passion, and bold creativity.
+          </p>
+        </div>
+
+        <svg
+          width="546"
+          height="499"
+          viewBox="0 0 546 499"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute hidden animate-moveBall lg:inline-block"
+        >
+          <g filter="url(#filter0_f_4160_457)">
+            <path
+              d="M127.607 201.455C126.667 104.135 187.553 146.113 267.685 142.653C347.818 139.194 416.853 91.6065 417.793 188.927C418.732 286.247 354.534 367.946 274.401 371.405C194.268 374.865 128.546 298.776 127.607 201.455Z"
+              fill="url(#paint0_linear_4160_457)"
+              fill-opacity="0.8"
+            />
+          </g>
+          <g filter="url(#filter1_f_4160_457)">
+            <path
+              d="M176.364 230.855C175.473 180.108 209.579 215.609 259.302 208.861C309.025 202.113 355.535 155.671 356.426 206.419C357.317 257.167 317.731 303.776 268.008 310.524C218.285 317.272 177.255 281.603 176.364 230.855Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_4160_457"
+              x="0.2957"
+              y="0.696091"
+              width="544.807"
+              height="498.122"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="63.65"
+                result="effect1_foregroundBlur_4160_457"
+              />
+            </filter>
+            <filter
+              id="filter1_f_4160_457"
+              x="14.1477"
+              y="20.778"
+              width="504.494"
+              height="452.766"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="81.1"
+                result="effect1_foregroundBlur_4160_457"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear_4160_457"
+              x1="178.197"
+              y1="333.171"
+              x2="385.342"
+              y2="294.012"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#029AB5" />
+              <stop offset="1" stop-color="#029AB5" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div
+        class="container grid gap-7 font-ubuntu text-xl text-white lg:grid-cols-3"
+      >
+        <div
+          class="flex flex-col gap-6 rounded-[20px] border border-[#0B0E37] bg-[#050721] pl-7 pr-14 pt-16 pb-7 [clip-path:polygon(0_0,100%_0,100%_calc(100%-70px),calc(100%-70px)_100%,0_100%)]"
+        >
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4189_1567)">
+              <path
+                d="M17.7138 31.4858L20.8275 31.4822C22.9229 31.4798 24.8803 30.655 26.367 29.1845L45.3409 10.1473C46.4559 9.02976 47.0613 7.56031 47.0595 5.99365C47.0577 4.42698 46.4489 2.95893 45.3314 1.84396C43.0375 -0.444649 39.3166 -0.440369 37.028 1.85352L18.0345 20.8908C16.5479 22.3808 15.7472 24.3401 15.7496 26.4355L15.7532 29.5493C15.7544 30.6263 16.6367 31.5066 17.7138 31.5053L17.7138 31.4858ZM42.5733 4.60839C42.9458 4.98004 43.1422 5.4694 43.1428 5.99815C43.1434 6.5269 42.9481 7.01671 42.5765 7.38922L40.0531 9.91837L37.2887 7.1603L39.8121 4.63115C40.5749 3.86652 41.8087 3.8651 42.5733 4.62797L42.5733 4.60839ZM19.6663 26.4114C19.6651 25.3735 20.0752 24.3743 20.8185 23.6488L34.5111 9.92475L37.2755 12.6828L23.5829 26.4069C22.8396 27.1519 21.8609 27.5643 20.823 27.5655L19.6676 27.5668L19.6663 26.4114ZM47.1045 45.1603C47.1058 46.2374 46.2255 47.1196 45.1484 47.1209C42.1326 47.1243 40.6613 44.9327 39.602 43.3085C38.6211 41.8409 38.1308 41.2539 37.3083 41.2549C36.3096 41.256 35.5468 42.1186 34.3539 43.5104C32.9849 45.1374 31.2834 47.1368 28.4243 47.1401C25.5651 47.1434 23.8786 45.1283 22.5451 43.4848C21.4077 42.1153 20.6625 41.274 19.6834 41.2752C18.9196 41.276 18.4502 41.7662 17.4137 43.0599C16.0057 44.7848 14.0697 47.1566 9.89846 47.1614C4.49346 47.1676 0.10175 42.786 0.095532 37.381C0.0893142 31.976 4.47093 27.5843 9.87593 27.5781C10.953 27.5769 11.8353 28.4571 11.8365 29.5342C11.8378 30.6113 10.9575 31.4935 9.88043 31.4948C6.64919 31.4985 4.00848 34.1453 4.0122 37.3765C4.01591 40.6078 6.6627 43.2485 9.89395 43.2448C12.2048 43.2421 13.163 42.066 14.3755 40.5763C15.5488 39.1453 16.9959 37.3616 19.6789 37.3585C22.5576 37.3552 24.2245 39.3704 25.5581 41.0138C26.6955 42.3833 27.4406 43.2246 28.4198 43.2234C29.3989 43.2223 30.1813 42.3598 31.3743 40.968C32.7432 39.341 34.4447 37.3415 37.3038 37.3382C40.163 37.3349 41.7909 39.5264 42.8503 41.1506C43.8312 42.6182 44.3214 43.2052 45.1439 43.2042C46.221 43.203 47.1033 44.0832 47.1045 45.1603Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4189_1567">
+                <rect
+                  width="47"
+                  height="47"
+                  fill="white"
+                  transform="translate(0.0527344 0.172668) rotate(-0.0659112)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p class="mt-2 mb-6 font-opti text-3xl">Email</p>
+
+          <a href="mailto:info@procus.com" class=""> info@procus.com </a>
+          <a href="mailto:support@procus.com" class=""> support@procus.com </a>
+        </div>
+
+        <div
+          class="flex flex-col gap-6 rounded-[20px] border border-[#0B0E37] bg-[#050721] pl-7 pr-14 pt-16 pb-7 [clip-path:polygon(0_0,calc(100%-70px)_0,100%_70px,100%_100%,0_100%)]"
+        >
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4189_1587)">
+              <path
+                d="M44 13.2935C44 10.6993 42.966 8.23347 41.0795 6.34697C32.6975 -2.03503 11.2988 -2.0332 2.9205 6.34697C1.034 8.23347 0 10.6993 0 13.2916V20.1666H6.1105L2.805 26.367C0.969833 29.8045 0 33.6838 0 37.5833V44H44V37.5833C44 33.6838 43.0302 29.8045 41.1968 26.367L37.8895 20.1666H44V13.2935ZM40.3333 37.5833V40.3333H3.66667V37.5833C3.66667 34.2833 4.48617 31.0016 6.04083 28.094L10.769 19.228L13.2458 15.0993C14.3183 14.5126 17.7558 12.8333 22 12.8333C26.2442 12.8333 29.6872 14.5145 30.7542 15.0993L33.231 19.228L37.961 28.0958C39.5138 31.0035 40.3333 34.2815 40.3333 37.5833ZM40.3333 16.5H35.871L33.4327 12.4355C33.4327 12.4355 28.2223 9.16664 22 9.16664C15.7777 9.16664 10.5673 12.4355 10.5673 12.4355L8.129 16.5H3.66667V13.2898C3.66667 11.6765 4.31933 10.131 5.51283 8.9393C12.6023 1.85347 31.4013 1.85347 38.4872 8.9393C39.6788 10.131 40.3352 11.6765 40.3333 13.2916V16.5ZM22 18.3333C16.9455 18.3333 12.8333 22.4455 12.8333 27.5C12.8333 32.5545 16.9455 36.6666 22 36.6666C27.0545 36.6666 31.1667 32.5545 31.1667 27.5C31.1667 22.4455 27.0545 18.3333 22 18.3333ZM22 33C18.9677 33 16.5 30.5323 16.5 27.5C16.5 24.4676 18.9677 22 22 22C25.0323 22 27.5 24.4676 27.5 27.5C27.5 30.5323 25.0323 33 22 33Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4189_1587">
+                <rect width="44" height="44" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p class="mt-2 mb-6 font-opti text-3xl">Phone</p>
+
+          <a href="tel:+00123456789" class="">+00 123 456 7890</a>
+          <a href="tel:+002546456789" class="">+00 2546 456 7890</a>
+        </div>
+
+        <div
+          class="flex flex-col gap-6 rounded-[20px] border border-[#0B0E37] bg-[#050721] pl-7 pr-14 pt-16 pb-7 [clip-path:polygon(0_0,100%_0,100%_calc(100%-70px),calc(100%-70px)_100%,0_100%)]"
+        >
+          <svg
+            width="49"
+            height="49"
+            viewBox="0 0 49 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4189_1595)">
+              <path
+                d="M46.6687 2.33158C44.4453 0.10616 41.2317 -0.585965 38.2244 0.54716L4.75327 14.4182C0.8006 15.9066 -0.420317 19.5959 0.124808 22.589C0.671975 25.5862 3.11381 28.6078 7.34006 28.6078H20.3639V41.6622C20.3639 45.8865 23.3855 48.3303 26.3806 48.8734C26.8278 48.9551 27.2892 48.998 27.7567 48.998C30.4293 48.998 33.2856 47.6219 34.533 44.3123L48.4776 10.7126C49.5883 7.76853 48.8961 4.55495 46.6687 2.33158ZM44.6801 9.20995L30.7355 42.8097C30.0291 44.6778 28.3978 45.0922 27.1136 44.8595C25.8233 44.6247 24.4451 43.661 24.4451 41.6643V26.5682C24.4451 25.4392 23.5325 24.5265 22.4035 24.5265H7.34006C5.34127 24.5265 4.3776 23.1484 4.14281 21.8581C3.91006 20.5698 4.32452 18.9405 6.25593 18.2137L39.727 4.34262C40.1884 4.16908 40.656 4.08333 41.1154 4.08333C42.0974 4.08333 43.0386 4.47328 43.7838 5.21849C44.8761 6.31078 45.2007 7.82774 44.6801 9.20995Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4189_1595">
+                <rect width="49" height="49" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p class="mt-2 mb-6 font-opti text-3xl">Location</p>
+
+          <a href="" class=""
+            >1498w Fluton ste, STE <br />
+            2D Chicgo, IL 63867.</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="container mt-32 grid items-center gap-24 lg:mt-[180px] lg:grid-cols-2"
+      >
+        <div class="max-w-lg">
+          <div class="leading-[1]">
+            <p
+              class="text-[60px] text-transparent [-webkit-text-stroke:1px_white]"
+            >
+              Get in
+            </p>
+            <p class="text-[70px] text-white lg:text-[80px]">Touch</p>
+          </div>
+
+          <p class="mt-10 font-ubuntu text-white/80">
+            If you would like to work with us or just want to get in touch, we’d
+            love to hear from you!
+          </p>
+
+          <div
+            class="mt-20 flex flex-wrap justify-between font-ubuntu text-white/80"
+          >
+            <a href="">Facebook.</a>
+            <a href="">Twitter.</a>
+            <a href="">LinkedIn.</a>
+            <a href="">Instagram.</a>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-2 gap-x-6 gap-y-6 font-ubuntu text-lg text-white/80"
+        >
+          <div class="col-span-2 mb-4 flex items-center gap-2">
+            <p>Send A Message</p>
+            <div class="h-px w-12 bg-white"></div>
+          </div>
+
+          <input
+            class="border-b border-[#313240] bg-transparent p-0 pb-4 placeholder-[#313240] focus:outline-0"
+            placeholder="Name"
+          />
+
+          <input
+            type="email"
+            class="border-b border-[#313240] bg-transparent p-0 pb-4 placeholder-[#313240] focus:outline-0"
+            placeholder="Email"
+          />
+
+          <input
+            class="col-span-2 border-b border-[#313240] bg-transparent p-0 pb-4 placeholder-[#313240] focus:outline-0"
+            placeholder="Subject"
+          />
+
+          <textarea
+            class="col-span-2 border-b border-[#313240] bg-transparent p-0 pb-4 placeholder-[#313240] focus:outline-0"
+            placeholder="Message"
+          ></textarea>
+
+          <div>
+            <button
+              href=""
+              class="mt-3 self-start rounded-md border border-lightBlue bg-lightBlue px-5 py-3 text-center text-base uppercase transition-colors duration-300 hover:border-white hover:bg-white/20 lg:mt-6"
+            >
+              let's talk
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder" class="contents"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/about.js" type="module"></script>
+  </body>
+</html>

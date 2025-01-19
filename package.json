@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "flowbite": "^1.8.1",
+    "motion": "^11.17.0",
     "swiper": "^11.1.14"
   }
 }
